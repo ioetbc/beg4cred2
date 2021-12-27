@@ -5,6 +5,7 @@ import { useHistory, useLocation, Switch, Route, useRouteMatch, Link } from 'rea
 import { Navigation } from './components/Navigation'
 import { HorizontalScrollingWrapper } from './components/HorizontalScrollingWrapper'
 import { Sidebar } from './components/Sidebar'
+import { NFTDetails } from './pages/NFTDetails'
 import { getCurrentProject } from './utils/getCurrentProject'
 import { getPageData } from './utils/getPageData'
 
@@ -12,7 +13,6 @@ const Shop = () => {
   const history = useHistory()
   const location = useLocation()
   const { path, url } = useRouteMatch()
-
   const [visibleContent, setVisibleContent] = useState([])
   const [pageContent, setPageContent] = useState([])
   const [imagesHaveLoaded, setImagesHaveLoaded] = useState(false)
@@ -40,55 +40,42 @@ const Shop = () => {
     },
   ]
 
-  useEffect(() => {
-    setPageContent(getPageData({ location }))
-    // document.querySelector('#scrollTo').scrollIntoView({}) // TODO see how to find ref in different component
-    setImagesHaveLoaded(false)
-  }, [location])
+  // useEffect(() => {
+  //   setPageContent(getPageData({ location }))
+  //   // document.querySelector('#scrollTo').scrollIntoView({}) // TODO see how to find ref in different component
+  //   setImagesHaveLoaded(false)
+  // }, [location])
 
   const handleElementOnScreen = element => {
     const index = Number(element?.getAttribute('index'))
     setVisibleContent(getPageData({ location })[index])
   }
 
-  const handleImageLoading = () => {
-    setAmountOfImagesLoaded(amountOfImagesLoaded + 1)
-    if (pageContent.length === amountOfImagesLoaded) {
-      setImagesHaveLoaded(true)
-    }
-  }
+  // const handleImageLoading = () => {
+  //   setAmountOfImagesLoaded(amountOfImagesLoaded + 1)
+  //   if (pageContent.length === amountOfImagesLoaded) {
+  //     setImagesHaveLoaded(true)
+  //   }
+  // }
+
+  console.log(`path: ${url}`)
 
   return (
     <>
       <div id="site-wrapper" className="site-wrapper">
         <Navigation secondaryNavigation={secondaryNavigation} fixed={true} />
-        <HorizontalScrollingWrapper
-          imagesHaveLoaded={imagesHaveLoaded}
-          nextProject={'workIsHell'}
-          handleElementOnScreen={handleElementOnScreen}
-          updateImagesHaveLoadedState={setImagesHaveLoaded}
-        >
-          {pageContent?.map((NFT, index) => (
-            <div className="image-wrapper">
-              <Link
-                to={{
-                  pathname: `details/${NFT.title}`,
-                  state: { details: NFT },
-                }}
-              >
-                <img
-                  className="image"
-                  id={`magnify-${index}`}
-                  src={NFT.image}
-                  alt={NFT.alt}
-                  index={index}
-                  key={index}
-                  onLoad={handleImageLoading}
-                />
-              </Link>
-            </div>
-          ))}
-        </HorizontalScrollingWrapper>
+        <Switch>
+          <Route path={`${url}/workIsHell`} exact>
+            <HorizontalScrollingWrapper
+              imagesHaveLoaded={imagesHaveLoaded}
+              handleElementOnScreen={handleElementOnScreen}
+              updateImagesHaveLoadedState={setImagesHaveLoaded}
+            />
+          </Route>
+          <Route path={`${url}/workIsHell/details`}>
+            <NFTDetails />
+          </Route>
+        </Switch>
         <Sidebar
           title={visibleContent?.title}
           description={visibleContent?.description}

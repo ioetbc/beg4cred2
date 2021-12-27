@@ -17,7 +17,7 @@ export const NFTDetails = ({}) => {
   // const index = Number(location.search.split('index=')[1])
   // const NFT = NFTContent[0].projects[index]
   // if (!NFT) return null
-
+  console.log('INIT')
   const handleCloseButton = () => {
     history.goBack()
   }
