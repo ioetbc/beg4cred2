@@ -5,7 +5,6 @@ import { magnifyImagesOnMouseOver } from '../utils/magnifyImagesOnMouseOver'
 
 export const HorizontalScrollingWrapper = ({ children, handleElementOnScreen, imagesHaveLoaded }) => {
   const scrollContainerRef = useRef(null)
-  console.log('children', children)
   useEffect(() => {
     scrollContainerRef.current.addEventListener('wheel', event => {
       event.preventDefault()

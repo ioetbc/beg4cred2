@@ -20,7 +20,12 @@ export default function AppRouter() {
               <TransitionGroup>
                 <CSSTransition key={location.pathname} classNames="fade" timeout={1000}>
                   <Switch location={location}>
-                    <Route path="/shop" render={() => <Shop location={location} />} />
+                    <Route
+                      path={['/shop/workIsHell', '/shop/editedAds']}
+                      exact
+                      render={() => <Shop location={location} />}
+                    />
+                    <Route path="/shop/details" render={() => <NFTDetails location={location} />} />
                     <Route path="/contact" render={() => <Contact location={location} />} />
                     <Route path="/tattoos" render={() => <Tattoos location={location} />} />
                     <Route path="/about" render={() => <AboutContact location={location} />} />

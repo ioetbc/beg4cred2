@@ -1,12 +1,17 @@
 import React, { useState } from 'react'
-import { useHistory } from 'react-router-dom'
+import { useHistory, useLocation } from 'react-router-dom'
 
 import { NFTContent } from '../content/NFTContent'
 import { CloseButton } from '../components/CloseButton'
 import { getCurrentProject } from '../utils/getCurrentProject'
+import { getPageData } from '../utils/getPageData'
 
-export const NFTDetails = ({ location }) => {
+export const NFTDetails = ({}) => {
   const history = useHistory()
+  const location = useLocation()
+
+  const { details } = location.state
+  // const { details } = location?.state
 
   // TODO: refactor this can we use react router api?
   // const index = Number(location.search.split('index=')[1])
@@ -14,17 +19,15 @@ export const NFTDetails = ({ location }) => {
   // if (!NFT) return null
 
   const handleCloseButton = () => {
-    const currentPage = getCurrentProject({ location })
-
     history.goBack()
   }
 
   return (
     <div className="details-inner-container">
       <CloseButton onClick={handleCloseButton} />
-      {/* <h1>{NFT.title}</h1>
-      <p>{NFT.description}</p>
-      <a href={NFT.stripeLink}>PURCHASE</a> */}
+      <h1>{details?.title}</h1>
+      <p>{details?.description}</p>
+      <a href={details?.stripeLink}>PURCHASE</a>
       <h1> this is the details page</h1>
     </div>
     // <div className="clickable-area" onClick={handleCloseButton}></div>

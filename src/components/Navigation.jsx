@@ -6,7 +6,6 @@ import { slide as Menu } from 'react-burger-menu'
 
 export const Navigation = ({ secondaryNavigation, fixed }) => {
   const history = useHistory()
-  console.log('history', history)
   const location = useLocation()
   const pagePath = location.pathname.split('/')[1]
   // var styles = {

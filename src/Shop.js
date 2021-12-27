@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import './App.css'
-import { useHistory, useLocation, Switch, Route, useRouteMatch } from 'react-router-dom'
+import { useHistory, useLocation, Switch, Route, useRouteMatch, Link } from 'react-router-dom'
 
 import { Navigation } from './components/Navigation'
 import { HorizontalScrollingWrapper } from './components/HorizontalScrollingWrapper'
@@ -53,45 +53,52 @@ const Shop = () => {
 
   const handleImageLoading = () => {
     setAmountOfImagesLoaded(amountOfImagesLoaded + 1)
-    console.log('pageContent.length', pageContent.length)
     if (pageContent.length === amountOfImagesLoaded) {
       setImagesHaveLoaded(true)
     }
   }
 
   return (
-    <div id="site-wrapper" className="site-wrapper">
-      <Navigation secondaryNavigation={secondaryNavigation} fixed={true} />
-      <HorizontalScrollingWrapper
-        imagesHaveLoaded={imagesHaveLoaded}
-        nextProject={'workIsHell'}
-        handleElementOnScreen={handleElementOnScreen}
-        updateImagesHaveLoadedState={setImagesHaveLoaded}
-      >
-        {pageContent?.map((NFT, index) => (
-          <div className="image-wrapper">
-            <img
-              onClick={() => history.push(`${url}/rendering`)}
-              className="image"
-              id={`magnify-${index}`}
-              src={NFT.image}
-              alt={NFT.alt}
-              index={index}
-              key={index}
-              onLoad={handleImageLoading}
-            />
-          </div>
-        ))}
-      </HorizontalScrollingWrapper>
-      <Sidebar
-        title={visibleContent?.title}
-        description={visibleContent?.description}
-        priceETH={visibleContent?.priceETH}
-        priceFiat={visibleContent?.priceFiat}
-        stripeLink={visibleContent?.stripeLink}
-        sold={visibleContent?.sold}
-      />
-    </div>
+    <>
+      <div id="site-wrapper" className="site-wrapper">
+        <Navigation secondaryNavigation={secondaryNavigation} fixed={true} />
+        <HorizontalScrollingWrapper
+          imagesHaveLoaded={imagesHaveLoaded}
+          nextProject={'workIsHell'}
+          handleElementOnScreen={handleElementOnScreen}
+          updateImagesHaveLoadedState={setImagesHaveLoaded}
+        >
+          {pageContent?.map((NFT, index) => (
+            <div className="image-wrapper">
+              <Link
+                to={{
+                  pathname: `details/${NFT.title}`,
+                  state: { details: NFT },
+                }}
+              >
+                <img
+                  className="image"
+                  id={`magnify-${index}`}
+                  src={NFT.image}
+                  alt={NFT.alt}
+                  index={index}
+                  key={index}
+                  onLoad={handleImageLoading}
+                />
+              </Link>
+            </div>
+          ))}
+        </HorizontalScrollingWrapper>
+        <Sidebar
+          title={visibleContent?.title}
+          description={visibleContent?.description}
+          priceETH={visibleContent?.priceETH}
+          priceFiat={visibleContent?.priceFiat}
+          stripeLink={visibleContent?.stripeLink}
+          sold={visibleContent?.sold}
+        />
+      </div>
+    </>
   )
 }
 
@@ -116,4 +123,4 @@ export default Shop
 // TATTOOS PAGE
 // MAGNIFY EFFECT ON TATTOO GALLERY
 // ADD A MORE INFO BUTTON ON MOBILE SO ALL THE TEXT ISN'T VISIBLE
-// MAKE THE GALLERY AUTOMATICALLY SCROLL BUT ALSO ABLE TO SCROLL IT YOURSELF
+// SLIGHT BUG WITH THE AUTO SCROLLING GALLERY

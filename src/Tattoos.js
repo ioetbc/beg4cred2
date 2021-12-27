@@ -33,12 +33,15 @@ const Tattoos = () => {
     iteration++
     const rightSection = verticalScrollingWrapper.current
 
-    const galleryHeight = rightSection.scrollHeight - window.innerHeight + PADDING
-    console.log('iteration', iteration)
-    console.log('galleryHeight', galleryHeight)
-    if (iteration >= galleryHeight) return cancelAnimationFrame(globalID)
+    const galleryHeight = Math.abs(rightSection.scrollHeight - window.innerHeight + PADDING)
 
-    rightSection.style.transform = `translateY(${-iteration}px`
+    if (iteration >= galleryHeight) {
+      // iteration = 0
+      return cancelAnimationFrame(globalID)
+    }
+
+    // rightSection.style.transform = `translateY(${-iteration}px`
+    rightSection.scroll(0, iteration)
     globalID = requestAnimationFrame(repeatOften)
   }
 
@@ -48,18 +51,18 @@ const Tattoos = () => {
     const rightSection = verticalScrollingWrapper.current
     const galleryHeight = rightSection.scrollHeight - window.innerHeight + PADDING
 
-    // globalID = requestAnimationFrame(repeatOften)
-    // rightSection.addEventListener('mouseenter', function (event) {
-    //   cancelAnimationFrame(globalID)
-    // })
-    // rightSection.addEventListener('mouseleave', function (event) {
-    //   globalID = requestAnimationFrame(repeatOften)
-    // })
-    // rightSection.addEventListener('wheel', function (event) {
-    //   iteration += event.deltaY
-    //   if (iteration >= galleryHeight || iteration < 0) return
-    //   rightSection.style.transform = `translateY(${iteration}px`
-    // })
+    globalID = requestAnimationFrame(repeatOften)
+    rightSection.addEventListener('mouseenter', function (event) {
+      cancelAnimationFrame(globalID)
+    })
+    rightSection.addEventListener('mouseleave', function (event) {
+      globalID = requestAnimationFrame(repeatOften)
+    })
+    rightSection.addEventListener('wheel', function (event) {
+      iteration += event.deltaY
+      if (iteration >= galleryHeight || iteration < 0) return
+      rightSection.style.transform = `translateY(${iteration}px`
+    })
   }, [])
 
   return (
