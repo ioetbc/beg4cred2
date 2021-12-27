@@ -6,6 +6,7 @@ import { slide as Menu } from 'react-burger-menu'
 
 export const Navigation = ({ secondaryNavigation, fixed }) => {
   const history = useHistory()
+
   const location = useLocation()
   const pagePath = location.pathname.split('/')[1]
   // var styles = {
@@ -76,7 +77,7 @@ export const Navigation = ({ secondaryNavigation, fixed }) => {
     },
     {
       title: 'SHOP',
-      url: 'shop/workIsHell',
+      url: 'shop?category=workIsHell',
     },
     {
       title: 'NFT',

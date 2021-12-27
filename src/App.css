@@ -70,14 +70,6 @@ p {
   margin: 0;
   padding: 0;
 }
-.close-icon-container {
-  float: right;
-  cursor: pointer;
-}
-
-.close-icon {
-  width: 30px;
-}
 
 .clickable-area {
   background: transparent;
@@ -87,19 +79,30 @@ p {
   width: 100%;
 }
 
+.shit {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
 .details-inner-container {
-  background: white;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  height: 90%;
-  width: 95%;
   padding: 16px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   margin: 0 auto;
-  z-index: 10;
+}
+
+.details-inner-container img {
+  width: 100%;
+}
+
+.close-icon-container {
+  float: right;
+  cursor: pointer;
+}
+
+.details-inner-container .close-icon {
+  width: 50px;
+  position: absolute;
+  right: 8px;
 }
 
 .fade-enter,

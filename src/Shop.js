@@ -1,81 +1,96 @@
 import React, { useState, useEffect, useRef } from 'react'
 import './App.css'
-import { useHistory, useLocation, Switch, Route, useRouteMatch, Link } from 'react-router-dom'
+import { useHistory, useLocation, useParams, Switch, Route, useRouteMatch, Link } from 'react-router-dom'
+import * as qs from 'query-string'
 
 import { Navigation } from './components/Navigation'
 import { HorizontalScrollingWrapper } from './components/HorizontalScrollingWrapper'
 import { Sidebar } from './components/Sidebar'
 import { NFTDetails } from './pages/NFTDetails'
-import { getCurrentProject } from './utils/getCurrentProject'
 import { getPageData } from './utils/getPageData'
+import { NFTContent } from './content/NFTContent'
 
-const Shop = () => {
+const Shop = ({ location }) => {
   const history = useHistory()
-  const location = useLocation()
+  const { 0: params } = useParams()
+
   const { path, url } = useRouteMatch()
   const [visibleContent, setVisibleContent] = useState([])
   const [pageContent, setPageContent] = useState([])
   const [imagesHaveLoaded, setImagesHaveLoaded] = useState(false)
   const [amountOfImagesLoaded, setAmountOfImagesLoaded] = useState(1)
+  const [showDetailsPage, setShowDetailsPafge] = useState(false)
   const secondaryNavigation = [
     {
       title: 'EDITED_ADS_COLLECTION',
-      url: '/shop/editedAds',
+      url: '/shop/?category=editedAds',
     },
     {
       title: 'PASTEL_SET_COLLECTION',
-      url: '/shop/pastelSet',
+      url: '/shop/:pastelSet',
     },
     {
       title: 'PEN_AND_INK_COLLECTION',
-      url: '/shop/penAndInk',
+      url: '/shop/:penAndInk',
     },
     {
       title: 'WORK_IS_HELL_COLLECTION',
-      url: '/shop/workIsHell',
+      url: '/shop?category=workIsHell',
     },
     {
       title: 'COLOUR_CARTOONS_COLLECTION',
-      url: '/shop/colourCartoons',
+      url: '/shop/:colourCartoons',
     },
   ]
 
-  // useEffect(() => {
-  //   setPageContent(getPageData({ location }))
-  //   // document.querySelector('#scrollTo').scrollIntoView({}) // TODO see how to find ref in different component
-  //   setImagesHaveLoaded(false)
-  // }, [location])
+  useEffect(() => {
+    setImagesHaveLoaded(false)
+    const body = document.querySelector('body')
+    body.style.overflow = 'hidden'
+  }, [location])
 
   const handleElementOnScreen = element => {
     const index = Number(element?.getAttribute('index'))
     setVisibleContent(getPageData({ location })[index])
   }
 
-  // const handleImageLoading = () => {
-  //   setAmountOfImagesLoaded(amountOfImagesLoaded + 1)
-  //   if (pageContent.length === amountOfImagesLoaded) {
-  //     setImagesHaveLoaded(true)
-  //   }
-  // }
+  const handleImageLoading = () => {
+    setAmountOfImagesLoaded(amountOfImagesLoaded + 1)
+    if (pageContent.length === amountOfImagesLoaded) {
+      setImagesHaveLoaded(true)
+    }
+  }
 
-  console.log(`path: ${url}`)
+  const query = qs.parse(location.search)
+  const pageData = NFTContent.filter(page => page.category === query.category)[0]
+  const projects = pageData.projects
 
   return (
     <>
       <div id="site-wrapper" className="site-wrapper">
         <Navigation secondaryNavigation={secondaryNavigation} fixed={true} />
-        <Switch>
-          <Route path={`${url}/workIsHell`} exact>
-            <HorizontalScrollingWrapper
-              imagesHaveLoaded={imagesHaveLoaded}
-              handleElementOnScreen={handleElementOnScreen}
-              updateImagesHaveLoadedState={setImagesHaveLoaded}
-            />
-          </Route>
-          <Route path={`${url}/workIsHell/details`}>
-            <NFTDetails />
-          </Route>
-        </Switch>
+
+        <HorizontalScrollingWrapper
+          imagesHaveLoaded={imagesHaveLoaded}
+          handleElementOnScreen={handleElementOnScreen}
+          updateImagesHaveLoadedState={setImagesHaveLoaded}
+        >
+          {projects?.map((NFT, index) => (
+            <div className="image-wrapper">
+              <img
+                className="image"
+                id={`magnify-${index}`}
+                src={NFT.image}
+                alt={NFT.alt}
+                index={index}
+                key={index}
+                onLoad={handleImageLoading}
+                onClick={() => history.push(`/details?category=${query.category}&title=${NFT.title}`)}
+              />
+            </div>
+          ))}
+        </HorizontalScrollingWrapper>
+
         <Sidebar
           title={visibleContent?.title}
           description={visibleContent?.description}
