@@ -1,0 +1,55 @@
+.sidebarTitle {
+  font-size: 19px;
+  letter-spacing: 1px;
+  text-align: right;
+  text-transform: uppercase;
+  color: white;
+}
+
+.price {
+  margin-top: 0;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-align: right;
+  color: white;
+}
+
+.moreInfo {
+  margin-top: 16px;
+  font-size: 12px;
+  text-decoration: underline;
+  letter-spacing: 1px;
+  text-align: right;
+  color: white;
+}
+
+.sidebarContainer {
+  width: 30vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  line-height: 20px;
+  max-width: 25vw;
+  height: 140px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+}
+
+@media screen and (min-width: 768px) {
+  .sidebarContainer {
+    height: 168px;
+  }
+  .sidebarWrapper {
+    height: 100vh;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .price {
+    margin-top: -16px;
+  }
+}

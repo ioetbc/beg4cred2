@@ -1,0 +1,89 @@
+.navigation {
+  width: 100%;
+  padding: 16px;
+  height: 168px;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation.fixed {
+    position: fixed;
+  }
+}
+
+.textLogo {
+  color: white;
+  font-size: 19px;
+  letter-spacing: 2px;
+  line-height: 20px;
+  position: absolute;
+  transform-origin: left top;
+  transform: rotate(-90deg) translateX(-100%);
+}
+
+.backButton {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  color: white;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.backButton p {
+  font-size: 12px;
+}
+
+.backButtonIcon {
+  width: 25px;
+  margin-left: -4px;
+}
+
+.bottomLogo {
+  font-size: 18px;
+}
+
+.menuLinksPages {
+  text-align: right;
+  position: absolute;
+  line-height: 20px;
+  /* top: 16px; */
+  right: 16px;
+}
+
+.menuLinksPages h1:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.menuLink {
+  font-size: 14px;
+  color: white;
+}
+
+/* .leftAlignedMenuWrapper {
+  display: none;
+} */
+.leftAlignedMenuWrapper {
+  display: block;
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  line-height: 18px;
+}
+@media screen and (min-width: 768px) {
+  .leftAlignedMenuWrapper h2 {
+    margin-bottom: 4px;
+    cursor: pointer;
+  }
+
+  .leftAlignedMenuWrapper h2:last-child {
+    margin-bottom: 0;
+  }
+
+  .leftAlignedMenuWrapper h2:hover {
+    text-decoration: underline;
+  }
+}

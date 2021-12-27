@@ -1,0 +1,17 @@
+.buttonWrapper {
+  margin-top: 16px;
+}
+
+.button {
+  border: white solid 1px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.button:hover {
+  background: #333;
+}

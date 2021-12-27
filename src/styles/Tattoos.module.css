@@ -1,0 +1,92 @@
+.videoTransWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.tattooWrapper {
+  margin: 0 16px;
+  /* overflow: hidden; */
+}
+@media screen and (min-width: 768px) {
+  .tattooWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+  }
+}
+
+.tattooWrapper .left {
+  box-sizing: border-box;
+}
+
+.tattooWrapper .right {
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .tattooWrapper .left {
+    /* width: 50vw; */
+    height: calc(100vh - 168px - 16px); /* minus height of navigation */
+    overflow-y: scroll;
+    /* border-right: 2px solid white; */
+  }
+  .tattooWrapper .right {
+    height: calc(100vh - 168px - 16px); /* minus height of navigation */
+    /* width: 50vw; */
+    overflow: scroll;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.video {
+  width: 100%;
+}
+
+.contactList {
+  margin: 16px 0 0 16px;
+}
+
+.contactList h1 {
+  margin-bottom: 16px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.contactList ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.contactList ul li {
+  line-height: 38px;
+}
+
+.contactList ul li a {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+.contactList ul li a:hover {
+  text-decoration: underline;
+}
+
+.transcript {
+  margin-top: 16px;
+}
+
+.transcript p {
+  color: white;
+}
+
+.image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+}
