@@ -1,17 +1,17 @@
 import React, { useState } from 'react'
-import { useHistory, useLocation } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import styles from '../styles/Navigation.module.css'
 import Icon from '../images/left-arrow.svg'
-import { slide as Menu } from 'react-burger-menu'
 
-export const Navigation = ({ secondaryNavigation, location, fixed }) => {
+import * as qs from 'query-string'
+
+export const Navigation = ({ location }) => {
   const [showSubMenu, setShowSubMenu] = useState(false)
   const history = useHistory()
-  // const location = useLocation()
 
   const pagePath = location.pathname.split('/')[1]
-
-  const isShopPage = location.pathname === '/shop'
+  const isShopPage = location.pathname === '/shop' || location.pathname === '/shop/'
+  const query = qs.parse(location.search)
 
   const websitePages = [
     {
@@ -36,21 +36,44 @@ export const Navigation = ({ secondaryNavigation, location, fixed }) => {
     },
     {
       title: 'SHOP',
-      url: 'shop?category=workIsHell',
+      url: 'shop?category=work_is_hell',
       subPages: [
         {
           title: 'WORK_IS_HELL_NFT',
-          url: 'workIsHell',
+          url: 'work_is_hell',
         },
         {
           title: 'EDITED_ADS_NFT',
-          url: 'editedAds',
+          url: 'edited_ads',
         },
       ],
     },
     {
       title: 'NFT',
-      url: 'shop/workIsHell',
+      url: 'shop/work_is_hell',
+    },
+  ]
+
+  const secondaryNavigation = [
+    {
+      title: 'EDITED_ADS_COLLECTION',
+      url: '/shop/?category=edited_ads',
+    },
+    {
+      title: 'PASTEL_SET_COLLECTION',
+      url: '/shop/:pastelSet',
+    },
+    {
+      title: 'PEN_AND_INK_COLLECTION',
+      url: '/shop/:penAndInk',
+    },
+    {
+      title: 'WORK_IS_HELL_COLLECTION',
+      url: '/shop?category=work_is_hell',
+    },
+    {
+      title: 'COLOUR_CARTOONS_COLLECTION',
+      url: '/shop/:colourCartoons',
     },
   ]
 
@@ -100,10 +123,16 @@ export const Navigation = ({ secondaryNavigation, location, fixed }) => {
           </>
         ))}
       </div>
-      {secondaryNavigation && (
+      {isShopPage && (
         <div className={styles.leftAlignedMenuWrapper}>
           {secondaryNavigation.map(item => (
-            <h2 onClick={() => history.push(item.url)} className={styles.menuLink}>
+            <h2
+              style={{
+                textDecoration: item.title.toLowerCase().includes(query.category) && 'underline',
+              }}
+              onClick={() => history.push(item.url)}
+              className={styles.menuLink}
+            >
               {item.title}
             </h2>
           ))}

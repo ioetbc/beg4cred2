@@ -1,9 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import './App.css'
 
-import { Navigation } from './components/Navigation'
-import VideoFile from './videos/homepage.mp4'
-
 const HomePage = () => {
   return (
     <>

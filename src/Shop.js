@@ -16,28 +16,6 @@ const Shop = ({ location }) => {
   const [pageContent, setPageContent] = useState([])
   const [imagesHaveLoaded, setImagesHaveLoaded] = useState(false)
   const [amountOfImagesLoaded, setAmountOfImagesLoaded] = useState(1)
-  const secondaryNavigation = [
-    {
-      title: 'EDITED_ADS_COLLECTION',
-      url: '/shop/?category=editedAds',
-    },
-    {
-      title: 'PASTEL_SET_COLLECTION',
-      url: '/shop/:pastelSet',
-    },
-    {
-      title: 'PEN_AND_INK_COLLECTION',
-      url: '/shop/:penAndInk',
-    },
-    {
-      title: 'WORK_IS_HELL_COLLECTION',
-      url: '/shop?category=workIsHell',
-    },
-    {
-      title: 'COLOUR_CARTOONS_COLLECTION',
-      url: '/shop/:colourCartoons',
-    },
-  ]
 
   useEffect(() => {
     // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
@@ -95,7 +73,7 @@ const Shop = ({ location }) => {
               <div className="image-wrapper">
                 <div
                   className="image-container"
-                  onClick={() => history.push(`details?category=${query.category}&title=${NFT.title}`)}
+                  onClick={() => history.push(`/details?category=${query.category}&title=${NFT.title}`)}
                 >
                   {isMobile ? (
                     <img src={NFT.image} alt={NFT.alt} index={index} className="image" onLoad={handleImageLoading} />

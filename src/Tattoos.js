@@ -22,15 +22,14 @@ const Tattoos = () => {
   const repeatOften = () => {
     iteration++
     const rightSection = verticalScrollingWrapper?.current
+    if (!rightSection) return
 
     const galleryHeight = Math.abs(rightSection.scrollHeight - window.innerHeight + PADDING)
 
     if (iteration >= galleryHeight) {
-      // iteration = 0
       return cancelAnimationFrame(globalID)
     }
 
-    // rightSection.style.transform = `translateY(${-iteration}px`
     rightSection.scroll(0, iteration)
     globalID = requestAnimationFrame(repeatOften)
   }

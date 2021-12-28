@@ -52,7 +52,7 @@ import editedAds28 from '../images/edited_ads/28.jpg'
 
 export const NFTContent = [
   {
-    category: 'workIsHell',
+    category: 'work_is_hell',
     projects: [
       {
         title: 'nostrum',
@@ -282,7 +282,7 @@ export const NFTContent = [
     ],
   },
   {
-    category: 'editedAds',
+    category: 'edited_ads',
     projects: [
       {
         title: 'nostrum',
