@@ -24,23 +24,26 @@
 }
 
 .sidebarContainer {
-  width: 30vw;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  width: 100%;
   line-height: 20px;
-  max-width: 25vw;
-  height: 140px;
+  height: 100px;
   padding: 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: right;
+  position: absolute;
+  bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
   .sidebarContainer {
+    width: 30vw;
+    max-width: 25vw;
     height: 168px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
   .sidebarWrapper {
     height: 100vh;
