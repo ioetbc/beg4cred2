@@ -5,12 +5,8 @@ import { Navigation } from './components/Navigation'
 import VideoFile from './videos/homepage.mp4'
 
 const HomePage = () => {
-  const videoRefOne = useRef(null)
-  const videoRefTwo = useRef(null)
-
   return (
     <>
-      <Navigation />
       <div className="contact-links-wrapper">
         <ul>
           <li>

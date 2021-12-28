@@ -8,8 +8,6 @@ import VideoFile from './videos/tattoo_description.mp4'
 const AboutContact = () => {
   return (
     <>
-      <Navigation />
-
       <div className={styles.aboutContactWrapper}>
         <video className={styles.video} controls muted autoPlay loop src={VideoFile}></video>
         <div className={styles.transcript}>

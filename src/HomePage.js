@@ -10,7 +10,6 @@ const HomePage = () => {
 
   return (
     <>
-      <Navigation />
       <div className="video-wrapper">
         {/* <video ref={videoRefOne} controls muted autoPlay loop src={VideoFile}></video> */}
         <video

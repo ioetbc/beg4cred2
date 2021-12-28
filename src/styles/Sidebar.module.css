@@ -24,16 +24,7 @@
 }
 
 .sidebarContainer {
-  width: 100%;
-  line-height: 20px;
-  height: 100px;
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: right;
-  position: absolute;
-  bottom: 0;
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -44,6 +35,12 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    line-height: 20px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
   }
   .sidebarWrapper {
     height: 100vh;

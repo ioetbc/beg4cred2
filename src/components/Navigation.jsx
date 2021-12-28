@@ -4,12 +4,14 @@ import styles from '../styles/Navigation.module.css'
 import Icon from '../images/left-arrow.svg'
 import { slide as Menu } from 'react-burger-menu'
 
-export const Navigation = ({ secondaryNavigation, fixed }) => {
+export const Navigation = ({ secondaryNavigation, location, fixed }) => {
   const [showSubMenu, setShowSubMenu] = useState(false)
   const history = useHistory()
-  const location = useLocation()
+  // const location = useLocation()
 
   const pagePath = location.pathname.split('/')[1]
+
+  const isShopPage = location.pathname === '/shop'
 
   const websitePages = [
     {
@@ -58,7 +60,7 @@ export const Navigation = ({ secondaryNavigation, fixed }) => {
   }
 
   return (
-    <div className={`${styles.navigation} ${fixed ? styles.fixed : ''}`}>
+    <div className={`${styles.navigation} ${isShopPage ? styles.fixed : ''}`}>
       <h1 className={styles.textLogo} onClick={() => history.push('/')}>
         BEG4
         <br />

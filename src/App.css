@@ -1,3 +1,15 @@
+:root {
+  --vh: 0px;
+}
+
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+html {
+  height: -webkit-fill-available;
+}
+
 .App {
   text-align: center;
 }
@@ -118,6 +130,25 @@ p {
   bottom: 0;
 } */
 
+.fade-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+  transition-delay: 300;
+}
+
 @media screen and (min-width: 768px) {
   :root {
     --NavigationHeight: 100px;
@@ -152,6 +183,12 @@ a {
   position: relative;
 }
 
+/* .image img {
+  width: auto !important;
+  height: 60vh; 
+  height: calc(var(--vh, 1vh) * 60);
+} */
+
 .link:after {
   position: absolute;
   content: '';
@@ -182,8 +219,18 @@ a {
   margin-right: 25%;
 }
 
-.image-container {
-  width: 400px;
+.image-container .image {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100 - 200px);
+}
+
+@media screen and (min-width: 768px) {
+  .image-container {
+    width: 400px;
+  }
+  .image-container .image {
+    height: auto;
+  }
 }
 
 .more-details {

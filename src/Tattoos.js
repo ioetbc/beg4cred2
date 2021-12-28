@@ -15,23 +15,13 @@ import noddyImageSix from './images/tattoos/noddySix.jpeg'
 
 const Tattoos = () => {
   const verticalScrollingWrapper = useRef(null)
-  // const secondaryNavigation = [
-  //   {
-  //     title: 'EMAIL',
-  //     url: '/',
-  //   },
-  //   {
-  //     title: 'DM ON INSTAGRAM',
-  //     url: '/',
-  //   },
-  // ]
   let globalID
   let iteration = 0
   const PADDING = 16
 
   const repeatOften = () => {
     iteration++
-    const rightSection = verticalScrollingWrapper.current
+    const rightSection = verticalScrollingWrapper?.current
 
     const galleryHeight = Math.abs(rightSection.scrollHeight - window.innerHeight + PADDING)
 
@@ -48,7 +38,7 @@ const Tattoos = () => {
   useEffect(() => {
     const body = document.querySelector('body')
     body.style.overflow = 'scroll'
-    const rightSection = verticalScrollingWrapper.current
+    const rightSection = verticalScrollingWrapper?.current
     const galleryHeight = rightSection.scrollHeight - window.innerHeight + PADDING
 
     globalID = requestAnimationFrame(repeatOften)
@@ -67,8 +57,6 @@ const Tattoos = () => {
 
   return (
     <>
-      <Navigation />
-
       <div className={styles.tattooWrapper}>
         <div className={styles.left}>
           <div className={styles.videoTransWrapper}>
