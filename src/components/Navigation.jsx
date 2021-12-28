@@ -1,58 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useHistory, useLocation } from 'react-router-dom'
 import styles from '../styles/Navigation.module.css'
 import Icon from '../images/left-arrow.svg'
 import { slide as Menu } from 'react-burger-menu'
 
 export const Navigation = ({ secondaryNavigation, fixed }) => {
+  const [showSubMenu, setShowSubMenu] = useState(false)
   const history = useHistory()
-
   const location = useLocation()
+
   const pagePath = location.pathname.split('/')[1]
-  // var styles = {
-  //   bmBurgerButton: {
-  //     position: 'fixed',
-  //     width: '36px',
-  //     height: '30px',
-  //     right: '16px',
-  //     top: '16px',
-  //   },
-  //   bmBurgerBars: {
-  //     background: 'red',
-  //   },
-  //   bmBurgerBarsHover: {
-  //     background: '#a90000',
-  //   },
-  //   bmCrossButton: {
-  //     height: '24px',
-  //     width: '24px',
-  //   },
-  //   bmCross: {
-  //     background: '#bdc3c7',
-  //   },
-  //   bmMenuWrap: {
-  //     position: 'fixed',
-  //     height: '100%',
-  //   },
-  //   bmMenu: {
-  //     background: '#373a47',
-  //     padding: '2.5em 1.5em 0',
-  //     fontSize: '1.15em',
-  //   },
-  //   bmMorphShape: {
-  //     fill: '#373a47',
-  //   },
-  //   bmItemList: {
-  //     color: '#b8b7ad',
-  //     padding: '0.8em',
-  //   },
-  //   bmItem: {
-  //     display: 'inline-block',
-  //   },
-  //   bmOverlay: {
-  //     background: 'rgba(0, 0, 0, 0.3)',
-  //   },
-  // }
 
   const websitePages = [
     {
@@ -78,12 +35,27 @@ export const Navigation = ({ secondaryNavigation, fixed }) => {
     {
       title: 'SHOP',
       url: 'shop?category=workIsHell',
+      subPages: [
+        {
+          title: 'WORK_IS_HELL_NFT',
+          url: 'workIsHell',
+        },
+        {
+          title: 'EDITED_ADS_NFT',
+          url: 'editedAds',
+        },
+      ],
     },
     {
       title: 'NFT',
       url: 'shop/workIsHell',
     },
   ]
+
+  const handleMenuSelection = (subPages = [], url) => {
+    if (!subPages.length) return history.push(url)
+    setShowSubMenu(!showSubMenu)
+  }
 
   return (
     <div className={`${styles.navigation} ${fixed ? styles.fixed : ''}`}>
@@ -98,16 +70,32 @@ export const Navigation = ({ secondaryNavigation, fixed }) => {
       </div>
       <div className={styles.menuLinksPages}>
         {websitePages.map(page => (
-          <h1
-            style={{
-              textDecoration: page.title.toLowerCase() === pagePath && 'underline',
-              // fontSize: page.title.toLowerCase() === pagePath && '26px',
-            }}
-            onClick={() => history.push(page.url)}
-            className={styles.menuLink}
-          >
-            {page.title}
-          </h1>
+          <>
+            <h1
+              style={{
+                textDecoration: page.title.toLowerCase() === pagePath && 'underline',
+              }}
+              onClick={() => handleMenuSelection(page.subPages, page.url)}
+              className={styles.menuLink}
+            >
+              {page.title}
+            </h1>
+            {page.subPages && showSubMenu && (
+              <ul>
+                {page.subPages.map(subpage => (
+                  <h1
+                    style={{
+                      fontSize: '12px',
+                    }}
+                    onClick={() => history.push(`shop?category=${subpage.url}`)}
+                    className={styles.menuLink}
+                  >
+                    {subpage.title}
+                  </h1>
+                ))}
+              </ul>
+            )}
+          </>
         ))}
       </div>
       {secondaryNavigation && (

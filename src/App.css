@@ -105,7 +105,7 @@ p {
   right: 8px;
 }
 
-.fade-enter,
+/* .fade-enter,
 .fade-exit {
   transition: bottom 0.6s ease;
 }
@@ -116,7 +116,7 @@ p {
 }
 .fade-enter-active {
   bottom: 0;
-}
+} */
 
 @media screen and (min-width: 768px) {
   :root {
@@ -180,6 +180,21 @@ a {
 
 .image-wrapper:last-of-type {
   margin-right: 25%;
+}
+
+.image-container {
+  width: 400px;
+}
+
+.more-details {
+  color: white;
+  text-align: right;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.more-details:hover {
+  text-decoration: underline;
 }
 
 /* NAV STYLES */
