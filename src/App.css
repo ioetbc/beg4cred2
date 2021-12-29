@@ -219,6 +219,11 @@ a {
   margin-right: 25%;
 }
 
+.image-index-container {
+  opacity: 0;
+  transition: opacity .6s ease-in-out;
+}
+
 .image-container .image {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100 - 200px);

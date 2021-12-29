@@ -24,7 +24,7 @@ export const HorizontalScrollingWrapper = ({ children, handleElementOnScreen }) 
       { threshold: [0.5, 1] },
     )
 
-    document.querySelectorAll('.image-container').forEach(img => {
+    document.querySelectorAll('.image-index-container').forEach(img => {
       observer.observe(img)
     })
   }, [])

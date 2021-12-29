@@ -33,6 +33,7 @@ const Shop = ({ location }) => {
   }, [location])
 
   const handleElementOnScreen = element => {
+    element.style.opacity = 1
     const index = Number(element?.getAttribute('index'))
     setVisibleContent(getPageData({ location })[index])
   }
@@ -71,7 +72,7 @@ const Shop = ({ location }) => {
                   className="image-container"
                   onClick={() => history.push(`/details?category=${query.category}&title=${NFT.title}`)}
                 >
-                  <div className="image-container" index={index}>
+                  <div className="image-index-container" index={index}>
                     {isMobile ? (
                       <img src={NFT.image} alt={NFT.alt} index={index} className="image" onLoad={handleImageLoading} />
                     ) : (
