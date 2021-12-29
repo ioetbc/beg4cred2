@@ -56,13 +56,9 @@ const Shop = ({ location }) => {
       ? true
       : false
 
-  console.log('isMobile', isMobile)
-
   return (
     <>
       <div id="site-wrapper" className="site-wrapper">
-        {/* <Navigation secondaryNavigation={secondaryNavigation} fixed={true} /> */}
-
         <HorizontalScrollingWrapper
           imagesHaveLoaded={imagesHaveLoaded}
           handleElementOnScreen={handleElementOnScreen}
@@ -75,20 +71,22 @@ const Shop = ({ location }) => {
                   className="image-container"
                   onClick={() => history.push(`/details?category=${query.category}&title=${NFT.title}`)}
                 >
-                  {isMobile ? (
-                    <img src={NFT.image} alt={NFT.alt} index={index} className="image" onLoad={handleImageLoading} />
-                  ) : (
-                    <GlassMagnifier
-                      className="image"
-                      imageSrc={NFT.image}
-                      imageAlt={NFT.alt}
-                      index={index}
-                      square={true}
-                      onImageLoad={handleImageLoading}
-                      magnifierSize={200}
-                      magnifierBorderSize={0}
-                    />
-                  )}
+                  <div className="image-container" index={index}>
+                    {isMobile ? (
+                      <img src={NFT.image} alt={NFT.alt} index={index} className="image" onLoad={handleImageLoading} />
+                    ) : (
+                      <GlassMagnifier
+                        className="image"
+                        imageSrc={NFT.image}
+                        imageAlt={NFT.alt}
+                        index={index}
+                        square={true}
+                        onImageLoad={handleImageLoading}
+                        magnifierSize={200}
+                        magnifierBorderSize={0}
+                      />
+                    )}
+                  </div>
                 </div>
                 <div style={{ display: 'flex', gap: 16, justifyContent: 'end' }}>
                   <p

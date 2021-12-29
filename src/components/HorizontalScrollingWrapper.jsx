@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from 'react'
 import styles from '../styles/HorizontalScrolling.module.css'
 
-export const HorizontalScrollingWrapper = ({ children, handleElementOnScreen, imagesHaveLoaded }) => {
+export const HorizontalScrollingWrapper = ({ children, handleElementOnScreen }) => {
   const scrollContainerRef = useRef(null)
+
   useEffect(() => {
     scrollContainerRef.current.addEventListener('wheel', event => {
       event.preventDefault()
@@ -11,9 +12,7 @@ export const HorizontalScrollingWrapper = ({ children, handleElementOnScreen, im
         left: scrollDelta,
       })
     })
-  }, [])
 
-  useEffect(() => {
     const observer = new IntersectionObserver(
       entries => {
         entries.forEach(entry => {
@@ -25,12 +24,10 @@ export const HorizontalScrollingWrapper = ({ children, handleElementOnScreen, im
       { threshold: [0.5, 1] },
     )
 
-    if (imagesHaveLoaded) {
-      document.querySelectorAll('.image').forEach(img => {
-        observer.observe(img)
-      })
-    }
-  }, [imagesHaveLoaded])
+    document.querySelectorAll('.image-container').forEach(img => {
+      observer.observe(img)
+    })
+  }, [])
 
   return (
     <>
