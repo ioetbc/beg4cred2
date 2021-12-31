@@ -5,12 +5,13 @@ import Icon from '../images/left-arrow.svg'
 
 import * as qs from 'query-string'
 
-export const Navigation = ({ location }) => {
+export const Navigation = ({ location, isMobile }) => {
   const [showSubMenu, setShowSubMenu] = useState(false)
+  const [showMenu, setShowMenu] = useState(isMobile ? false : true)
   const history = useHistory()
 
   const pagePath = location.pathname.split('/')[1]
-  const isShopPage = location.pathname === '/shop' || location.pathname === '/shop/'
+  const isShopPage = location.pathname === '/shop' || location.pathname === '/shop/' || location.pathname === '/videos' || location.pathname === '/videos/'
   const query = qs.parse(location.search)
 
   const websitePages = [
@@ -82,6 +83,11 @@ export const Navigation = ({ location }) => {
     setShowSubMenu(!showSubMenu)
   }
 
+  const handleSubPageSelection = (subpage) => {
+    setShowSubMenu(false)
+    history.push(`shop?category=${subpage.url}`)
+  }
+
   return (
     <div className={`${styles.navigation} ${isShopPage ? styles.fixed : ''}`}>
       <h1 className={styles.textLogo} onClick={() => history.push('/')}>
@@ -93,36 +99,39 @@ export const Navigation = ({ location }) => {
         <img className={styles.backButtonIcon} src={Icon} alt="back button" />
         <p>GO BACK</p>
       </div>
-      <div className={styles.menuLinksPages}>
-        {websitePages.map(page => (
-          <>
-            <h1
-              style={{
-                textDecoration: page.title.toLowerCase() === pagePath && 'underline',
-              }}
-              onClick={() => handleMenuSelection(page.subPages, page.url)}
-              className={styles.menuLink}
-            >
-              {page.title}
-            </h1>
-            {page.subPages && showSubMenu && (
-              <ul>
-                {page.subPages.map(subpage => (
-                  <h1
-                    style={{
-                      fontSize: '12px',
-                    }}
-                    onClick={() => history.push(`shop?category=${subpage.url}`)}
-                    className={styles.menuLink}
-                  >
-                    {subpage.title}
-                  </h1>
-                ))}
-              </ul>
-            )}
-          </>
-        ))}
-      </div>
+      <h1 onClick={() => setShowMenu(!showMenu)} className={styles.menuMobile}>MENU</h1>
+      {showMenu &&
+        <div className={styles.menuLinksPages}>
+          {websitePages.map(page => (
+            <>
+              <h1
+                style={{
+                  textDecoration: page.title.toLowerCase() === pagePath && 'underline',
+                }}
+                onClick={() => handleMenuSelection(page.subPages, page.url)}
+                className={styles.menuLink}
+              >
+                {page.title}
+              </h1>
+              {page.subPages && showSubMenu && (
+                <ul>
+                  {page.subPages.map(subpage => (
+                    <h1
+                      style={{
+                        fontSize: '12px',
+                      }}
+                      onClick={() => handleSubPageSelection(subpage)}
+                      className={styles.menuLink}
+                    >
+                      {subpage.title}
+                    </h1>
+                  ))}
+                </ul>
+              )}
+            </>
+          ))}
+        </div>
+      }
       {isShopPage && (
         <div className={styles.leftAlignedMenuWrapper}>
           {secondaryNavigation.map(item => (
@@ -133,7 +142,10 @@ export const Navigation = ({ location }) => {
               onClick={() => history.push(item.url)}
               className={styles.menuLink}
             >
+              <div className={styles.secondaryNavigationWrapper}>
               {item.title}
+              <img className={styles.forwardButtonIcon} src={Icon} alt={`link to ${item.title}`} />
+              </div>
             </h2>
           ))}
         </div>

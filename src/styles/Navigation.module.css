@@ -1,13 +1,14 @@
 .navigation {
   width: 100%;
   padding: 16px;
-  height: 168px;
+  height: 128px;
   position: relative;
 }
 
 @media screen and (min-width: 768px) {
   .navigation.fixed {
     position: fixed;
+    height: 168px;
   }
 }
 
@@ -41,16 +42,33 @@
   margin-left: -4px;
 }
 
+.forwardButtonIcon {
+  width: 25px;
+  position: absolute;
+  top: -3px;
+  transform: scale(-1);
+  margin-left: 8px;
+}
+
 .bottomLogo {
   font-size: 18px;
+}
+
+.menuMobile {
+  color: white;
+  text-align: right;
+  font-size: 14px;
 }
 
 .menuLinksPages {
   text-align: right;
   position: absolute;
   line-height: 20px;
-  /* top: 16px; */
-  right: 16px;
+  right: 0;
+  background: black;
+  z-index: 1;
+  margin-top: 16px;
+  padding: 16px;
 }
 
 .menuLinksPages h1:hover {
@@ -61,6 +79,22 @@
 .menuLink {
   font-size: 14px;
   color: white;
+  font-weight: 400;
+}
+
+.menuLinksPages .menuLink {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .menuMobile {
+    display: none;
+  }
+  .menuLinksPages {
+    margin-top: 0;
+    padding: 0;
+    right: 16px;
+  }
 }
 
 .leftAlignedMenuWrapper {
@@ -86,5 +120,9 @@
 
   .leftAlignedMenuWrapper h2:hover {
     text-decoration: underline;
+  }
+
+  .secondaryNavigationWrapper {
+    position: relative;
   }
 }

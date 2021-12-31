@@ -199,10 +199,6 @@ a {
   background: blue;
 }
 
-.site-wrapper {
-  height: 100%;
-}
-
 .image-wrapper {
   position: relative;
 }
@@ -229,6 +225,15 @@ a {
   height: calc(var(--vh, 1vh) * 100 - 200px);
 }
 
+.video-container {
+  width: calc(100% - 32px);
+  /* margin: 0 auto; */
+}
+
+.video-container video {
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .image-container {
     width: 400px;
@@ -236,6 +241,10 @@ a {
   .image-container .image {
     height: auto;
   }
+  .video-container {
+    width: 600px;
+  }
+
 }
 
 .more-details {

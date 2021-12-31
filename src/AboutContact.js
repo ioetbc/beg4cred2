@@ -1,7 +1,6 @@
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import styles from './styles/AboutContact.module.css'
 
-import { Navigation } from './components/Navigation'
 import { PrimaryButton } from './components/PrimaryButton'
 import VideoFile from './videos/tattoo_description.mp4'
 
