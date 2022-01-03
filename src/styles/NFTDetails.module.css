@@ -1,17 +1,23 @@
-.aboutContactWrapper {
+.details {
   margin: 16px;
 }
 
 @media screen and (min-width: 768px) {
-  .aboutContactWrapper {
+  .details {
     display: grid;
     grid-gap: 16px;
     grid-template-columns: 1fr 1fr;
   }
 }
 
+.desktop {
+  display: none;
+}
+
 .title {
   color: white;
+  text-transform: uppercase;
+  margin-bottom: 16px;
 }
 
 .video {
@@ -25,4 +31,41 @@
 .image {
   cursor: pointer;
   width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .image {
+    margin-bottom: 0;
+  }
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+}
+
+.detailsList {
+  list-style: none;
+  margin: 16px 0 16px 32px;
+  padding: 0;
+  position: relative;
+}
+
+.detailsList li {
+  position: relative;
+}
+
+.detailsList li:before {
+  content: '';
+  position: absolute;
+  left: -32px;
+  top: 6px;
+  border: white 1px solid;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
 }
