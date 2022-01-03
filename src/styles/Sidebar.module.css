@@ -32,7 +32,7 @@
   .sidebarContainer {
     width: 30vw;
     max-width: 25vw;
-    height: 168px;
+    /* height: 168px; */
     position: absolute;
     bottom: 0;
     right: 0;
@@ -51,6 +51,7 @@
     justify-content: center;
   }
   .price {
-    margin-top: -16px;
+    /* margin-top: -16px; */
+    margin: 16px 0;
   }
 }

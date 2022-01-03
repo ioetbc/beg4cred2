@@ -33,9 +33,9 @@
     /* border-right: 2px solid white; */
   }
   .tattooWrapper .right {
-    height: calc(100vh - 168px - 16px); /* minus height of navigation */
+    /* height: calc(100vh - 168px - 16px); minus height of navigation */
     /* width: 50vw; */
-    overflow: scroll;
+    /* overflow: scroll; */
     grid-template-columns: 1fr 1fr 1fr;
   }
 }

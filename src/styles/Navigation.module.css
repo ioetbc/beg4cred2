@@ -6,9 +6,11 @@
 }
 
 @media screen and (min-width: 768px) {
+  .navigation {
+    height: 168px;
+  }
   .navigation.fixed {
     position: fixed;
-    height: 168px;
   }
 }
 

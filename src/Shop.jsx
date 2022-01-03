@@ -35,7 +35,7 @@ const Shop = ({ location, isMobile }) => {
               <div className="image-container" onClick={() => handleRouteChange(query.category, NFT.title)}>
                 <div className="image-index-container" index={index}>
                   {isMobile ? (
-                    <img src={NFT.image} alt={NFT.alt} index={index} className="image" onLoad={handleImageLoading} />
+                    <img src={NFT.image} alt={NFT.alt} index={index} className="image" />
                   ) : (
                     <GlassMagnifier
                       className="image"
