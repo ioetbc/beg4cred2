@@ -3,7 +3,11 @@
   align-items: center;
   overflow-x: scroll;
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100 - 168px);
+  height: calc(var(--vh, 1vh) * 100 - 140px);
+}
+
+.horizontalContainer::-webkit-scrollbar {
+  display: none;
 }
 
 .horizontalWrapper {

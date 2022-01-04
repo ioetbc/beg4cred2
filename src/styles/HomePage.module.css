@@ -1,0 +1,11 @@
+.video {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 168px);
+  justify-content: center;
+}
+
+.video video {
+  height: 90%;
+}

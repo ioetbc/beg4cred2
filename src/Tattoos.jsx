@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import styles from './styles/Tattoos.module.css'
 import { GlassMagnifier } from 'react-image-magnifiers'
 
@@ -6,7 +6,8 @@ import { PrimaryButton } from './components/PrimaryButton'
 import VideoFile from './videos/tattoo_description.mp4'
 import { TattooImages } from './content/TattooImages'
 
-const Tattoos = () => {
+const Tattoos = ({ isMobile }) => {
+  const [expandMoreInfo, setExpandMoreInfo] = useState(false)
   const verticalScrollingWrapper = useRef(null)
   let globalID
   let iteration = 0
@@ -56,11 +57,19 @@ const Tattoos = () => {
   return (
     <>
       <div className={styles.tattooWrapper}>
+        <h1 className={`${styles.title} ${styles.mobile}`}>TATTOOS</h1>
         <div className={styles.left}>
           <div className={styles.videoTransWrapper}>
-            <video className={styles.video} controls muted autoPlay loop src={VideoFile}></video>
+            <video
+              className={styles.video}
+              controls
+              muted
+              autoPlay={!isMobile}
+              loop={!isMobile}
+              src={`${VideoFile}#t=0.5`}
+            ></video>
             <div className={styles.transcript}>
-              <p>
+              <p className={`${styles.textContainer} ${expandMoreInfo ? styles.expand : ''}`}>
                 On mobile the images on the left will just live in the sliding page.Seventh NFT lorem ipsum dolor sit
                 amet consectetur adipisicing elit. Porro praesentium neque esse. Seventh NFT lorem ipsum dolor sit amet
                 consectetur adipisicing elit. Porro praesentium neque esse. Seventh NFT lorem ipsum dolor sit amet
@@ -70,6 +79,9 @@ const Tattoos = () => {
                 consectetur adipisicing elit. Porro praesentium neque esse. Seventh NFT lorem ipsum dolor sit amet
                 consectetur adipisicing elit. Porro praesentium neque esse. Seventh NFT lorem ipsum dolor sit amet
                 consectetur adipisicing elit. Porro praesentium neque esse.
+              </p>
+              <p className={styles.readMore} onClick={() => setExpandMoreInfo(!expandMoreInfo)}>
+                {expandMoreInfo ? 'READ LESS' : 'READ MORE'}
               </p>
             </div>
             <PrimaryButton
@@ -81,16 +93,20 @@ const Tattoos = () => {
         </div>
         <div className={styles.hmm}>
           <div ref={verticalScrollingWrapper} className={styles.right}>
-            {TattooImages.map(image => (
-              <GlassMagnifier
-                className={styles.image}
-                imageSrc={image.url}
-                imageAlt={image.alt}
-                square={true}
-                magnifierSize={100}
-                magnifierBorderSize={0}
-              />
-            ))}
+            {TattooImages.map(image =>
+              isMobile ? (
+                <img src={image?.url} alt={image?.alt} className={styles.image} />
+              ) : (
+                <GlassMagnifier
+                  className={styles.image}
+                  imageSrc={image.url}
+                  imageAlt={image.alt}
+                  square={true}
+                  magnifierSize={100}
+                  magnifierBorderSize={0}
+                />
+              ),
+            )}
           </div>
         </div>
       </div>

@@ -55,14 +55,14 @@ const Shop = ({ location, isMobile }) => {
                     />
                   )}
                 </div>
-              </div>
-              <div className="more-info-container">
-                <p className="more-details" onClick={() => handleMoreInfoEvent(NFT.title)}>
-                  MORE INFO
-                </p>
-                <p className="more-details" onClick={() => handlePurchaseEvent(NFT.title)}>
-                  PURCHASE
-                </p>
+                <div className="more-info-container">
+                  <p className="more-details" onClick={() => handleMoreInfoEvent(NFT.title)}>
+                    MORE INFO
+                  </p>
+                  <p className="more-details" onClick={() => handlePurchaseEvent(NFT.title)}>
+                    PURCHASE
+                  </p>
+                </div>
               </div>
             </div>
           </>
@@ -84,13 +84,13 @@ const Shop = ({ location, isMobile }) => {
 export default Shop
 
 // ADD A BETTER LOADING TRANSITION
-// FIX THE HOMEPAGE ADD A BETTER VIDEO
 // ADD IN ALL THE PROJECTS TO THE SHOP PAGE
-// VIDEOS ARE BLACK ON MOBILE UNTIL YOU START PLAYING THEM
 // MAKE THE SPACING ON MOBILE CORRECT
-// ADD A MORE BUTTON TO THE SECONDARY NAV SO THAT IT DOESN'T OVERFLOW THE IMAGE AND WE CAN BRING THE IMAGE DOWN A BIT\
+// ADD A MORE BUTTON TO THE SECONDARY NAV SO THAT IT DOESN'T OVERFLOW THE IMAGE AND WE CAN BRING THE IMAGE DOWN A BIT
 // MAKE THE MOBILE MENU FULL WIDTH
 // MAKE IT POSSIBLE TO CHANGE THE THEME ON THE HOMEPAGE USE THE SECONDARY NAVIGATION
+// CONTACT PAGE IS GOOD BUT MAYBE MAKE THE VIDEO AND TEXT HIGHER ON > 1500 BP LOOKS A LITTLE LOW
+// ZOOMING DOESNT WORK ON MOBILE
 
 // NICE TO HAVE
 // DEBOUNCE

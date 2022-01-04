@@ -28,7 +28,7 @@ const Videos = ({ location }) => {
             <div className="video-wrapper">
               <div className="video-container">
                 <div className="image-index-container" index={index}>
-                  <video controls src={video.url}></video>
+                  <video controls src={`${video?.url}#t=0.5`}></video>
                 </div>
               </div>
               <div style={{ display: 'flex', gap: 16, justifyContent: 'end' }}>

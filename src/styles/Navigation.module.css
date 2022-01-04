@@ -80,8 +80,8 @@
   border-radius: 4px;
 }
 
-.menuLinksPages h1:hover {
-  text-decoration: underline;
+.menuLink:hover {
+  text-decoration: underline !important;
   cursor: pointer;
 }
 
@@ -89,7 +89,6 @@
   font-size: 14px;
   color: white;
   font-weight: 400;
-  /* position: relative; */
 }
 
 .menuLinksPages .menuLink {
@@ -105,11 +104,6 @@
     padding: 0;
     right: 16px;
     border: none;
-  }
-  .border {
-    /* padding: 16px; */
-    /* border: 1px solid white; */
-    /* border-radius: 4px; */
   }
 }
 

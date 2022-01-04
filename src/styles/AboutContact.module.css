@@ -51,6 +51,21 @@
   display: flex;
   gap: 16px;
   margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.textContainer {
+  height: 180px;
+  overflow: hidden;
+}
+
+.readMore {
+  text-decoration: underline;
+  margin-top: 8px;
+}
+
+.expand {
+  height: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -62,6 +77,15 @@
   }
   .desktop {
     display: block;
+  }
+  .buttonContainer {
+    margin-bottom: 0;
+  }
+  .textContainer {
+    height: auto;
+  }
+  .readMore {
+    display: none;
   }
 }
 

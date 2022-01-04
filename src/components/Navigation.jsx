@@ -83,6 +83,17 @@ export const Navigation = ({ location, isMobile }) => {
     history.push(`shop?category=${subpage.url}`)
   }
 
+  const handleActiveNavigation = page => {
+    if (
+      (pagePath === 'NFTS' && page.title === 'NFT') ||
+      (pagePath === 'contact' && page.title === 'ABOUT/CONTACT') ||
+      pagePath === page.title.toLowerCase()
+    ) {
+      return 'underline'
+    }
+    return 'none'
+  }
+
   return (
     <div className={`${styles.navigation} ${isShopPage || isNFTPage ? styles.fixed : ''}`}>
       <h1 className={styles.textLogo} onClick={() => history.push('/')}>
@@ -106,7 +117,7 @@ export const Navigation = ({ location, isMobile }) => {
                 // className={`${page.title.toLowerCase() === pagePath ? styles.thing : ''}`}
                 className={styles.menuLink}
                 style={{
-                  textDecoration: page.title.toLowerCase().includes(pagePath) && 'underline',
+                  textDecoration: handleActiveNavigation(page),
                 }}
               >
                 {page.title}

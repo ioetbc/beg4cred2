@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import * as qs from 'query-string'
 import dayjs from 'dayjs'
 const advancedFormat = require('dayjs/plugin/advancedFormat')
@@ -9,7 +9,8 @@ import styles from '../styles/NFTDetails.module.css'
 import { NFTContent } from '../content/NFTContent'
 import { PrimaryButton } from '../components/PrimaryButton'
 
-export const NFTDetails = ({ location }) => {
+export const NFTDetails = ({ location, isMobile }) => {
+  const [expandMoreInfo, setExpandMoreInfo] = useState(false)
   const { category, title, type } = qs.parse(location.search)
   const pageData = NFTContent.filter(page => page.category === category)[0].projects
   const data = pageData.filter(page => page.title === title)[0]
@@ -23,17 +24,22 @@ export const NFTDetails = ({ location }) => {
     <>
       <div className={styles.details}>
         <h1 className={`${styles.title} ${styles.mobile}`}>{data?.title}</h1>
-        <GlassMagnifier
-          className={styles.image}
-          imageSrc={data?.image}
-          imageAlt={data?.alt}
-          square={true}
-          magnifierSize={200}
-          magnifierBorderSize={0}
-        />
+        {isMobile ? (
+          <img src={data?.image} alt={data?.alt} className={styles.image} />
+        ) : (
+          <GlassMagnifier
+            className={styles.image}
+            imageSrc={data?.image}
+            imageAlt={data?.alt}
+            square={true}
+            magnifierSize={200}
+            magnifierBorderSize={0}
+          />
+        )}
+
         <div className={styles.transcript}>
           <h1 className={`${styles.title} ${styles.desktop}`}>{data?.title}</h1>
-          <p>
+          <p className={`${styles.textContainer} ${expandMoreInfo ? styles.expand : ''}`}>
             On mobile the images on the left will just live in the sliding page.Seventh NFT lorem ipsum dolor sit amet
             consectetur adipisicing elit. Porro praesentium neque esse. Seventh NFT lorem ipsum dolor sit amet
             consectetur adipisicing elit. Porro praesentium neque esse. Seventh NFT lorem ipsum dolor sit amet
@@ -42,6 +48,9 @@ export const NFTDetails = ({ location }) => {
             consectetur adipisicing elit. Porro praesentium neque esse. Seventh NFT lorem ipsum dolor sit amet
             consectetur adipisicing elit. Porro praesentium neque esse. Seventh NFT lorem ipsum dolor sit amet
             consectetur adipisicing elit. Porro praesentium neque esse. Seventh NFT lorem ipsum dolor sit amet
+          </p>
+          <p className={styles.readMore} onClick={() => setExpandMoreInfo(!expandMoreInfo)}>
+            {expandMoreInfo ? 'READ LESS' : 'READ MORE'}
           </p>
           <ul className={styles.detailsList}>
             <li>

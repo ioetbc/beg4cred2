@@ -33,9 +33,9 @@ export default function AppRouter() {
                     <Route path="/" exact render={() => <HomePage />}></Route>
                     <Route path="/shop" render={() => <Shop location={location} isMobile={isMobile} />} />
                     <Route path="/NFTS" render={() => <Shop location={location} isMobile={isMobile} />} />
-                    <Route path="/details" render={() => <NFTDetails location={location} />} />
-                    <Route path="/contact" render={() => <AboutContact location={location} />} />
-                    <Route path="/tattoos" render={() => <Tattoos location={location} />} />
+                    <Route path="/details" render={() => <NFTDetails location={location} isMobile={isMobile} />} />
+                    <Route path="/contact" render={() => <AboutContact isMobile={isMobile} />} />
+                    <Route path="/tattoos" render={() => <Tattoos location={location} isMobile={isMobile} />} />
                     <Route path="/about" render={() => <AboutContact location={location} />} />
                     <Route path="/videos" render={() => <Videos location={location} />} />
                   </Switch>

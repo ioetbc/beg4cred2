@@ -1,6 +1,5 @@
 .details {
   margin: 16px;
-  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -29,6 +28,29 @@
   margin-bottom: 16px;
 }
 
+.textContainer {
+  height: 180px;
+  overflow: hidden;
+}
+
+.readMore {
+  text-decoration: underline;
+  margin-top: 8px;
+}
+
+.expand {
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .textContainer {
+    height: auto;
+  }
+  .readMore {
+    display: none;
+  }
+}
+
 .video {
   width: 100%;
 }
@@ -39,7 +61,6 @@
 }
 
 .image {
-  cursor: pointer;
   width: 100%;
   max-width: 480px;
   margin: 0 auto;
@@ -48,6 +69,8 @@
 
 @media screen and (min-width: 768px) {
   .image {
+    cursor: pointer;
+    width: 100%;
     margin-bottom: 0;
   }
   .mobile {
