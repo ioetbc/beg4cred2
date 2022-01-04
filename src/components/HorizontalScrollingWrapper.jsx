@@ -19,16 +19,13 @@ export const HorizontalScrollingWrapper = ({ children, handleElementOnScreen }) 
       })
     })
 
-    const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            handleElementOnScreen(entry.target)
-          }
-        })
-      },
-      { threshold: [0.5, 1] },
-    )
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          handleElementOnScreen(entry.target)
+        }
+      })
+    })
 
     document.querySelectorAll('.image-index-container').forEach(img => {
       observer.observe(img)

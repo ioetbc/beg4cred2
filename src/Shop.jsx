@@ -12,19 +12,26 @@ import { NFTContent } from './content/NFTContent'
 const Shop = ({ location, isMobile }) => {
   const history = useHistory()
   const [visibleContent, setVisibleContent] = useState([])
+  const { pathname, search } = location
+  const { category } = queryString.parse(location.search)
+  const projects = NFTContent.filter(page => page.category === category)[0].projects
+  const isNFTPage = pathname === '/NFTS' || pathname === '/NFTS/'
 
   const handleElementOnScreen = element => {
     element.style.opacity = 1
     const index = Number(element?.getAttribute('index'))
-    setVisibleContent(getPageData({ location })[index])
+    const projects = getPageData({ location })[index]
+
+    setVisibleContent({ ...projects, index: index + 1 })
   }
 
-  const handleRouteChange = (category, title) => {
-    history.push(`/details?category=${category}&title=${title}`)
+  const handleMoreInfoEvent = title => {
+    history.push(`/details?category=${category}&title=${title}&type=${isNFTPage ? 'NFT' : 'print'}`)
   }
 
-  const query = queryString.parse(location.search)
-  const projects = NFTContent.filter(page => page.category === query.category)[0].projects
+  const handlePurchaseEvent = title => {
+    window.open('https://foundation.app/', '_blank')
+  }
 
   return (
     <>
@@ -32,7 +39,7 @@ const Shop = ({ location, isMobile }) => {
         {projects?.map((NFT, index) => (
           <>
             <div className="image-wrapper">
-              <div className="image-container" onClick={() => handleRouteChange(query.category, NFT.title)}>
+              <div className="image-container" onClick={() => handleMoreInfoEvent(NFT.title)}>
                 <div className="image-index-container" index={index}>
                   {isMobile ? (
                     <img src={NFT.image} alt={NFT.alt} index={index} className="image" />
@@ -49,11 +56,11 @@ const Shop = ({ location, isMobile }) => {
                   )}
                 </div>
               </div>
-              <div style={{ display: 'flex', gap: 16, justifyContent: 'end' }}>
-                <p className="more-details" onClick={() => handleRouteChange(query.category, NFT.title)}>
+              <div className="more-info-container">
+                <p className="more-details" onClick={() => handleMoreInfoEvent(NFT.title)}>
                   MORE INFO
                 </p>
-                <p className="more-details" onClick={() => handleRouteChange(query.category, NFT.title)}>
+                <p className="more-details" onClick={() => handlePurchaseEvent(NFT.title)}>
                   PURCHASE
                 </p>
               </div>
@@ -63,10 +70,10 @@ const Shop = ({ location, isMobile }) => {
       </HorizontalScrollingWrapper>
 
       <Sidebar
-        title={visibleContent?.title}
+        title={`${visibleContent?.index}/${getPageData({ location }).length}`}
         description={visibleContent?.description}
         priceETH={visibleContent?.priceETH}
-        priceFiat={visibleContent?.priceFiat}
+        price={isNFTPage ? `${visibleContent?.priceETH} ETH` : `£${visibleContent?.priceFiat}`}
         stripeLink={visibleContent?.stripeLink}
         sold={visibleContent?.sold}
       />
@@ -76,23 +83,14 @@ const Shop = ({ location, isMobile }) => {
 
 export default Shop
 
-// NEED
-// FIX THE NAVIGATION ON MOBILE
-// CHANGE THE TITLE TO THE COLLECTION NAME / INDEX
-// LINK HOVER SHOULD BE SVG OF CIRCLE
-// MAKE AN NFT PAGE WHICH IS A COPY OF THE SHOP
-// TATTOO PAGE SHOULD HAVE TWO SCROLLING SECTIONS
-// ADD HOVER ANIMATIONS TO LINKS (MOVE THE ARROWS)
-// MAKE THE PURCHASE LINKS GO TO THE NODDY STRIPE CHECKOUT
 // ADD A BETTER LOADING TRANSITION
-// INSTA LINK IN THE NAVIGATION
-// FIX THE ABOUT/CONTACT PAGE
-// CURSOR POINTER ON THE LOGO
+// FIX THE HOMEPAGE ADD A BETTER VIDEO
 // ADD IN ALL THE PROJECTS TO THE SHOP PAGE
 // VIDEOS ARE BLACK ON MOBILE UNTIL YOU START PLAYING THEM
-// MAKE THE SHOP IMAGES THE CORRECT SIZE
-// MARGIN LEFT ON THE LAST IMAGE IN THE CONTAINER
-// MAKE THE SPACING IN MOBILE CORRECT
+// MAKE THE SPACING ON MOBILE CORRECT
+// ADD A MORE BUTTON TO THE SECONDARY NAV SO THAT IT DOESN'T OVERFLOW THE IMAGE AND WE CAN BRING THE IMAGE DOWN A BIT\
+// MAKE THE MOBILE MENU FULL WIDTH
+// MAKE IT POSSIBLE TO CHANGE THE THEME ON THE HOMEPAGE USE THE SECONDARY NAVIGATION
 
 // NICE TO HAVE
 // DEBOUNCE
@@ -101,7 +99,9 @@ export default Shop
 // USE WEBP
 // SCROLL RESTORATION
 // MAKE THE PRODUCT PAGES SLIDE UP FROM THE BOTTOM
+// BREADCRUMBS
 
 // TATTOOS PAGE
 // ADD A MORE INFO BUTTON ON MOBILE SO ALL THE TEXT ISN'T VISIBLE
 // SLIGHT BUG WITH THE AUTO SCROLLING GALLERY
+// LINK HOVER SHOULD BE SVG OF CIRCLE

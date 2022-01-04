@@ -5,6 +5,18 @@
   position: relative;
 }
 
+/* .thing:after {
+  position: absolute;
+  content: '';
+  background: url('../images/circle.svg');
+  width: 150px;
+  height: 150px;
+  left: 18px;
+  right: 0;
+  top: -20px;
+  background-size: 100%;
+} */
+
 @media screen and (min-width: 768px) {
   .navigation {
     height: 168px;
@@ -22,6 +34,7 @@
   position: absolute;
   transform-origin: left top;
   transform: rotate(-90deg) translateX(-100%);
+  cursor: pointer;
 }
 
 .backButton {
@@ -44,14 +57,6 @@
   margin-left: -4px;
 }
 
-.forwardButtonIcon {
-  width: 25px;
-  position: absolute;
-  top: -3px;
-  transform: scale(-1);
-  margin-left: 8px;
-}
-
 .bottomLogo {
   font-size: 18px;
 }
@@ -71,6 +76,8 @@
   z-index: 1;
   margin-top: 16px;
   padding: 16px;
+  border: 1px solid white;
+  border-radius: 4px;
 }
 
 .menuLinksPages h1:hover {
@@ -82,6 +89,7 @@
   font-size: 14px;
   color: white;
   font-weight: 400;
+  /* position: relative; */
 }
 
 .menuLinksPages .menuLink {
@@ -96,6 +104,12 @@
     margin-top: 0;
     padding: 0;
     right: 16px;
+    border: none;
+  }
+  .border {
+    /* padding: 16px; */
+    /* border: 1px solid white; */
+    /* border-radius: 4px; */
   }
 }
 
@@ -104,6 +118,14 @@
 }
 
 @media screen and (min-width: 768px) {
+  .forwardButtonIcon {
+    width: 25px;
+    position: absolute;
+    top: -3px;
+    transform: scale(-1);
+    margin-left: 8px;
+    transition: margin-left 0.2s ease-in-out;
+  }
   .leftAlignedMenuWrapper {
     display: block;
     position: fixed;
@@ -120,8 +142,8 @@
     margin-bottom: 0;
   }
 
-  .leftAlignedMenuWrapper h2:hover {
-    text-decoration: underline;
+  .leftAlignedMenuWrapper h2:hover .forwardButtonIcon {
+    margin-left: 16px;
   }
 
   .secondaryNavigationWrapper {

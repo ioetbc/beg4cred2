@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
-import styles from '../styles/Navigation.module.css'
-import Icon from '../images/left-arrow.svg'
-
 import * as qs from 'query-string'
+import styles from '../styles/Navigation.module.css'
+
+import { getSecondaryNavigation } from '../utils/getSecondaryNavigation'
+import Icon from '../images/left-arrow.svg'
+import Circle from '../images/circle.svg'
 
 export const Navigation = ({ location, isMobile }) => {
   const [showSubMenu, setShowSubMenu] = useState(false)
@@ -11,8 +13,13 @@ export const Navigation = ({ location, isMobile }) => {
   const history = useHistory()
 
   const pagePath = location.pathname.split('/')[1]
-  const isShopPage = location.pathname === '/shop' || location.pathname === '/shop/' || location.pathname === '/videos' || location.pathname === '/videos/'
-  const query = qs.parse(location.search)
+  const { pathname, search } = location
+
+  const isVideoPage = pathname === '/videos' || pathname === '/videos/'
+  const isShopPage = pathname === '/shop' || pathname === '/shop/'
+  const isNFTPage = pathname === '/NFTS' || pathname === '/NFTS/'
+  const query = qs.parse(search)
+  console.log('isNFTPage', isNFTPage)
 
   const websitePages = [
     {
@@ -34,6 +41,7 @@ export const Navigation = ({ location, isMobile }) => {
     {
       title: 'INSTA',
       url: 'https://www.instagram.com/beg4cred/?hl=en',
+      newWindow: true,
     },
     {
       title: 'SHOP',
@@ -51,45 +59,32 @@ export const Navigation = ({ location, isMobile }) => {
     },
     {
       title: 'NFT',
-      url: 'shop/work_is_hell',
+      url: 'NFTS?category=work_is_hell',
     },
   ]
 
-  const secondaryNavigation = [
-    {
-      title: 'EDITED_ADS_COLLECTION',
-      url: '/shop/?category=edited_ads',
-    },
-    {
-      title: 'PASTEL_SET_COLLECTION',
-      url: '/shop/:pastelSet',
-    },
-    {
-      title: 'PEN_AND_INK_COLLECTION',
-      url: '/shop/:penAndInk',
-    },
-    {
-      title: 'WORK_IS_HELL_COLLECTION',
-      url: '/shop?category=work_is_hell',
-    },
-    {
-      title: 'COLOUR_CARTOONS_COLLECTION',
-      url: '/shop/:colourCartoons',
-    },
-  ]
+  const secondaryNavigation = getSecondaryNavigation({ isShopPage, isVideoPage, isNFTPage })
 
-  const handleMenuSelection = (subPages = [], url) => {
-    if (!subPages.length) return history.push(url)
+  const handleMenuSelection = (subPages = [], url, newWindow) => {
+    if (!subPages.length) {
+      if (isMobile) setShowMenu(false)
+      setShowSubMenu(false)
+      if (newWindow) {
+        return window.open(url, '_blank')
+      }
+      return history.push(url)
+    }
     setShowSubMenu(!showSubMenu)
   }
 
-  const handleSubPageSelection = (subpage) => {
+  const handleSubPageSelection = subpage => {
     setShowSubMenu(false)
+    if (isMobile) setShowMenu(false)
     history.push(`shop?category=${subpage.url}`)
   }
 
   return (
-    <div className={`${styles.navigation} ${isShopPage ? styles.fixed : ''}`}>
+    <div className={`${styles.navigation} ${isShopPage || isNFTPage ? styles.fixed : ''}`}>
       <h1 className={styles.textLogo} onClick={() => history.push('/')}>
         BEG4
         <br />
@@ -99,17 +94,20 @@ export const Navigation = ({ location, isMobile }) => {
         <img className={styles.backButtonIcon} src={Icon} alt="back button" />
         <p>GO BACK</p>
       </div>
-      <h1 onClick={() => setShowMenu(!showMenu)} className={styles.menuMobile}>MENU</h1>
-      {showMenu &&
-        <div className={styles.menuLinksPages}>
+      <h1 onClick={() => setShowMenu(!showMenu)} className={styles.menuMobile}>
+        MENU
+      </h1>
+      {showMenu && (
+        <div className={`${styles.menuLinksPages} ${showSubMenu ? styles.border : ''}`}>
           {websitePages.map(page => (
             <>
               <h1
-                style={{
-                  textDecoration: page.title.toLowerCase() === pagePath && 'underline',
-                }}
-                onClick={() => handleMenuSelection(page.subPages, page.url)}
+                onClick={() => handleMenuSelection(page.subPages, page.url, page.newWindow)}
+                // className={`${page.title.toLowerCase() === pagePath ? styles.thing : ''}`}
                 className={styles.menuLink}
+                style={{
+                  textDecoration: page.title.toLowerCase().includes(pagePath) && 'underline',
+                }}
               >
                 {page.title}
               </h1>
@@ -131,8 +129,8 @@ export const Navigation = ({ location, isMobile }) => {
             </>
           ))}
         </div>
-      }
-      {isShopPage && (
+      )}
+      {(isShopPage || isVideoPage || isNFTPage) && (
         <div className={styles.leftAlignedMenuWrapper}>
           {secondaryNavigation.map(item => (
             <h2
@@ -143,8 +141,8 @@ export const Navigation = ({ location, isMobile }) => {
               className={styles.menuLink}
             >
               <div className={styles.secondaryNavigationWrapper}>
-              {item.title}
-              <img className={styles.forwardButtonIcon} src={Icon} alt={`link to ${item.title}`} />
+                {item.title}
+                <img className={styles.forwardButtonIcon} src={Icon} alt={`link to ${item.title}`} />
               </div>
             </h2>
           ))}

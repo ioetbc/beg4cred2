@@ -2,10 +2,15 @@
   display: grid;
   grid-template-columns: 1fr;
 }
+
 .tattooWrapper {
   margin: 0 16px;
-  /* overflow: hidden; */
 }
+
+.transcript {
+  margin-bottom: 16px;
+}
+
 @media screen and (min-width: 768px) {
   .tattooWrapper {
     display: grid;
@@ -27,16 +32,15 @@
 
 @media screen and (min-width: 768px) {
   .tattooWrapper .left {
-    /* width: 50vw; */
-    height: calc(100vh - 168px - 16px); /* minus height of navigation */
+    height: calc(100vh - 168px); /* minus height of navigation */
     overflow-y: scroll;
-    /* border-right: 2px solid white; */
   }
   .tattooWrapper .right {
-    /* height: calc(100vh - 168px - 16px); minus height of navigation */
-    /* width: 50vw; */
-    /* overflow: scroll; */
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .hmm {
+    height: calc(100vh - 168px);
+    overflow: scroll;
   }
 }
 

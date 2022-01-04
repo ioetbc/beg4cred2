@@ -1,10 +1,10 @@
 import React from 'react'
 import styles from '../styles/Button.module.css'
 
-export const PrimaryButton = ({ text, url }) => {
+export const PrimaryButton = ({ text, handleOnClick, style }) => {
   return (
-    <div className={styles.buttonWrapper}>
-      <button className={styles.button} href={url}>
+    <div className={styles.buttonWrapper} style={style}>
+      <button className={styles.button} onClick={handleOnClick}>
         {text}
       </button>
     </div>

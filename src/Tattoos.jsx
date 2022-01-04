@@ -71,21 +71,27 @@ const Tattoos = () => {
                 consectetur adipisicing elit. Porro praesentium neque esse. Seventh NFT lorem ipsum dolor sit amet
                 consectetur adipisicing elit. Porro praesentium neque esse.
               </p>
-              <PrimaryButton text="BOOK A TATTOO" url="https://www.test.bymiles.co.uk/" />
             </div>
+            <PrimaryButton
+              style={{ marginBottom: 16 }}
+              text="BOOK A TATTOO"
+              handleOnClick={() => window.open('https://www.instagram.com/beg4cred/?hl=en', '_blank')}
+            />
           </div>
         </div>
-        <div ref={verticalScrollingWrapper} className={styles.right}>
-          {TattooImages.map(image => (
-            <GlassMagnifier
-              className={styles.image}
-              imageSrc={image.url}
-              imageAlt={image.alt}
-              square={true}
-              magnifierSize={100}
-              magnifierBorderSize={0}
-            />
-          ))}
+        <div className={styles.hmm}>
+          <div ref={verticalScrollingWrapper} className={styles.right}>
+            {TattooImages.map(image => (
+              <GlassMagnifier
+                className={styles.image}
+                imageSrc={image.url}
+                imageAlt={image.alt}
+                square={true}
+                magnifierSize={100}
+                magnifierBorderSize={0}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </>

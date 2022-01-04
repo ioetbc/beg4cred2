@@ -1,5 +1,6 @@
 .details {
   margin: 16px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -7,6 +8,14 @@
     display: grid;
     grid-gap: 16px;
     grid-template-columns: 1fr 1fr;
+    max-width: 1240px;
+    margin: 0 auto 16px auto;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .details {
+    max-width: 1400px;
   }
 }
 
@@ -26,6 +35,7 @@
 
 .transcript p {
   color: white;
+  font-size: 14px;
 }
 
 .image {
