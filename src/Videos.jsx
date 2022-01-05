@@ -32,10 +32,7 @@ const Videos = ({ location }) => {
                 </div>
               </div>
               <div style={{ display: 'flex', gap: 16, justifyContent: 'end' }}>
-                <p
-                  className="more-details"
-                  onClick={() => history.push(`/details?category=${query.category}&title=${NFT.title}`)}
-                >
+                <p className="more-details" onClick={() => console.log('open youtube')}>
                   VIEW ON YOUTUBE
                 </p>
               </div>

@@ -1,0 +1,17 @@
+.closeIconContainer {
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+}
+
+.closeIcon {
+  width: 100%;
+  text-align: right;
+  margin-right: -7px;
+}
+
+@media screen and (min-width: 768px) {
+  .closeIconContainer {
+    display: none;
+  }
+}

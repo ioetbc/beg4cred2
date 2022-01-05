@@ -262,6 +262,7 @@ a {
   }
   .video-container {
     width: 800px;
+    margin-top: -30vh; /* THIS IS SHIT */
   }
   .video-wrapper:nth-child(1) {
     margin-left: calc(50vw - 200px); /* minus half with width of an video */

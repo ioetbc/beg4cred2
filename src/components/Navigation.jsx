@@ -3,12 +3,13 @@ import { useHistory } from 'react-router-dom'
 import * as qs from 'query-string'
 import styles from '../styles/Navigation.module.css'
 
+import { CloseButton } from './CloseButton'
 import { getSecondaryNavigation } from '../utils/getSecondaryNavigation'
 import Icon from '../images/left-arrow.svg'
 import Circle from '../images/circle.svg'
 
 export const Navigation = ({ location, isMobile }) => {
-  const [showSubMenu, setShowSubMenu] = useState(false)
+  const [showSubMenu, setShowSubMenu] = useState({ title: '', show: false })
   const [showMenu, setShowMenu] = useState(isMobile ? false : true)
   const history = useHistory()
 
@@ -19,7 +20,6 @@ export const Navigation = ({ location, isMobile }) => {
   const isShopPage = pathname === '/shop' || pathname === '/shop/'
   const isNFTPage = pathname === '/NFTS' || pathname === '/NFTS/'
   const query = qs.parse(search)
-  console.log('isNFTPage', isNFTPage)
 
   const websitePages = [
     {
@@ -48,6 +48,20 @@ export const Navigation = ({ location, isMobile }) => {
       url: 'shop?category=work_is_hell',
       subPages: [
         {
+          title: 'WORK_IS_HELL_PRINTS',
+          url: 'work_is_hell',
+        },
+        {
+          title: 'EDITED_ADS_PRINTS',
+          url: 'edited_ads',
+        },
+      ],
+    },
+    {
+      title: 'NFT',
+      url: 'NFTS?category=work_is_hell',
+      subPages: [
+        {
           title: 'WORK_IS_HELL_NFT',
           url: 'work_is_hell',
         },
@@ -57,15 +71,12 @@ export const Navigation = ({ location, isMobile }) => {
         },
       ],
     },
-    {
-      title: 'NFT',
-      url: 'NFTS?category=work_is_hell',
-    },
   ]
 
   const secondaryNavigation = getSecondaryNavigation({ isShopPage, isVideoPage, isNFTPage })
 
-  const handleMenuSelection = (subPages = [], url, newWindow) => {
+  const handleMenuSelection = (title, subPages = [], url, newWindow) => {
+    console.log('title', title)
     if (!subPages.length) {
       if (isMobile) setShowMenu(false)
       setShowSubMenu(false)
@@ -74,11 +85,11 @@ export const Navigation = ({ location, isMobile }) => {
       }
       return history.push(url)
     }
-    setShowSubMenu(!showSubMenu)
+    setShowSubMenu({ title, show: !showSubMenu.show })
   }
 
   const handleSubPageSelection = subpage => {
-    setShowSubMenu(false)
+    setShowSubMenu({ title: '', show: false })
     if (isMobile) setShowMenu(false)
     history.push(`shop?category=${subpage.url}`)
   }
@@ -93,6 +104,12 @@ export const Navigation = ({ location, isMobile }) => {
     }
     return 'none'
   }
+
+  const handleCloseNavigation = () => {
+    setShowMenu(false)
+  }
+
+  console.log('showSubMenu', showSubMenu)
 
   return (
     <div className={`${styles.navigation} ${isShopPage || isNFTPage ? styles.fixed : ''}`}>
@@ -110,35 +127,35 @@ export const Navigation = ({ location, isMobile }) => {
       </h1>
       {showMenu && (
         <div className={`${styles.menuLinksPages} ${showSubMenu ? styles.border : ''}`}>
-          {websitePages.map(page => (
-            <>
-              <h1
-                onClick={() => handleMenuSelection(page.subPages, page.url, page.newWindow)}
-                // className={`${page.title.toLowerCase() === pagePath ? styles.thing : ''}`}
-                className={styles.menuLink}
-                style={{
-                  textDecoration: handleActiveNavigation(page),
-                }}
-              >
-                {page.title}
-              </h1>
-              {page.subPages && showSubMenu && (
-                <ul>
-                  {page.subPages.map(subpage => (
-                    <h1
-                      style={{
-                        fontSize: '12px',
-                      }}
-                      onClick={() => handleSubPageSelection(subpage)}
-                      className={styles.menuLink}
-                    >
-                      {subpage.title}
-                    </h1>
-                  ))}
-                </ul>
-              )}
-            </>
-          ))}
+          <CloseButton handleOnClick={handleCloseNavigation} />
+          <div className={styles.list}>
+            {websitePages.map(page => (
+              <>
+                <h1
+                  onClick={() => handleMenuSelection(page.title, page.subPages, page.url, page.newWindow)}
+                  // className={`${page.title.toLowerCase() === pagePath ? styles.thing : ''}`}
+                  className={styles.menuLink}
+                  style={{
+                    textDecoration: handleActiveNavigation(page),
+                  }}
+                >
+                  {page.title}
+                </h1>
+                {page.subPages && showSubMenu.show && showSubMenu.title === page.title && (
+                  <ul>
+                    {page.subPages.map(subpage => (
+                      <h1
+                        onClick={() => handleSubPageSelection(subpage)}
+                        className={`${styles.menuLink} ${styles.subLink}`}
+                      >
+                        {subpage.title}
+                      </h1>
+                    ))}
+                  </ul>
+                )}
+              </>
+            ))}
+          </div>
         </div>
       )}
       {(isShopPage || isVideoPage || isNFTPage) && (

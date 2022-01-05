@@ -7,7 +7,7 @@ export const Sidebar = ({ title, price }) => {
   return (
     <div className={styles.sidebarContainer}>
       {title && <h1 className={styles.sidebarTitle}>{title}</h1>}
-      {price && <h1 className={styles.price}>{price}</h1>}
+      {<h1 className={styles.price}>{price}</h1>}
     </div>
   )
 }
