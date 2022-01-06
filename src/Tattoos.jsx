@@ -32,27 +32,22 @@ const Tattoos = ({ isMobile }) => {
     globalID = requestAnimationFrame(repeatOften)
   }
 
-  useEffect(() => {
-    const body = document.querySelector('body')
-    body.style.overflow = 'scroll'
-    const rightSection = verticalScrollingWrapper?.current
-    const galleryHeight = rightSection.scrollHeight - window.innerHeight + PADDING
-    // globalID = requestAnimationFrame(repeatOften)
-
-    // rightSection.addEventListener('mouseenter', () => {
-    //   cancelAnimationFrame(globalID)
-    // })
-
-    // rightSection.addEventListener('mouseleave', () => {
-    //   globalID = requestAnimationFrame(repeatOften)
-    // })
-
-    // rightSection.addEventListener('wheel', () => {
-    //   iteration += event.deltaY
-    //   if (iteration >= galleryHeight || iteration < 0) return
-    //   rightSection.style.transform = `translateY(${iteration}px`
-    // })
-  }, [])
+  // useEffect(() => {
+  // const rightSection = verticalScrollingWrapper?.current
+  // const galleryHeight = rightSection.scrollHeight - window.innerHeight + PADDING
+  // globalID = requestAnimationFrame(repeatOften)
+  // rightSection.addEventListener('mouseenter', () => {
+  //   cancelAnimationFrame(globalID)
+  // })
+  // rightSection.addEventListener('mouseleave', () => {
+  //   globalID = requestAnimationFrame(repeatOften)
+  // })
+  // rightSection.addEventListener('wheel', () => {
+  //   iteration += event.deltaY
+  //   if (iteration >= galleryHeight || iteration < 0) return
+  //   rightSection.style.transform = `translateY(${iteration}px`
+  // })
+  // }, [])
 
   return (
     <>

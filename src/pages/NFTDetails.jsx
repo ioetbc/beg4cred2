@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import * as qs from 'query-string'
 import dayjs from 'dayjs'
 const advancedFormat = require('dayjs/plugin/advancedFormat')
@@ -14,11 +14,6 @@ export const NFTDetails = ({ location, isMobile }) => {
   const { category, title, type } = qs.parse(location.search)
   const pageData = NFTContent.filter(page => page.category === category)[0].projects
   const data = pageData.filter(page => page.title === title)[0]
-
-  useEffect(() => {
-    const body = document.querySelector('body')
-    body.style.overflow = 'scroll'
-  }, [])
 
   return (
     <>

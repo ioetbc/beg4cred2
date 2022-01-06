@@ -4,7 +4,7 @@ import * as qs from 'query-string'
 import styles from '../styles/Navigation.module.css'
 
 import { CloseButton } from './CloseButton'
-import { getSecondaryNavigation } from '../utils/getSecondaryNavigation'
+import { getSecondaryNavigation, getPrimaryNavigation } from '../utils/getNavigation'
 import Icon from '../images/left-arrow.svg'
 import Circle from '../images/circle.svg'
 
@@ -21,58 +21,7 @@ export const Navigation = ({ location, isMobile }) => {
   const isNFTPage = pathname === '/NFTS' || pathname === '/NFTS/'
   const query = qs.parse(search)
 
-  const websitePages = [
-    {
-      title: 'ABOUT/CONTACT',
-      url: '/contact',
-    },
-    {
-      title: 'LINKEDTREE',
-      url: '/',
-    },
-    {
-      title: 'TATTOOS',
-      url: '/tattoos',
-    },
-    {
-      title: 'VIDEOS',
-      url: '/videos',
-    },
-    {
-      title: 'INSTA',
-      url: 'https://www.instagram.com/beg4cred/?hl=en',
-      newWindow: true,
-    },
-    {
-      title: 'SHOP',
-      url: 'shop?category=work_is_hell',
-      subPages: [
-        {
-          title: 'WORK_IS_HELL_PRINTS',
-          url: 'work_is_hell',
-        },
-        {
-          title: 'EDITED_ADS_PRINTS',
-          url: 'edited_ads',
-        },
-      ],
-    },
-    {
-      title: 'NFT',
-      url: 'NFTS?category=work_is_hell',
-      subPages: [
-        {
-          title: 'WORK_IS_HELL_NFT',
-          url: 'work_is_hell',
-        },
-        {
-          title: 'EDITED_ADS_NFT',
-          url: 'edited_ads',
-        },
-      ],
-    },
-  ]
-
+  const primaryNavigation = getPrimaryNavigation({ isNFTPage })
   const secondaryNavigation = getSecondaryNavigation({ isShopPage, isVideoPage, isNFTPage })
 
   const handleMenuSelection = (title, subPages = [], url, newWindow) => {
@@ -109,8 +58,6 @@ export const Navigation = ({ location, isMobile }) => {
     setShowMenu(false)
   }
 
-  console.log('showSubMenu', showSubMenu)
-
   return (
     <div className={`${styles.navigation} ${isShopPage || isNFTPage ? styles.fixed : ''}`}>
       <h1 className={styles.textLogo} onClick={() => history.push('/')}>
@@ -129,7 +76,7 @@ export const Navigation = ({ location, isMobile }) => {
         <div className={`${styles.menuLinksPages} ${showSubMenu ? styles.border : ''}`}>
           <CloseButton handleOnClick={handleCloseNavigation} />
           <div className={styles.list}>
-            {websitePages.map(page => (
+            {primaryNavigation.map(page => (
               <>
                 <h1
                   onClick={() => handleMenuSelection(page.title, page.subPages, page.url, page.newWindow)}

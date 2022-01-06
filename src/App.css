@@ -1,17 +1,5 @@
-:root {
-  --vh: 0px;
-}
-
 body {
   min-height: 100vh;
-  min-height: -webkit-fill-available;
-}
-html {
-  height: -webkit-fill-available;
-}
-
-.App {
-  text-align: center;
 }
 
 button {
@@ -19,41 +7,6 @@ button {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 :root {
@@ -72,9 +25,6 @@ button {
 
 html,
 body {
-  /* NEED TO ADD THIS IN FOR MOBILE SCROLLING BUT NEED TO REMOVE FOR SUB PAGES. */
-  overflow: hidden;
-  height: 100%;
   background: black;
 }
 
@@ -82,53 +32,6 @@ p {
   margin: 0;
   padding: 0;
 }
-
-.clickable-area {
-  background: transparent;
-  height: 10%;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-.shit {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 16px;
-}
-
-.details-inner-container {
-  padding: 16px;
-  margin: 0 auto;
-}
-
-.details-inner-container img {
-  width: 100%;
-}
-
-.close-icon-container {
-  float: right;
-  cursor: pointer;
-}
-
-.details-inner-container .close-icon {
-  width: 50px;
-  position: absolute;
-  right: 8px;
-}
-
-/* .fade-enter,
-.fade-exit {
-  transition: bottom 0.6s ease;
-}
-
-.fade-enter,
-.fade-exit-active {
-  bottom: -100vh;
-}
-.fade-enter-active {
-  bottom: 0;
-} */
 
 .fade-enter {
   opacity: 0;
@@ -175,34 +78,6 @@ a {
   color: white;
 }
 
-.link {
-  font-size: var(--fontSizePara);
-  color: black;
-  text-transform: uppercase;
-  text-decoration: none;
-  position: relative;
-}
-
-/* .image img {
-  width: auto !important;
-  height: 60vh; 
-  height: calc(var(--vh, 1vh) * 60);
-} */
-
-.link:after {
-  position: absolute;
-  content: '';
-  width: 100%;
-  height: 2px;
-  bottom: -2px;
-  left: 0;
-  background: blue;
-}
-
-.image-wrapper {
-  position: relative;
-}
-
 .video-wrapper {
   position: relative;
 }
@@ -220,46 +95,15 @@ a {
   transition: opacity 0.6s ease-in-out;
 }
 
-.image-container .image {
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100 - 200px);
-}
-
 .video-container {
   width: calc(100vw - 32px);
-  /* margin: 0 auto; */
 }
 
 .video-container video {
   width: 100%;
 }
 
-.more-info-container {
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 16px;
-  margin-top: 8px;
-}
-
-.image-container {
-  margin-left: 50vw;
-}
-
 @media screen and (min-width: 768px) {
-  .image-container {
-    width: 400px;
-  }
-  .image-container .image {
-    height: auto;
-  }
-  .image-container {
-    margin-left: calc(50vw - 200px);
-    margin-right: calc(50vw - 200px);
-  }
-  .more-info-container {
-    margin-right: calc(50vw - 200px);
-    width: 100%;
-  }
   .video-container {
     width: 800px;
     margin-top: -30vh; /* THIS IS SHIT */
@@ -268,192 +112,3 @@ a {
     margin-left: calc(50vw - 200px); /* minus half with width of an video */
   }
 }
-
-.more-details {
-  color: white;
-  text-align: right;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.more-details:hover {
-  text-decoration: underline;
-}
-
-/* NAV STYLES */
-
-.menu-links {
-  margin-right: 16px;
-  margin-top: auto;
-  padding-bottom: 16px;
-}
-
-.letter-spacing-sm {
-  letter-spacing: 1px;
-}
-
-/* .menu {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 16px;
-} */
-.insta {
-  letter-spacing: 2px;
-}
-.email {
-  letter-spacing: 0.5px;
-}
-.logo {
-  width: 100px;
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  transform-origin: left top;
-  transform: rotate(-90deg) translateX(-100%);
-}
-.top-nav {
-  list-style: none;
-  padding: 0 var(--marginLarge);
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: var(--NavigationHeight);
-  margin-left: auto;
-  /* background: red; */
-  position: absolute;
-}
-
-.top-nav li {
-  cursor: pointer;
-  font-size: 16px;
-  text-transform: uppercase;
-}
-
-@media screen and (min-width: 768px) {
-  .top-nav {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .logo {
-    width: 175px;
-    right: 60px;
-    left: auto;
-    top: 60px;
-  }
-  .project-container {
-    margin-left: calc(33vw + 60vh);
-  }
-}
-
-.product-page {
-  background: white;
-  height: 85vh;
-  position: absolute;
-  bottom: -100vh;
-  width: 98%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  transition: bottom 0.6s ease-in-out;
-  overflow: scroll;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  padding: 16px;
-}
-
-.product-page .nft-image {
-  margin: 0 auto;
-}
-
-.about-page {
-  background: white;
-  height: 85vh;
-  position: absolute;
-  bottom: -100vh;
-  width: 98%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  transition: bottom 0.6s ease-in-out;
-  overflow: scroll;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  padding: 16px;
-}
-
-.menu-draw-container {
-  background: white;
-}
-
-.project-heading {
-  color: white;
-  margin-right: 25vw;
-}
-
-/* .img-magnifier-container {
-  position: relative;
-  transform: translateY(28vw); */
-/* } */
-
-.img-magnifier-glass {
-  position: absolute;
-  /* transform: translateY(28vw); */
-
-  /* border: 3px solid ; */
-  /* border-radius: 50%; */
-  cursor: none;
-  /*Set the size of the magnifier glass:*/
-  width: 250px;
-  height: 250px;
-}
-
-.button-wrapper h1 {
-  margin-top: 16px;
-}
-
-.contact-links-wrapper {
-  width: 33%;
-  height: 100vh;
-  padding-left: 16px;
-  /* background-color: red; */
-  display: flex;
-  align-items: center;
-}
-
-.contact-links-wrapper ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.contact-links-wrapper ul li a {
-  color: white;
-  font-size: 71px;
-  font-weight: 700;
-  line-height: 80px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.contact-links-wrapper ul li a:hover {
-  text-decoration: underline;
-}
-
-/* .tattoo-video-wrapper {
-  width: 50%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  margin-left: 16px;
-} */
-
-/* .tattoo-video-wrapper video {
-  width: 700px;
-  margin-right: 15vw;
-} */

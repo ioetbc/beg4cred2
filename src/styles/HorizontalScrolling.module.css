@@ -1,33 +1,69 @@
 .horizontalContainer {
   display: flex;
-  align-items: center;
-  overflow-x: scroll;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100 - 140px);
+  flex-direction: column;
+  gap: 96px;
 }
 
-.horizontalContainer::-webkit-scrollbar {
-  display: none;
+.imageContainer {
+  margin: 0 16px;
 }
 
-.horizontalWrapper {
-  display: flex;
+.imageContainer img {
   width: 100%;
 }
 
+.moreInfoContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.moreDetails {
+  color: white;
+  text-align: right;
+  font-size: 14px;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 768px) {
+  html,
+  body {
+    overflow: hidden;
+    height: 100%;
+  }
+
   .horizontalContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
     width: auto;
     height: 100vh;
     overflow: scroll;
   }
 
-  .horizontalWrapper {
-    height: 100%;
-    align-items: center;
+  .horizontalContainer::-webkit-scrollbar {
+    display: none;
   }
 
-  .horizontalContainer img {
-    width: 400px;
+  .imageContainer {
+    margin: 0 25vw;
+  }
+
+  .imageContainer:first-child {
+    margin: 0 25vw 0 calc(50vw - 200px); /* NEGATIVE 200 TO CENTER THE FIRST IMAGE (IMAGE NEEDS TO BE 400 WIDTH FOR THIS TO WORK) */
+  }
+  .imageContainer:last-child {
+    margin: 0 calc(50vw - 200px) 0 25vw; /* NEGATIVE 200 TO CENTER THE LAST IMAGE (IMAGE NEEDS TO BE 400 WIDTH FOR THIS TO WORK) */
+  }
+
+  .imageContainer img {
+    width: auto;
+    height: 550px;
+  }
+
+  .moreDetails:hover {
+    text-decoration: underline;
   }
 }

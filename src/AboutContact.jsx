@@ -7,10 +7,6 @@ import VideoFile from './videos/tattoo_description.mp4'
 const AboutContact = ({ isMobile }) => {
   const [expandMoreInfo, setExpandMoreInfo] = useState(false)
 
-  useEffect(() => {
-    const body = document.querySelector('body')
-    body.style.overflow = 'scroll'
-  }, [])
   return (
     <div className={styles.details}>
       <h1 className={`${styles.title} ${styles.mobile}`}>ABOUT/CONTACT</h1>

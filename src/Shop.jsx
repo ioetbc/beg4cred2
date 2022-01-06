@@ -3,6 +3,7 @@ import './App.css'
 import { useHistory } from 'react-router-dom'
 import queryString from 'query-string'
 import { GlassMagnifier } from 'react-image-magnifiers'
+import styles from './styles/HorizontalScrolling.module.css'
 
 import { HorizontalScrollingWrapper } from './components/HorizontalScrollingWrapper'
 import { Sidebar } from './components/Sidebar'
@@ -12,7 +13,7 @@ import { NFTContent } from './content/NFTContent'
 const Shop = ({ location, isMobile }) => {
   const history = useHistory()
   const [visibleContent, setVisibleContent] = useState([])
-  const { pathname, search } = location
+  const { pathname } = location
   const { category } = queryString.parse(location.search)
   const projects = NFTContent.filter(page => page.category === category)[0].projects
   const isNFTPage = pathname === '/NFTS' || pathname === '/NFTS/'
@@ -21,6 +22,7 @@ const Shop = ({ location, isMobile }) => {
     element.style.opacity = 1
     const index = Number(element?.getAttribute('index'))
     const projects = getPageData({ location })[index]
+    element.src = projects.image
 
     setVisibleContent({ ...projects, index: index + 1 })
   }
@@ -33,38 +35,34 @@ const Shop = ({ location, isMobile }) => {
     window.open('https://foundation.app/', '_blank')
   }
 
-  console.log('isMobile', isMobile)
-
   return (
     <>
-      <HorizontalScrollingWrapper handleElementOnScreen={handleElementOnScreen}>
+      <HorizontalScrollingWrapper handleElementOnScreen={handleElementOnScreen} isMobile={isMobile}>
         {projects?.map((NFT, index) => (
           <>
-            <div className="image-wrapper">
-              <div className="image-container" onClick={() => handleMoreInfoEvent(NFT.title)}>
-                <div className="image-index-container" index={index}>
-                  {isMobile ? (
-                    <img src={NFT.image} alt={NFT.alt} index={index} className="image" />
-                  ) : (
-                    <GlassMagnifier
-                      className="image"
-                      imageSrc={NFT.image}
-                      imageAlt={NFT.alt}
-                      index={index}
-                      square={true}
-                      magnifierSize={200}
-                      magnifierBorderSize={0}
-                    />
-                  )}
-                </div>
-                <div className="more-info-container">
-                  <p className="more-details" onClick={() => handleMoreInfoEvent(NFT.title)}>
-                    MORE INFO
-                  </p>
-                  <p className="more-details" onClick={() => handlePurchaseEvent(NFT.title)}>
-                    PURCHASE
-                  </p>
-                </div>
+            <div className={styles.imageContainer} onClick={() => handleMoreInfoEvent(NFT.title)}>
+              <img
+                src={`/images/placeholders/${category}/${[index]}.svg`}
+                alt={NFT.alt}
+                index={index}
+                className="image image-index-container"
+              />
+              {/* <GlassMagnifier
+                className="image"
+                imageSrc={NFT.image}
+                imageAlt={NFT.alt}
+                index={index}
+                square={true}
+                magnifierSize={200}
+                magnifierBorderSize={0}
+              /> */}
+              <div className={styles.moreInfoContainer}>
+                <p className={styles.moreDetails} onClick={() => handleMoreInfoEvent(NFT.title)}>
+                  MORE INFO
+                </p>
+                <p className={styles.moreDetails} onClick={() => handlePurchaseEvent(NFT.title)}>
+                  PURCHASE
+                </p>
               </div>
             </div>
           </>
@@ -89,6 +87,9 @@ export default Shop
 // ADD IN ALL THE PROJECTS TO THE SHOP PAGE
 // MAKE IT POSSIBLE TO CHANGE THE THEME ON THE HOMEPAGE USE THE SECONDARY NAVIGATION
 // CONTACT PAGE IS GOOD BUT MAYBE MAKE THE VIDEO AND TEXT HIGHER ON > 1500 BP LOOKS A LITTLE LOW
+// FIX MAGNIFYING GLASS
+// ADD A FOOTER TO MAKE IT MORE PROFESSIONAL
+// BUG WHERE THE IMAGE DOESN'T LOAD WHEN YOU CHANGE THE PATH
 
 // NICE TO HAVE
 // DEBOUNCE
@@ -98,6 +99,7 @@ export default Shop
 // SCROLL RESTORATION
 // MAKE THE PRODUCT PAGES SLIDE UP FROM THE BOTTOM
 // BREADCRUMBS
+// USE SRCSET
 
 // TATTOOS PAGE
 // SLIGHT BUG WITH THE AUTO SCROLLING GALLERY
