@@ -22,7 +22,10 @@ const Shop = ({ location, isMobile }) => {
     element.style.opacity = 1
     const index = Number(element?.getAttribute('index'))
     const projects = getPageData({ location })[index]
-    element.src = projects.image
+    if (!element.loaded) {
+      element.loaded = true
+      element.src = projects.image
+    }
 
     setVisibleContent({ ...projects, index: index + 1 })
   }
@@ -46,6 +49,7 @@ const Shop = ({ location, isMobile }) => {
                 alt={NFT.alt}
                 index={index}
                 className="image image-index-container"
+                loaded={false}
               />
               {/* <GlassMagnifier
                 className="image"
@@ -84,12 +88,13 @@ const Shop = ({ location, isMobile }) => {
 export default Shop
 
 // ADD A BETTER LOADING TRANSITION
-// ADD IN ALL THE PROJECTS TO THE SHOP PAGE
 // MAKE IT POSSIBLE TO CHANGE THE THEME ON THE HOMEPAGE USE THE SECONDARY NAVIGATION
 // CONTACT PAGE IS GOOD BUT MAYBE MAKE THE VIDEO AND TEXT HIGHER ON > 1500 BP LOOKS A LITTLE LOW
 // FIX MAGNIFYING GLASS
 // ADD A FOOTER TO MAKE IT MORE PROFESSIONAL
 // BUG WHERE THE IMAGE DOESN'T LOAD WHEN YOU CHANGE THE PATH
+// LINK HOVER SHOULD BE SVG OF CIRCLE
+// MOBILE SUB PAGE SHOULD LOAD AT THE TOP OF THE PAGE
 
 // NICE TO HAVE
 // DEBOUNCE
@@ -100,7 +105,3 @@ export default Shop
 // MAKE THE PRODUCT PAGES SLIDE UP FROM THE BOTTOM
 // BREADCRUMBS
 // USE SRCSET
-
-// TATTOOS PAGE
-// SLIGHT BUG WITH THE AUTO SCROLLING GALLERY
-// LINK HOVER SHOULD BE SVG OF CIRCLE

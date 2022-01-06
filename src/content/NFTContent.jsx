@@ -89,6 +89,16 @@ import pastelSet11 from '../images/pastel_set/11.jpg'
 import pastelSet12 from '../images/pastel_set/12.jpg'
 import pastelSet13 from '../images/pastel_set/13.jpg'
 
+import funny0 from '../images/funny/0.jpg'
+import funny1 from '../images/funny/1.jpg'
+import funny2 from '../images/funny/2.jpg'
+import funny3 from '../images/funny/3.jpg'
+import funny4 from '../images/funny/4.jpg'
+import funny5 from '../images/funny/5.jpg'
+import funny6 from '../images/funny/6.jpg'
+import funny7 from '../images/funny/7.jpg'
+import funny8 from '../images/funny/8.jpg'
+
 export const NFTContent = [
   {
     category: 'work_is_hell',
@@ -1181,6 +1191,129 @@ export const NFTContent = [
         priceFiat: 50,
         sold: true,
         image: pastelSet13,
+        alt: 'NFT image',
+        stripeLink:
+          'https://checkout.stripe.com/pay/cs_test_a1jBtO1sMhCjF6Nu8vJiBh6hlwl4x8NTIcSfwe89KebLkH1813A5g4NZ9k#fidkdWxOYHwnPyd1blpxYHZxWmNGN3c2M2dONjdiUjJpbXRQMGdiTW5KMTU1bUBScHE3fWInKSd1aWxrbkB9dWp2YGFMYSc%2FJ3FgdnFaPERUMnFyYEBoNUBjM2R2Z0xMJyknd2BjYHd3YHcnPydtcXF1dj8qKmZtYGZuanBxK3Zxd2x1YCtmamgqJ3gl',
+        NFTLink: 'https://foundation.app/',
+      },
+    ],
+  },
+  {
+    category: 'funny',
+    projects: [
+      {
+        title: 'funny_1',
+        description:
+          'Seventh NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse.',
+        priceETH: 0.2,
+        priceFiat: 20,
+        sold: true,
+        image: funny0,
+        alt: 'NFT image',
+        stripeLink:
+          'https://checkout.stripe.com/pay/cs_test_a1jBtO1sMhCjF6Nu8vJiBh6hlwl4x8NTIcSfwe89KebLkH1813A5g4NZ9k#fidkdWxOYHwnPyd1blpxYHZxWmNGN3c2M2dONjdiUjJpbXRQMGdiTW5KMTU1bUBScHE3fWInKSd1aWxrbkB9dWp2YGFMYSc%2FJ3FgdnFaPERUMnFyYEBoNUBjM2R2Z0xMJyknd2BjYHd3YHcnPydtcXF1dj8qKmZtYGZuanBxK3Zxd2x1YCtmamgqJ3gl',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'funny_2',
+        description:
+          'Eighth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi.',
+        priceETH: 0.1,
+        priceFiat: 10,
+        sold: false,
+        image: funny1,
+        alt: 'NFT image',
+        stripeLink:
+          'https://checkout.stripe.com/pay/cs_test_a1jBtO1sMhCjF6Nu8vJiBh6hlwl4x8NTIcSfwe89KebLkH1813A5g4NZ9k#fidkdWxOYHwnPyd1blpxYHZxWmNGN3c2M2dONjdiUjJpbXRQMGdiTW5KMTU1bUBScHE3fWInKSd1aWxrbkB9dWp2YGFMYSc%2FJ3FgdnFaPERUMnFyYEBoNUBjM2R2Z0xMJyknd2BjYHd3YHcnPydtcXF1dj8qKmZtYGZuanBxK3Zxd2x1YCtmamgqJ3gl',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'funny_3',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        priceETH: 0.5,
+        priceFiat: 50,
+        sold: true,
+        image: funny2,
+        alt: 'NFT image',
+        stripeLink:
+          'https://checkout.stripe.com/pay/cs_test_a1jBtO1sMhCjF6Nu8vJiBh6hlwl4x8NTIcSfwe89KebLkH1813A5g4NZ9k#fidkdWxOYHwnPyd1blpxYHZxWmNGN3c2M2dONjdiUjJpbXRQMGdiTW5KMTU1bUBScHE3fWInKSd1aWxrbkB9dWp2YGFMYSc%2FJ3FgdnFaPERUMnFyYEBoNUBjM2R2Z0xMJyknd2BjYHd3YHcnPydtcXF1dj8qKmZtYGZuanBxK3Zxd2x1YCtmamgqJ3gl',
+        NFTLink: 'https://foundation.app/',
+      },
+
+      {
+        title: 'funny_4',
+        description:
+          'Seventh NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse.',
+        priceETH: 0.2,
+        priceFiat: 20,
+        sold: true,
+        image: funny3,
+        alt: 'NFT image',
+        stripeLink:
+          'https://checkout.stripe.com/pay/cs_test_a1jBtO1sMhCjF6Nu8vJiBh6hlwl4x8NTIcSfwe89KebLkH1813A5g4NZ9k#fidkdWxOYHwnPyd1blpxYHZxWmNGN3c2M2dONjdiUjJpbXRQMGdiTW5KMTU1bUBScHE3fWInKSd1aWxrbkB9dWp2YGFMYSc%2FJ3FgdnFaPERUMnFyYEBoNUBjM2R2Z0xMJyknd2BjYHd3YHcnPydtcXF1dj8qKmZtYGZuanBxK3Zxd2x1YCtmamgqJ3gl',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'funny_5',
+        description:
+          'Eighth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi.',
+        priceETH: 0.1,
+        priceFiat: 10,
+        sold: false,
+        image: funny4,
+        alt: 'NFT image',
+        stripeLink:
+          'https://checkout.stripe.com/pay/cs_test_a1jBtO1sMhCjF6Nu8vJiBh6hlwl4x8NTIcSfwe89KebLkH1813A5g4NZ9k#fidkdWxOYHwnPyd1blpxYHZxWmNGN3c2M2dONjdiUjJpbXRQMGdiTW5KMTU1bUBScHE3fWInKSd1aWxrbkB9dWp2YGFMYSc%2FJ3FgdnFaPERUMnFyYEBoNUBjM2R2Z0xMJyknd2BjYHd3YHcnPydtcXF1dj8qKmZtYGZuanBxK3Zxd2x1YCtmamgqJ3gl',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'funny_6',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        priceETH: 0.5,
+        priceFiat: 50,
+        sold: true,
+        image: funny5,
+        alt: 'NFT image',
+        stripeLink:
+          'https://checkout.stripe.com/pay/cs_test_a1jBtO1sMhCjF6Nu8vJiBh6hlwl4x8NTIcSfwe89KebLkH1813A5g4NZ9k#fidkdWxOYHwnPyd1blpxYHZxWmNGN3c2M2dONjdiUjJpbXRQMGdiTW5KMTU1bUBScHE3fWInKSd1aWxrbkB9dWp2YGFMYSc%2FJ3FgdnFaPERUMnFyYEBoNUBjM2R2Z0xMJyknd2BjYHd3YHcnPydtcXF1dj8qKmZtYGZuanBxK3Zxd2x1YCtmamgqJ3gl',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'funny_7',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        priceETH: 0.5,
+        priceFiat: 50,
+        sold: true,
+        image: funny6,
+        alt: 'NFT image',
+        stripeLink:
+          'https://checkout.stripe.com/pay/cs_test_a1jBtO1sMhCjF6Nu8vJiBh6hlwl4x8NTIcSfwe89KebLkH1813A5g4NZ9k#fidkdWxOYHwnPyd1blpxYHZxWmNGN3c2M2dONjdiUjJpbXRQMGdiTW5KMTU1bUBScHE3fWInKSd1aWxrbkB9dWp2YGFMYSc%2FJ3FgdnFaPERUMnFyYEBoNUBjM2R2Z0xMJyknd2BjYHd3YHcnPydtcXF1dj8qKmZtYGZuanBxK3Zxd2x1YCtmamgqJ3gl',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'funny_8',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        priceETH: 0.5,
+        priceFiat: 50,
+        sold: true,
+        image: funny7,
+        alt: 'NFT image',
+        stripeLink:
+          'https://checkout.stripe.com/pay/cs_test_a1jBtO1sMhCjF6Nu8vJiBh6hlwl4x8NTIcSfwe89KebLkH1813A5g4NZ9k#fidkdWxOYHwnPyd1blpxYHZxWmNGN3c2M2dONjdiUjJpbXRQMGdiTW5KMTU1bUBScHE3fWInKSd1aWxrbkB9dWp2YGFMYSc%2FJ3FgdnFaPERUMnFyYEBoNUBjM2R2Z0xMJyknd2BjYHd3YHcnPydtcXF1dj8qKmZtYGZuanBxK3Zxd2x1YCtmamgqJ3gl',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'funny_9',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        priceETH: 0.5,
+        priceFiat: 50,
+        sold: true,
+        image: funny8,
         alt: 'NFT image',
         stripeLink:
           'https://checkout.stripe.com/pay/cs_test_a1jBtO1sMhCjF6Nu8vJiBh6hlwl4x8NTIcSfwe89KebLkH1813A5g4NZ9k#fidkdWxOYHwnPyd1blpxYHZxWmNGN3c2M2dONjdiUjJpbXRQMGdiTW5KMTU1bUBScHE3fWInKSd1aWxrbkB9dWp2YGFMYSc%2FJ3FgdnFaPERUMnFyYEBoNUBjM2R2Z0xMJyknd2BjYHd3YHcnPydtcXF1dj8qKmZtYGZuanBxK3Zxd2x1YCtmamgqJ3gl',

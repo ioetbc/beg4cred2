@@ -25,7 +25,7 @@ export const HorizontalScrollingWrapper = ({ children, handleElementOnScreen, is
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           handleElementOnScreen(entry.target)
-          observer.unobserve(entry.target)
+          // observer.unobserve(entry.target)
         }
       })
     })

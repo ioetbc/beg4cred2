@@ -2,6 +2,10 @@ export const getSecondaryNavigation = ({ isShopPage, isVideoPage, isNFTPage }) =
   if (isShopPage || isNFTPage) {
     return [
       {
+        title: `FUNNY_${isNFTPage ? 'NFTS' : 'PRINTS'}`,
+        url: `/${isNFTPage ? 'NFTS' : 'shop'}/?category=funny`,
+      },
+      {
         title: `EDITED_ADS_${isNFTPage ? 'NFTS' : 'PRINTS'}`,
         url: `/${isNFTPage ? 'NFTS' : 'shop'}/?category=edited_ads`,
       },
@@ -15,11 +19,11 @@ export const getSecondaryNavigation = ({ isShopPage, isVideoPage, isNFTPage }) =
       },
       {
         title: `COLOURED_FACES_${isNFTPage ? 'NFTS' : 'PRINTS'}`,
-        url: '/shop/?category=coloured_faces',
+        url: `/${isNFTPage ? 'NFTS' : 'shop'}/?category=coloured_faces`,
       },
       {
         title: `COLOURED_CARTOON_${isNFTPage ? 'NFTS' : 'PRINTS'}`,
-        url: '/shop/?category=coloured_cartoon',
+        url: `/${isNFTPage ? 'NFTS' : 'shop'}/?category=coloured_cartoon`,
       },
       {
         title: `DETAILED_PEN_AND_INK_${isNFTPage ? 'NFTS' : 'PRINTS'}`,
@@ -69,6 +73,10 @@ export const getPrimaryNavigation = ({ isNFTPage }) => {
       title: `${isNFTPage ? 'NFT' : 'SHOP'}`,
       url: `${isNFTPage ? 'NFTS' : 'SHOP'}?category=work_is_hell`,
       subPages: [
+        {
+          title: `FUNNY_${isNFTPage ? 'NFTS' : 'PRINTS'}`,
+          url: 'funny',
+        },
         {
           title: `EDITED_ADS_${isNFTPage ? 'NFTS' : 'PRINTS'}`,
           url: 'edited_ads',
