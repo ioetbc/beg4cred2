@@ -26,10 +26,12 @@ export const NFTDetails = ({ location, isMobile }) => {
           <GlassMagnifier
             className={styles.image}
             imageSrc={data?.image}
+            largeImageSrc={data?.imageLarge}
             imageAlt={data?.alt}
             square={true}
             magnifierSize={200}
             magnifierBorderSize={0}
+            allowOverflow={true}
           />
         )}
 

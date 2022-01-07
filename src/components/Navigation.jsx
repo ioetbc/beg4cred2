@@ -33,7 +33,7 @@ export const Navigation = ({ location, isMobile }) => {
   const handleSubPageSelection = subpage => {
     setShowSubMenu({ title: '', show: false })
     if (isMobile) setShowMenu(false)
-    history.push(`shop?category=${subpage.url}`)
+    history.push(subpage.url)
   }
 
   const handleActiveNavigation = page => {

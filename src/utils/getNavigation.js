@@ -3,11 +3,11 @@ export const getSecondaryNavigation = ({ isShopPage, isVideoPage, isNFTPage }) =
     return [
       {
         title: `FUNNY_${isNFTPage ? 'NFTS' : 'PRINTS'}`,
-        url: `/${isNFTPage ? 'NFTS' : 'shop'}/?category=funny`,
+        url: `/${isNFTPage ? 'NFTS' : 'shop'}?category=funny`,
       },
       {
         title: `EDITED_ADS_${isNFTPage ? 'NFTS' : 'PRINTS'}`,
-        url: `/${isNFTPage ? 'NFTS' : 'shop'}/?category=edited_ads`,
+        url: `/${isNFTPage ? 'NFTS' : 'shop'}?category=edited_ads`,
       },
       {
         title: `PASTEL_SET_${isNFTPage ? 'NFTS' : 'PRINTS'}`,
@@ -19,15 +19,15 @@ export const getSecondaryNavigation = ({ isShopPage, isVideoPage, isNFTPage }) =
       },
       {
         title: `COLOURED_FACES_${isNFTPage ? 'NFTS' : 'PRINTS'}`,
-        url: `/${isNFTPage ? 'NFTS' : 'shop'}/?category=coloured_faces`,
+        url: `/${isNFTPage ? 'NFTS' : 'shop'}?category=coloured_faces`,
       },
       {
         title: `COLOURED_CARTOON_${isNFTPage ? 'NFTS' : 'PRINTS'}`,
-        url: `/${isNFTPage ? 'NFTS' : 'shop'}/?category=coloured_cartoon`,
+        url: `/${isNFTPage ? 'NFTS' : 'shop'}?category=coloured_cartoon`,
       },
       {
         title: `DETAILED_PEN_AND_INK_${isNFTPage ? 'NFTS' : 'PRINTS'}`,
-        url: `/${isNFTPage ? 'NFTS' : 'shop'}/?category=detailed_pen_and_ink`,
+        url: `/${isNFTPage ? 'NFTS' : 'shop'}?category=detailed_pen_and_ink`,
       },
     ]
   }
@@ -70,36 +70,70 @@ export const getPrimaryNavigation = ({ isNFTPage }) => {
       newWindow: true,
     },
     {
-      title: `${isNFTPage ? 'NFT' : 'SHOP'}`,
-      url: `${isNFTPage ? 'NFTS' : 'SHOP'}?category=work_is_hell`,
+      title: 'SHOP',
+      url: '/shop?category=work_is_hell',
       subPages: [
         {
-          title: `FUNNY_${isNFTPage ? 'NFTS' : 'PRINTS'}`,
-          url: 'funny',
+          title: 'FUNNY_PRINTS',
+          url: '/shop?category=funny',
         },
         {
-          title: `EDITED_ADS_${isNFTPage ? 'NFTS' : 'PRINTS'}`,
-          url: 'edited_ads',
+          title: 'EDITED_A_PRINTS',
+          url: '/shop?category=edited_ads',
         },
         {
-          title: `PASTEL_SET_${isNFTPage ? 'NFTS' : 'PRINTS'}`,
-          url: 'pastel_set',
+          title: 'PASTEL_SET_PRINTS',
+          url: '/shop?category=pastel_set',
         },
         {
-          title: `WORK_IS_HELL_${isNFTPage ? 'NFTS' : 'PRINTS'}`,
-          url: 'work_is_hell',
+          title: 'WORK_IS_HELL_PRINTS',
+          url: '/shop?category=work_is_hell',
         },
         {
-          title: `COLOURED_FACES  _${isNFTPage ? 'NFTS' : 'PRINTS'}`,
-          url: 'coloured_faces',
+          title: 'COLOURED_FACES_PRINTS',
+          url: '/shop?category=coloured_faces',
         },
         {
-          title: `COLOURED_CARTOON_${isNFTPage ? 'NFTS' : 'PRINTS'}`,
-          url: 'coloured_cartoon',
+          title: 'COLOURED_CARTOON_PRINTS',
+          url: '/shop?category=coloured_cartoon',
         },
         {
-          title: `DETAILED_PEN_AND_INK_${isNFTPage ? 'NFTS' : 'PRINTS'}`,
-          url: 'detailed_pen_and_ink',
+          title: 'DETAILED_PEN_AND_INK_PRINTS',
+          url: '/shop?category=detailed_pen_and_ink',
+        },
+      ],
+    },
+    {
+      title: 'NFT',
+      url: '/NFTS?category=work_is_hell',
+      subPages: [
+        {
+          title: 'FUNNY_NFTS',
+          url: '/NFTS/?category=funny',
+        },
+        {
+          title: 'EDITED_ADS_NFTS',
+          url: '/NFTS/?category=edited_ads',
+        },
+        {
+          title: 'PASTEL_SET_NFTS',
+          url: '/NFTS?category=pastel_set',
+        },
+        {
+          title: 'WORK_IS_HELL_NFTS',
+          url: '/NFTS?category=work_is_hell',
+        },
+        {
+          title: 'COLOURED_FACES_NFTS',
+          url: '/NFTS?category=coloured_faces',
+        },
+        {
+          title: 'COLOURED_CARTOON_NFTS',
+          url: '/NFTS?category=coloured_cartoon',
+        },
+        {
+          title: 'DETAILED_PEN_AND_INK_NFTS',
+          url: '/NFTS?category=detailed_pen_and_ink',
         },
       ],
     },

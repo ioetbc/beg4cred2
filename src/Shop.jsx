@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './App.css'
 import { useHistory } from 'react-router-dom'
 import queryString from 'query-string'
@@ -14,19 +14,29 @@ import { Secondary } from './components/Navigation/Secondary'
 const Shop = ({ location, isMobile }) => {
   const history = useHistory()
   const [visibleContent, setVisibleContent] = useState([])
+  const [hmm, setHmm] = useState([])
   const { pathname, search } = location
   const { category } = queryString.parse(location.search)
-  const projects = NFTContent.filter(page => page.category === category)[0].projects
+  let projects = NFTContent.filter(page => page.category === category)[0].projects
   const isNFTPage = pathname === '/NFTS' || pathname === '/NFTS/'
+
+  useEffect(() => {
+    console.log('wtwydgwydwydgwyd', category)
+    setHmm([])
+  }, [location])
+
+  useEffect(() => {
+    setHmm(NFTContent.filter(page => page.category === category)[0].projects)
+  }, [hmm])
 
   const handleElementOnScreen = element => {
     element.style.opacity = 1
     const index = Number(element?.getAttribute('index'))
     const projects = getPageData({ location })[index]
-    if (!element.loaded) {
-      element.loaded = true
-      element.src = projects.image
-    }
+    // if (!element.loaded) {
+    element.loaded = true
+    element.src = projects.image
+    // }
 
     setVisibleContent({ ...projects, index: index + 1 })
   }
@@ -41,38 +51,31 @@ const Shop = ({ location, isMobile }) => {
 
   return (
     <>
-      <HorizontalScrollingWrapper handleElementOnScreen={handleElementOnScreen} isMobile={isMobile}>
-        {projects?.map((NFT, index) => (
-          <>
-            <div className={styles.imageContainer} onClick={() => handleMoreInfoEvent(NFT.title)}>
-              <img
-                src={`/images/placeholders/${category}/${[index]}.svg`}
-                alt={NFT.alt}
-                index={index}
-                className="image image-index-container"
-                loaded={false}
-              />
-              {/* <GlassMagnifier
-                className="image"
-                imageSrc={NFT.image}
-                imageAlt={NFT.alt}
-                index={index}
-                square={true}
-                magnifierSize={200}
-                magnifierBorderSize={0}
-              /> */}
-              <div className={styles.moreInfoContainer}>
-                <p className={styles.moreDetails} onClick={() => handleMoreInfoEvent(NFT.title)}>
-                  MORE INFO
-                </p>
-                <p className={styles.moreDetails} onClick={() => handlePurchaseEvent(NFT.title)}>
-                  PURCHASE
-                </p>
+      {hmm.length && (
+        <HorizontalScrollingWrapper handleElementOnScreen={handleElementOnScreen} isMobile={isMobile}>
+          {hmm?.map((NFT, index) => (
+            <>
+              <div className={styles.imageContainer} onClick={() => handleMoreInfoEvent(NFT.title)}>
+                <img
+                  src={`/images/placeholders/${category}/${[index]}.svg`}
+                  alt={NFT.alt}
+                  index={index}
+                  className="image image-index-container"
+                  loaded={false}
+                />
+                <div className={styles.moreInfoContainer}>
+                  <p className={styles.moreDetails} onClick={() => handleMoreInfoEvent(NFT.title)}>
+                    MORE INFO
+                  </p>
+                  <p className={styles.moreDetails} onClick={() => handlePurchaseEvent(NFT.title)}>
+                    PURCHASE
+                  </p>
+                </div>
               </div>
-            </div>
-          </>
-        ))}
-      </HorizontalScrollingWrapper>
+            </>
+          ))}
+        </HorizontalScrollingWrapper>
+      )}
 
       <Sidebar
         title={`${visibleContent?.index}/${getPageData({ location }).length}`}
@@ -90,9 +93,8 @@ const Shop = ({ location, isMobile }) => {
 export default Shop
 
 // DEAL BREAKERS
-// PRIMARY AND SECONDARY NAV SOMETIMES BROKEN
-// MAGINIFYING GLASS NOT WORKING
-// THE NAVIGATION ON MOBILE IS NOT SCROLLABLE BUT THE BACKGROUND SCROLLS
+// MOBILE SUB PAGE SHOULD LOAD AT THE TOP OF THE PAGE
+// WHEN CLICKING THE NAV AT THE BOTTOM ON HOMEPAGE IT SHOULD SCROLL YOU TO THE TOP OF THE PAGE
 
 // ADD A BETTER LOADING TRANSITION
 // MAKE IT POSSIBLE TO CHANGE THE THEME ON THE HOMEPAGE USE THE SECONDARY NAVIGATION
@@ -100,7 +102,6 @@ export default Shop
 // FIX MAGNIFYING GLASS
 // BUG WHERE THE IMAGE DOESN'T LOAD WHEN YOU CHANGE THE PATH
 // LINK HOVER SHOULD BE SVG OF CIRCLE
-// MOBILE SUB PAGE SHOULD LOAD AT THE TOP OF THE PAGE
 
 // NICE TO HAVE
 // DEBOUNCE

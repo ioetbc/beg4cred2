@@ -2,6 +2,11 @@
   margin: 16px;
 }
 
+html,
+body {
+  overflow: scroll;
+}
+
 @media screen and (min-width: 768px) {
   .details {
     display: grid;
@@ -15,6 +20,7 @@
 @media screen and (min-width: 1500px) {
   .details {
     max-width: 1400px;
+    margin: 0 auto 16px auto;
   }
 }
 
@@ -26,6 +32,7 @@
   color: white;
   text-transform: uppercase;
   margin-bottom: 16px;
+  font-size: 18px;
 }
 
 .textContainer {
@@ -48,6 +55,9 @@
   }
   .readMore {
     display: none;
+  }
+  .title {
+    font-size: 32px;
   }
 }
 

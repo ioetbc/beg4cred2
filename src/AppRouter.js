@@ -27,20 +27,20 @@ export default function AppRouter() {
           render={({ location }) => (
             <>
               <Navigation location={location} isMobile={isMobile} />
-              <TransitionGroup>
-                <CSSTransition key={location.pathname} classNames="fade" timeout={1000}>
-                  <Switch location={location}>
-                    <Route path="/" exact render={() => <HomePage />}></Route>
-                    <Route path="/shop" render={() => <Shop location={location} isMobile={isMobile} />} />
-                    <Route path="/NFTS" render={() => <Shop location={location} isMobile={isMobile} />} />
-                    <Route path="/details" render={() => <NFTDetails location={location} isMobile={isMobile} />} />
-                    <Route path="/contact" render={() => <AboutContact isMobile={isMobile} />} />
-                    <Route path="/tattoos" render={() => <Tattoos location={location} isMobile={isMobile} />} />
-                    <Route path="/about" render={() => <AboutContact location={location} />} />
-                    <Route path="/videos" render={() => <Videos location={location} />} />
-                  </Switch>
-                </CSSTransition>
-              </TransitionGroup>
+              {/* <TransitionGroup> */}
+              {/* <CSSTransition key={location.pathname} classNames="fade" timeout={1000}> */}
+              <Switch location={location}>
+                <Route path="/" exact render={() => <HomePage />}></Route>
+                <Route path="/shop" render={() => <Shop location={location} isMobile={isMobile} />} />
+                <Route path="/NFTS" render={() => <Shop location={location} isMobile={isMobile} />} />
+                <Route path="/details" render={() => <NFTDetails location={location} isMobile={isMobile} />} />
+                <Route path="/contact" render={() => <AboutContact isMobile={isMobile} />} />
+                <Route path="/tattoos" render={() => <Tattoos location={location} isMobile={isMobile} />} />
+                <Route path="/about" render={() => <AboutContact location={location} />} />
+                <Route path="/videos" render={() => <Videos location={location} />} />
+              </Switch>
+              {/* </CSSTransition> */}
+              {/* </TransitionGroup> */}
             </>
           )}
         />

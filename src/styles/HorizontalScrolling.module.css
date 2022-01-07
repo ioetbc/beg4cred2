@@ -6,6 +6,7 @@
 
 .imageContainer {
   margin: 0 16px;
+  cursor: pointer;
 }
 
 .imageContainer img {
