@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
-import * as qs from 'query-string'
 import styles from '../styles/Navigation.module.css'
 
-import { CloseButton } from './CloseButton'
-import { getSecondaryNavigation, getPrimaryNavigation } from '../utils/getNavigation'
+import { Primary } from './Navigation/Primary'
+import { Secondary } from './Navigation/Secondary'
 import Icon from '../images/left-arrow.svg'
-import Circle from '../images/circle.svg'
 
 export const Navigation = ({ location, isMobile }) => {
   const [showSubMenu, setShowSubMenu] = useState({ title: '', show: false })
@@ -16,13 +14,8 @@ export const Navigation = ({ location, isMobile }) => {
   const pagePath = location.pathname.split('/')[1]
   const { pathname, search } = location
 
-  const isVideoPage = pathname === '/videos' || pathname === '/videos/'
   const isShopPage = pathname === '/shop' || pathname === '/shop/'
   const isNFTPage = pathname === '/NFTS' || pathname === '/NFTS/'
-  const query = qs.parse(search)
-
-  const primaryNavigation = getPrimaryNavigation({ isNFTPage })
-  const secondaryNavigation = getSecondaryNavigation({ isShopPage, isVideoPage, isNFTPage })
 
   const handleMenuSelection = (title, subPages = [], url, newWindow) => {
     console.log('title', title)
@@ -69,60 +62,19 @@ export const Navigation = ({ location, isMobile }) => {
         <img className={styles.backButtonIcon} src={Icon} alt="back button" />
         <p>GO BACK</p>
       </div>
-      <h1 onClick={() => setShowMenu(!showMenu)} className={styles.menuMobile}>
-        MENU
-      </h1>
-      {showMenu && (
-        <div className={`${styles.menuLinksPages} ${showSubMenu ? styles.border : ''}`}>
-          <CloseButton handleOnClick={handleCloseNavigation} />
-          <div className={styles.list}>
-            {primaryNavigation.map(page => (
-              <>
-                <h1
-                  onClick={() => handleMenuSelection(page.title, page.subPages, page.url, page.newWindow)}
-                  // className={`${page.title.toLowerCase() === pagePath ? styles.thing : ''}`}
-                  className={styles.menuLink}
-                  style={{
-                    textDecoration: handleActiveNavigation(page),
-                  }}
-                >
-                  {page.title}
-                </h1>
-                {page.subPages && showSubMenu.show && showSubMenu.title === page.title && (
-                  <ul>
-                    {page.subPages.map(subpage => (
-                      <h1
-                        onClick={() => handleSubPageSelection(subpage)}
-                        className={`${styles.menuLink} ${styles.subLink}`}
-                      >
-                        {subpage.title}
-                      </h1>
-                    ))}
-                  </ul>
-                )}
-              </>
-            ))}
-          </div>
-        </div>
-      )}
-      {(isShopPage || isVideoPage || isNFTPage) && (
-        <div className={styles.leftAlignedMenuWrapper}>
-          {secondaryNavigation.map(item => (
-            <h2
-              style={{
-                textDecoration: item.title.toLowerCase().includes(query.category) && 'underline',
-              }}
-              onClick={() => history.push(item.url)}
-              className={styles.menuLink}
-            >
-              <div className={styles.secondaryNavigationWrapper}>
-                {item.title}
-                <img className={styles.forwardButtonIcon} src={Icon} alt={`link to ${item.title}`} />
-              </div>
-            </h2>
-          ))}
-        </div>
-      )}
+
+      <Primary
+        pathname={pathname}
+        showMenu={showMenu}
+        showSubMenu={showSubMenu}
+        setShowMenu={() => setShowMenu(!showMenu)}
+        handleMenuSelection={handleMenuSelection}
+        handleSubPageSelection={handleSubPageSelection}
+        handleActiveNavigation={handleActiveNavigation}
+        handleCloseNavigation={handleCloseNavigation}
+      />
+
+      <Secondary pathname={pathname} search={search} />
     </div>
   )
 }

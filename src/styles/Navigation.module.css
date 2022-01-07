@@ -130,19 +130,37 @@
   }
 }
 
+.forwardButtonIcon {
+  width: 25px;
+  transform: scale(-1);
+  margin-left: 8px;
+  transition: margin-left 0.2s ease-in-out;
+}
+
 .leftAlignedMenuWrapper {
   display: none;
 }
 
+.leftAlignedMenuWrapper.showSecondaryNav {
+  display: block;
+  margin: 32px 16px;
+}
+
+.leftAlignedMenuWrapper.showSecondaryNav h2 {
+  font-size: 14px;
+  line-height: 24px;
+  cursor: pointer;
+  position: relative;
+}
+.forwardButtonIcon {
+  width: 25px;
+  position: absolute;
+  transform: scale(-1);
+  margin-left: 8px;
+  transition: margin-left 0.2s ease-in-out;
+}
+
 @media screen and (min-width: 768px) {
-  .forwardButtonIcon {
-    width: 25px;
-    position: absolute;
-    top: -3px;
-    transform: scale(-1);
-    margin-left: 8px;
-    transition: margin-left 0.2s ease-in-out;
-  }
   .leftAlignedMenuWrapper {
     display: block;
     position: fixed;
@@ -154,7 +172,9 @@
     margin-bottom: 4px;
     cursor: pointer;
   }
-
+  .forwardButtonIcon {
+    top: -3px;
+  }
   .leftAlignedMenuWrapper h2:last-child {
     margin-bottom: 0;
   }

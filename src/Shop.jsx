@@ -9,11 +9,12 @@ import { HorizontalScrollingWrapper } from './components/HorizontalScrollingWrap
 import { Sidebar } from './components/Sidebar'
 import { getPageData } from './utils/getPageData'
 import { NFTContent } from './content/NFTContent'
+import { Secondary } from './components/Navigation/Secondary'
 
 const Shop = ({ location, isMobile }) => {
   const history = useHistory()
   const [visibleContent, setVisibleContent] = useState([])
-  const { pathname } = location
+  const { pathname, search } = location
   const { category } = queryString.parse(location.search)
   const projects = NFTContent.filter(page => page.category === category)[0].projects
   const isNFTPage = pathname === '/NFTS' || pathname === '/NFTS/'
@@ -81,17 +82,22 @@ const Shop = ({ location, isMobile }) => {
         stripeLink={visibleContent?.stripeLink}
         sold={visibleContent?.sold}
       />
+      <Secondary pathname={pathname} search={search} showSecondaryNav="showSecondaryNav" />
     </>
   )
 }
 
 export default Shop
 
+// DEAL BREAKERS
+// PRIMARY AND SECONDARY NAV SOMETIMES BROKEN
+// MAGINIFYING GLASS NOT WORKING
+// THE NAVIGATION ON MOBILE IS NOT SCROLLABLE BUT THE BACKGROUND SCROLLS
+
 // ADD A BETTER LOADING TRANSITION
 // MAKE IT POSSIBLE TO CHANGE THE THEME ON THE HOMEPAGE USE THE SECONDARY NAVIGATION
 // CONTACT PAGE IS GOOD BUT MAYBE MAKE THE VIDEO AND TEXT HIGHER ON > 1500 BP LOOKS A LITTLE LOW
 // FIX MAGNIFYING GLASS
-// ADD A FOOTER TO MAKE IT MORE PROFESSIONAL
 // BUG WHERE THE IMAGE DOESN'T LOAD WHEN YOU CHANGE THE PATH
 // LINK HOVER SHOULD BE SVG OF CIRCLE
 // MOBILE SUB PAGE SHOULD LOAD AT THE TOP OF THE PAGE

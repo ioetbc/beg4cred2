@@ -14,11 +14,12 @@ export const NFTDetails = ({ location, isMobile }) => {
   const { category, title, type } = qs.parse(location.search)
   const pageData = NFTContent.filter(page => page.category === category)[0].projects
   const data = pageData.filter(page => page.title === title)[0]
+  const productTitle = `${data?.title}_${type === 'NFT' ? 'NFT' : 'PRINT'}`
 
   return (
     <>
       <div className={styles.details}>
-        <h1 className={`${styles.title} ${styles.mobile}`}>{data?.title}</h1>
+        <h1 className={`${styles.title} ${styles.mobile}`}>{productTitle}</h1>
         {isMobile ? (
           <img src={data?.image} alt={data?.alt} className={styles.image} />
         ) : (
@@ -33,7 +34,7 @@ export const NFTDetails = ({ location, isMobile }) => {
         )}
 
         <div className={styles.transcript}>
-          <h1 className={`${styles.title} ${styles.desktop}`}>{data?.title}</h1>
+          <h1 className={`${styles.title} ${styles.desktop}`}>{productTitle}</h1>
           <p className={`${styles.textContainer} ${expandMoreInfo ? styles.expand : ''}`}>
             On mobile the images on the left will just live in the sliding page.Seventh NFT lorem ipsum dolor sit amet
             consectetur adipisicing elit. Porro praesentium neque esse. Seventh NFT lorem ipsum dolor sit amet
