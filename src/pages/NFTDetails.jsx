@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import * as qs from 'query-string'
 import dayjs from 'dayjs'
 const advancedFormat = require('dayjs/plugin/advancedFormat')
@@ -15,6 +15,14 @@ export const NFTDetails = ({ location, isMobile }) => {
   const pageData = NFTContent.filter(page => page.category === category)[0].projects
   const data = pageData.filter(page => page.title === title)[0]
   const productTitle = `${data?.title}_${type === 'NFT' ? 'NFT' : 'PRINT'}`
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    })
+  }, [location])
 
   return (
     <>

@@ -14,20 +14,24 @@ import { Secondary } from './components/Navigation/Secondary'
 const Shop = ({ location, isMobile }) => {
   const history = useHistory()
   const [visibleContent, setVisibleContent] = useState([])
-  const [hmm, setHmm] = useState([])
+  const [projects, setProjects] = useState([])
   const { pathname, search } = location
   const { category } = queryString.parse(location.search)
-  let projects = NFTContent.filter(page => page.category === category)[0].projects
   const isNFTPage = pathname === '/NFTS' || pathname === '/NFTS/'
 
   useEffect(() => {
     console.log('wtwydgwydwydgwyd', category)
-    setHmm([])
+    setProjects([])
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    })
   }, [location])
 
   useEffect(() => {
-    setHmm(NFTContent.filter(page => page.category === category)[0].projects)
-  }, [hmm])
+    setProjects(NFTContent.filter(page => page.category === category)[0].projects)
+  }, [projects])
 
   const handleElementOnScreen = element => {
     element.style.opacity = 1
@@ -51,9 +55,9 @@ const Shop = ({ location, isMobile }) => {
 
   return (
     <>
-      {hmm.length && (
+      {projects.length && (
         <HorizontalScrollingWrapper handleElementOnScreen={handleElementOnScreen} isMobile={isMobile}>
-          {hmm?.map((NFT, index) => (
+          {projects?.map((NFT, index) => (
             <>
               <div className={styles.imageContainer} onClick={() => handleMoreInfoEvent(NFT.title)}>
                 <img
@@ -102,6 +106,7 @@ export default Shop
 // FIX MAGNIFYING GLASS
 // BUG WHERE THE IMAGE DOESN'T LOAD WHEN YOU CHANGE THE PATH
 // LINK HOVER SHOULD BE SVG OF CIRCLE
+// ADD IN A NEXT PRINT BUTTON WHEN YOU ARE ON THE PRODUCT DETAILS PAGE (SAME STYLE AS THE LINKS IN THE SECONDARY NAV)
 
 // NICE TO HAVE
 // DEBOUNCE
