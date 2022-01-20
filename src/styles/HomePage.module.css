@@ -1,11 +1,24 @@
-.video {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  height: calc(100vh - 168px);
-  justify-content: center;
+.wrapper {
+  max-width: 1200px;
 }
 
-.video video {
-  height: 90%;
+@media screen and (min-width: 768px) {
+  .wrapper {
+    margin: 0 16px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .wrapper {
+    margin: 0 auto;
+  }
+}
+
+.title {
+  margin-top: -16px;
+}
+
+.image:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }

@@ -204,7 +204,7 @@ export const NFTContent = [
     category: 'work_is_hell',
     projects: [
       {
-        title: 'work_is_hell_1',
+        title: "Your_Job_Doesn't_Care_About_You",
         description:
           'Seventh NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse.',
         priceETH: 0.2,
@@ -218,7 +218,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'work_is_hell_2',
+        title: 'Mortgage_Approved',
         description:
           'Eighth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi.',
         priceETH: 0.1,
@@ -232,7 +232,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'work_is_hell_3',
+        title: 'Police',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -246,7 +246,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'work_is_hell_4',
+        title: 'Socialising',
         description:
           'Tenth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum.',
         priceETH: 0.4,
@@ -260,7 +260,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'work_is_hell_5',
+        title: 'Careers_Officer',
         description:
           'Seventh NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse.',
         priceETH: 0.2,
@@ -274,7 +274,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'work_is_hell_6',
+        title: 'On_the_Train',
         description:
           'Eighth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi.',
         priceETH: 0.1,
@@ -288,7 +288,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'work_is_hell_7',
+        title: 'Manager',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -302,7 +302,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'work_is_hell_8',
+        title: 'New_Airpods',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -316,7 +316,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'work_is_hell_9',
+        title: 'Time_Off',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -330,7 +330,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'work_is_hell_10',
+        title: 'Private_Prisons',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -344,7 +344,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'work_is_hell_11',
+        title: 'Mother_and_Child',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -358,7 +358,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'work_is_hell_12',
+        title: 'Mask',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -377,7 +377,7 @@ export const NFTContent = [
     category: 'detailed_pen_and_ink',
     projects: [
       {
-        title: 'pen_and_ink_1',
+        title: 'Moon',
         description:
           'Seventh NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse.',
         priceETH: 0.2,
@@ -391,21 +391,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'pen_and_ink_2',
-        description:
-          'Eighth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi.',
-        priceETH: 0.1,
-        priceFiat: 10,
-        sold: false,
-        image: detailedPenAndInk1,
-        imageLarge: detailedPenAndInkLarge1,
-        alt: 'NFT image',
-        stripeLink:
-          'https://checkout.stripe.com/pay/cs_test_a1jBtO1sMhCjF6Nu8vJiBh6hlwl4x8NTIcSfwe89KebLkH1813A5g4NZ9k#fidkdWxOYHwnPyd1blpxYHZxWmNGN3c2M2dONjdiUjJpbXRQMGdiTW5KMTU1bUBScHE3fWInKSd1aWxrbkB9dWp2YGFMYSc%2FJ3FgdnFaPERUMnFyYEBoNUBjM2R2Z0xMJyknd2BjYHd3YHcnPydtcXF1dj8qKmZtYGZuanBxK3Zxd2x1YCtmamgqJ3gl',
-        NFTLink: 'https://foundation.app/',
-      },
-      {
-        title: 'pen_and_ink_3',
+        title: 'Three_Nights_on_Ffinch_Street',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -419,7 +405,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'pen_and_ink_4',
+        title: 'After_Guernica',
         description:
           'Tenth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum.',
         priceETH: 0.4,
@@ -433,7 +419,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'pen_and_ink_5',
+        title: 'Armchair_Man',
         description:
           'Seventh NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse.',
         priceETH: 0.2,
@@ -447,7 +433,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'pen_and_ink_6',
+        title: 'Terraces',
         description:
           'Eighth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi.',
         priceETH: 0.1,
@@ -461,7 +447,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'pen_and_ink_7',
+        title: 'Last_Supper',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -475,7 +461,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'pen_and_ink_8',
+        title: 'Rackham',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -494,7 +480,7 @@ export const NFTContent = [
     category: 'edited_ads',
     projects: [
       {
-        title: 'edited_ads_1',
+        title: 'Front_Row',
         description:
           'Seventh NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse.',
         priceETH: 0.2,
@@ -508,7 +494,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'edited_ads_2',
+        title: 'I_am_Loved',
         description:
           'Eighth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi.',
         priceETH: 0.1,
@@ -522,7 +508,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'edited_ads_3',
+        title: 'Peace',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -536,7 +522,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'edited_ads_4',
+        title: 'You_make_my_Love_come_Down',
         description:
           'Tenth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum.',
         priceETH: 0.4,
@@ -550,7 +536,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'edited_ads_5',
+        title: 'Oppenheimer',
         description:
           'Seventh NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse.',
         priceETH: 0.2,
@@ -564,7 +550,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'edited_ads_6',
+        title: 'Green_Crown',
         description:
           'Eighth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi.',
         priceETH: 0.1,
@@ -578,7 +564,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'edited_ads_7',
+        title: 'Model_Portrait ',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -592,7 +578,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'edited_ads_8',
+        title: 'Hey_Arnold!',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -606,7 +592,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'edited_ads_9',
+        title: 'Gucci_Detail_1',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -620,7 +606,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'edited_ads_10',
+        title: 'Gucci_Detail_2',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -634,7 +620,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'edited_ads_11',
+        title: 'Tell_me_what_you_Know',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -648,7 +634,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'edited_ads_12',
+        title: 'Occulted_Knowledge',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -662,7 +648,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'edited_ads_13',
+        title: 'French_for_With',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -676,7 +662,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'edited_ads_14',
+        title: 'Poppy',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -690,7 +676,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'edited_ads_15',
+        title: "Don't_Explain",
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -704,7 +690,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'edited_ads_16',
+        title: 'The_Physical_World',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -718,7 +704,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'edited_ads_17',
+        title: 'Larder_full_of_Prada',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -732,7 +718,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'edited_ads_18',
+        title: 'Sore_Winner',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -746,7 +732,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'edited_ads_19',
+        title: 'Faith',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -760,7 +746,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'edited_ads_20',
+        title: 'Absurdity_beneath_Solemnity ',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -774,7 +760,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'edited_ads_21',
+        title: "Ain't_Laurent",
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -788,7 +774,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'edited_ads_22',
+        title: 'Serial_Person',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -802,7 +788,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'edited_ads_23',
+        title: 'Prada_Profile',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -816,7 +802,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'edited_ads_24',
+        title: "I'm_Really_Here",
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -830,7 +816,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'edited_ads_25',
+        title: 'Abundance',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -844,7 +830,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'edited_ads_26',
+        title: 'Do_Not_Draw',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -858,7 +844,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'edited_ads_27',
+        title: 'I_Accept_Myself',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -872,7 +858,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'edited_ads_28',
+        title: "Dior_can't_Afford_me",
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -891,7 +877,7 @@ export const NFTContent = [
     category: 'coloured_cartoon',
     projects: [
       {
-        title: 'coloured_cartoon_1',
+        title: 'fake_suns',
         description:
           'Seventh NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse.',
         priceETH: 0.2,
@@ -905,7 +891,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'coloured_cartoon_2',
+        title: 'artifical_consciousness',
         description:
           'Eighth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi.',
         priceETH: 0.1,
@@ -920,7 +906,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'coloured_cartoon_3',
+        title: 'like_button',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -934,7 +920,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'coloured_cartoon_4',
+        title: "I'm_not_on_drugs",
         description:
           'Tenth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum.',
         priceETH: 0.4,
@@ -948,7 +934,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'coloured_cartoon_5',
+        title: 'bots_run_the_economy',
         description:
           'Seventh NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse.',
         priceETH: 0.2,
@@ -962,7 +948,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'coloured_cartoon_6',
+        title: 'your_dad',
         description:
           'Eighth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi.',
         priceETH: 0.1,
@@ -976,7 +962,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'coloured_cartoon_7',
+        title: 'up',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -990,7 +976,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'coloured_cartoon_8',
+        title: 'death',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -1004,7 +990,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'coloured_cartoon_9',
+        title: 'take_ur_pill',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -1018,7 +1004,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'coloured_cartoon_9',
+        title: 'blue_guy',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -1032,7 +1018,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'coloured_cartoon_10',
+        title: 'yeah',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -1046,7 +1032,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'coloured_cartoon_11',
+        title: 'conspiracy',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -1065,7 +1051,7 @@ export const NFTContent = [
     category: 'coloured_faces',
     projects: [
       {
-        title: 'coloured_faces_1',
+        title: 'lonely_boy',
         description:
           'Seventh NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse.',
         priceETH: 0.2,
@@ -1079,7 +1065,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'coloured_faces_2',
+        title: 'different_types_of_brears',
         description:
           'Eighth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi.',
         priceETH: 0.1,
@@ -1093,7 +1079,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'coloured_faces_3',
+        title: 'lady',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -1108,7 +1094,7 @@ export const NFTContent = [
       },
 
       {
-        title: 'coloured_faces_4',
+        title: 'street_cleaner',
         description:
           'Seventh NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse.',
         priceETH: 0.2,
@@ -1122,7 +1108,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'coloured_faces_5',
+        title: 'comfort',
         description:
           'Eighth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi.',
         priceETH: 0.1,
@@ -1136,7 +1122,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'coloured_faces_6',
+        title: 'man',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -1150,7 +1136,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'coloured_faces_7',
+        title: 'young_priest',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -1164,7 +1150,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'coloured_faces_8',
+        title: 'old_boy',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -1183,7 +1169,7 @@ export const NFTContent = [
     category: 'pastel_set',
     projects: [
       {
-        title: 'pastel_set_1',
+        title: 'Sleeper',
         description:
           'Seventh NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse.',
         priceETH: 0.2,
@@ -1197,7 +1183,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'pastel_set_2',
+        title: 'ship',
         description:
           'Eighth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi.',
         priceETH: 0.1,
@@ -1211,7 +1197,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'pastel_set_3',
+        title: 'blowhard',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -1226,7 +1212,7 @@ export const NFTContent = [
       },
 
       {
-        title: 'pastel_set_4',
+        title: 'bird_of_paradise',
         description:
           'Seventh NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse.',
         priceETH: 0.2,
@@ -1240,7 +1226,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'pastel_set_5',
+        title: 'filed_man',
         description:
           'Eighth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi.',
         priceETH: 0.1,
@@ -1254,7 +1240,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'pastel_set_6',
+        title: 'dog',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -1268,7 +1254,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'pastel_set_7',
+        title: 'park_bench',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -1282,7 +1268,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'pastel_set_8',
+        title: 'sinister_minister',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -1296,7 +1282,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'pastel_set_9',
+        title: 'creature',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -1310,7 +1296,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'pastel_set_10',
+        title: 'grey_land',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -1324,7 +1310,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'pastel_set_11',
+        title: 'yo!',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -1338,7 +1324,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'pastel_set_12',
+        title: 'codependent',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -1352,7 +1338,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'pastel_set_13',
+        title: 'structures_on_the_land',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -1366,7 +1352,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'pastel_set_14',
+        title: 'mates',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -1385,7 +1371,7 @@ export const NFTContent = [
     category: 'funny',
     projects: [
       {
-        title: 'funny_1',
+        title: 'The_Soviet_Union',
         description:
           'Seventh NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse.',
         priceETH: 0.2,
@@ -1399,7 +1385,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'funny_2',
+        title: 'All_the_Tennis_Players_I_can_think_of',
         description:
           'Eighth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi.',
         priceETH: 0.1,
@@ -1413,7 +1399,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'funny_3',
+        title: 'Sammy_Davis_Junior',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -1428,7 +1414,7 @@ export const NFTContent = [
       },
 
       {
-        title: 'funny_4',
+        title: "I'm_Not_Thinking_about_my_Audience",
         description:
           'Seventh NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse.',
         priceETH: 0.2,
@@ -1442,7 +1428,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'funny_5',
+        title: 'Crave/Get_Cycle',
         description:
           'Eighth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi.',
         priceETH: 0.1,
@@ -1456,7 +1442,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'funny_6',
+        title: 'Might_Delete_Later',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -1470,7 +1456,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'funny_7',
+        title: 'GNVQ_Level_1',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -1484,7 +1470,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'funny_8',
+        title: 'Closh',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -1498,7 +1484,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'funny_9',
+        title: 'Candle',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,
@@ -1512,7 +1498,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'funny_10',
+        title: 'What?!',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
         priceETH: 0.5,

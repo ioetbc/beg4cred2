@@ -53,7 +53,7 @@ export const getPrimaryNavigation = ({ isNFTPage }) => {
       url: '/contact',
     },
     {
-      title: 'LINKEDTREE',
+      title: 'LINKTREE',
       url: '/',
     },
     {

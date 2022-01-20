@@ -5,6 +5,7 @@ import styles from '../styles/Navigation.module.css'
 import { Primary } from './Navigation/Primary'
 import { Secondary } from './Navigation/Secondary'
 import Icon from '../images/left-arrow.svg'
+import Logo from '../images/logo.svg'
 
 export const Navigation = ({ location, isMobile }) => {
   const [showSubMenu, setShowSubMenu] = useState({ title: '', show: false })
@@ -53,11 +54,13 @@ export const Navigation = ({ location, isMobile }) => {
 
   return (
     <div className={`${styles.navigation} ${isShopPage || isNFTPage ? styles.fixed : ''}`}>
-      <h1 className={styles.textLogo} onClick={() => history.push('/')}>
+      {/* <h1 className={styles.textLogo} onClick={() => history.push('/')}>
         BEG4
         <br />
         <span className={styles.bottomLogo}>CRED</span>
-      </h1>
+      </h1> */}
+
+      <img onClick={() => history.push('/')} className={styles.logo} src={Logo} />
       <div className={styles.backButton} onClick={() => history.goBack()}>
         <img className={styles.backButtonIcon} src={Icon} alt="back button" />
         <p>GO BACK</p>

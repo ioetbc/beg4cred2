@@ -59,6 +59,22 @@
     margin: 0 calc(50vw - 200px) 0 25vw; /* NEGATIVE 200 TO CENTER THE LAST IMAGE (IMAGE NEEDS TO BE 400 WIDTH FOR THIS TO WORK) */
   }
 
+  .pastelSet:first-child {
+    margin: 0 25vw 0 calc(50vw - 378px) !important; /* NEGATIVE 200 TO CENTER THE FIRST IMAGE (IMAGE NEEDS TO BE 400 WIDTH FOR THIS TO WORK) */
+  }
+
+  .pastelSet:last-child {
+    margin: 0 calc(50vw - 378px) 0 25vw; /* NEGATIVE 200 TO CENTER THE LAST IMAGE (IMAGE NEEDS TO BE 400 WIDTH FOR THIS TO WORK) */
+  }
+
+  .detailedPenAndInk:first-child {
+    margin: 0 25vw 0 calc(50vw - 228px) !important; /* NEGATIVE 200 TO CENTER THE FIRST IMAGE (IMAGE NEEDS TO BE 400 WIDTH FOR THIS TO WORK) */
+  }
+
+  .detailedPenAndInk:last-child {
+    margin: 0 calc(50vw - 405px) 0 25vw; /* NEGATIVE 200 TO CENTER THE LAST IMAGE (IMAGE NEEDS TO BE 400 WIDTH FOR THIS TO WORK) */
+  }
+
   .imageContainer img {
     width: auto;
     height: 550px;

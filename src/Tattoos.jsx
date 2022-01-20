@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import styles from './styles/Tattoos.module.css'
 import { GlassMagnifier } from 'react-image-magnifiers'
+import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
 
 import { PrimaryButton } from './components/PrimaryButton'
 import VideoFile from './videos/tattoo_description.mp4'
@@ -88,20 +89,24 @@ const Tattoos = ({ isMobile }) => {
         </div>
         <div className={styles.hmm}>
           <div ref={verticalScrollingWrapper} className={styles.right}>
-            {TattooImages.map(image =>
-              isMobile ? (
-                <img src={image?.url} alt={image?.alt} className={styles.image} />
-              ) : (
-                <GlassMagnifier
-                  className={styles.image}
-                  imageSrc={image.url}
-                  imageAlt={image.alt}
-                  square={true}
-                  magnifierSize={100}
-                  magnifierBorderSize={0}
-                />
-              ),
-            )}
+            <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 500: 2, 1400: 3 }}>
+              <Masonry gutter="16px">
+                {TattooImages.map(image =>
+                  isMobile ? (
+                    <img src={image?.url} alt={image?.alt} className={styles.image} />
+                  ) : (
+                    <GlassMagnifier
+                      className={styles.image}
+                      imageSrc={image.url}
+                      imageAlt={image.alt}
+                      square={true}
+                      magnifierSize={200}
+                      magnifierBorderSize={0}
+                    />
+                  ),
+                )}
+              </Masonry>
+            </ResponsiveMasonry>
           </div>
         </div>
       </div>

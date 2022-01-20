@@ -5,6 +5,15 @@
   position: relative;
 }
 
+.logo {
+  width: 170px;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: -16px auto;
+}
+
 /* .thing:after {
   position: absolute;
   content: '';
@@ -40,7 +49,7 @@
 .backButton {
   position: absolute;
   left: 16px;
-  bottom: 16px;
+  top: 16px;
   color: white;
   display: flex;
   gap: 8px;

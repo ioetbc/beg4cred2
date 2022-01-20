@@ -20,13 +20,12 @@ const Shop = ({ location, isMobile }) => {
   const isNFTPage = pathname === '/NFTS' || pathname === '/NFTS/'
 
   useEffect(() => {
-    console.log('wtwydgwydwydgwyd', category)
     setProjects([])
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'smooth',
-    })
+    // window.scrollTo({
+    //   top: 0,
+    //   left: 0,
+    //   behavior: 'smooth',
+    // })
   }, [location])
 
   useEffect(() => {
@@ -37,10 +36,7 @@ const Shop = ({ location, isMobile }) => {
     element.style.opacity = 1
     const index = Number(element?.getAttribute('index'))
     const projects = getPageData({ location })[index]
-    // if (!element.loaded) {
-    element.loaded = true
     element.src = projects.image
-    // }
 
     setVisibleContent({ ...projects, index: index + 1 })
   }
@@ -59,7 +55,12 @@ const Shop = ({ location, isMobile }) => {
         <HorizontalScrollingWrapper handleElementOnScreen={handleElementOnScreen} isMobile={isMobile}>
           {projects?.map((NFT, index) => (
             <>
-              <div className={styles.imageContainer} onClick={() => handleMoreInfoEvent(NFT.title)}>
+              <div
+                className={`${styles.imageContainer} ${category === 'pastel_set' ? styles.pastelSet : ''} ${
+                  category === 'detailed_pen_and_ink' ? styles.detailedPenAndInk : ''
+                }`}
+                onClick={() => handleMoreInfoEvent(NFT.title)}
+              >
                 <img
                   src={`/images/placeholders/${category}/${[index]}.svg`}
                   alt={NFT.alt}
@@ -95,10 +96,6 @@ const Shop = ({ location, isMobile }) => {
 }
 
 export default Shop
-
-// DEAL BREAKERS
-// MOBILE SUB PAGE SHOULD LOAD AT THE TOP OF THE PAGE
-// WHEN CLICKING THE NAV AT THE BOTTOM ON HOMEPAGE IT SHOULD SCROLL YOU TO THE TOP OF THE PAGE
 
 // ADD A BETTER LOADING TRANSITION
 // MAKE IT POSSIBLE TO CHANGE THE THEME ON THE HOMEPAGE USE THE SECONDARY NAVIGATION

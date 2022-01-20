@@ -1,5 +1,6 @@
 .details {
   margin: 16px;
+  overflow-y: scroll;
 }
 
 html,
