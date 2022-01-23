@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './App.css'
-import { useHistory } from 'react-router-dom'
+import { useHistory, useLocation } from 'react-router-dom'
 import queryString from 'query-string'
 import { GlassMagnifier } from 'react-image-magnifiers'
 import styles from './styles/HorizontalScrolling.module.css'
@@ -10,26 +10,27 @@ import { Sidebar } from './components/Sidebar'
 import { getPageData } from './utils/getPageData'
 import { NFTContent } from './content/NFTContent'
 import { Secondary } from './components/Navigation/Secondary'
+import { standardizeClassName } from './utils/standardizeClassName'
 
 const Shop = ({ location, isMobile }) => {
   const history = useHistory()
+  const hmm = useLocation()
   const [visibleContent, setVisibleContent] = useState([])
   const [projects, setProjects] = useState([])
   const { pathname, search } = location
-  const { category } = queryString.parse(location.search)
+  const { category, position } = queryString.parse(location.search)
   const isNFTPage = pathname === '/NFTS' || pathname === '/NFTS/'
 
   useEffect(() => {
     setProjects([])
-    // window.scrollTo({
-    //   top: 0,
-    //   left: 0,
-    //   behavior: 'smooth',
-    // })
   }, [location])
 
   useEffect(() => {
     setProjects(NFTContent.filter(page => page.category === category)[0].projects)
+    if (position) {
+      const item = document.querySelector(`.${position}`)
+      item?.scrollIntoView({ behavior: 'smooth', inline: 'center' })
+    }
   }, [projects])
 
   const handleElementOnScreen = element => {
@@ -65,15 +66,12 @@ const Shop = ({ location, isMobile }) => {
                   src={`/images/placeholders/${category}/${[index]}.svg`}
                   alt={NFT.alt}
                   index={index}
-                  className="image image-index-container"
+                  className={`image image-index-container ${standardizeClassName(NFT.title)}`}
                   loaded={false}
                 />
                 <div className={styles.moreInfoContainer}>
                   <p className={styles.moreDetails} onClick={() => handleMoreInfoEvent(NFT.title)}>
                     MORE INFO
-                  </p>
-                  <p className={styles.moreDetails} onClick={() => handlePurchaseEvent(NFT.title)}>
-                    PURCHASE
                   </p>
                 </div>
               </div>
@@ -83,10 +81,10 @@ const Shop = ({ location, isMobile }) => {
       )}
 
       <Sidebar
-        title={`${visibleContent?.index}/${getPageData({ location }).length}`}
+        title={visibleContent?.title}
         description={visibleContent?.description}
-        priceETH={visibleContent?.priceETH}
-        price={isNFTPage ? `${visibleContent?.priceETH} ETH` : `£${visibleContent?.priceFiat}`}
+        NFTPrice={visibleContent?.NFTPrice}
+        price={isNFTPage ? `${visibleContent?.NFTPrice} ETH` : `£${visibleContent?.pricePrint}`}
         stripeLink={visibleContent?.stripeLink}
         sold={visibleContent?.sold}
       />

@@ -113,3 +113,9 @@ body {
   height: 8px;
   border-radius: 50%;
 }
+
+.buttonWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

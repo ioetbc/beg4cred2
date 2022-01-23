@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { useHistory, Link } from 'react-router-dom'
 import * as qs from 'query-string'
 import dayjs from 'dayjs'
+
 const advancedFormat = require('dayjs/plugin/advancedFormat')
 dayjs.extend(advancedFormat)
 import { GlassMagnifier } from 'react-image-magnifiers'
@@ -14,21 +16,12 @@ export const NFTDetails = ({ location, isMobile }) => {
   const { category, title, type } = qs.parse(location.search)
   const pageData = NFTContent.filter(page => page.category === category)[0].projects
   const data = pageData.filter(page => page.title === title)[0]
-  const productTitle = `${data?.title}_${type === 'NFT' ? 'NFT' : 'PRINT'}`
   const details = useRef(null)
-  useEffect(() => {
-    console.log('details', details.current)
-    details.current.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'smooth',
-    })
-  }, [location])
 
   return (
     <>
       <div ref={details} className={styles.details}>
-        <h1 className={`${styles.title} ${styles.mobile}`}>{productTitle}</h1>
+        <h1 className={`${styles.title} ${styles.mobile}`}>{data?.title}</h1>
         {isMobile ? (
           <img src={data?.image} alt={data?.alt} className={styles.image} />
         ) : (
@@ -45,7 +38,7 @@ export const NFTDetails = ({ location, isMobile }) => {
         )}
 
         <div className={styles.transcript}>
-          <h1 className={`${styles.title} ${styles.desktop}`}>{productTitle}</h1>
+          <h1 className={`${styles.title} ${styles.desktop}`}>{data?.title}</h1>
           <p className={`${styles.textContainer} ${expandMoreInfo ? styles.expand : ''}`}>
             On mobile the images on the left will just live in the sliding page.Seventh NFT lorem ipsum dolor sit amet
             consectetur adipisicing elit. Porro praesentium neque esse. Seventh NFT lorem ipsum dolor sit amet
@@ -60,18 +53,41 @@ export const NFTDetails = ({ location, isMobile }) => {
             {expandMoreInfo ? 'READ LESS' : 'READ MORE'}
           </p>
           <ul className={styles.detailsList}>
-            <li>
-              DIMENSIONS: <strong>W/20cm H/30cm</strong>
-            </li>
-            <li>
-              PRICE: <strong>£{data?.priceFiat?.toFixed(2)}</strong>
-            </li>
             <li>Delivered by {<strong>{dayjs().add(5, 'days').format('dddd Do MMMM')}</strong>}</li>
+            <li>
+              DIMENSIONS: <strong>{data?.dimensions}</strong>
+            </li>
+            {data?.priceOriginal && (
+              <li>
+                ORIGINAL PRICE: <strong>£{data?.priceOriginal?.toFixed(2)}</strong>
+              </li>
+            )}
+            {data?.priceOriginal && (
+              <li>
+                PRINT PRICE: <strong>£{data?.pricePrint?.toFixed(2)}</strong>
+              </li>
+            )}
+            {data?.NFTPrice && (
+              <li>
+                NFT PRICE: <strong>{data?.NFTPrice} ETH</strong>
+              </li>
+            )}
           </ul>
-          <PrimaryButton
-            text={`BUY ${type === 'NFT' ? 'NFT' : 'PRINT'}`}
-            handleOnClick={() => window.open(type === 'NFT' ? data?.NFTLink : data?.stripeLink, '_blank')}
-          />
+          <div className={styles.buttonWrapper}>
+            {data?.priceOriginal && (
+              <PrimaryButton
+                text="BUY ORIGINAL"
+                handleOnClick={() => window.open(data?.originalStripeLink, '_blank')}
+              />
+            )}
+            <PrimaryButton
+              text="BUY PRINT"
+              handleOnClick={() => window.open(type === 'NFT' ? data?.NFTLink : data?.printStripeLink, '_blank')}
+            />
+            {data?.NFTPrice && (
+              <PrimaryButton text="BUY NFT" handleOnClick={() => window.open(data?.stripeLink, '_blank')} />
+            )}
+          </div>
         </div>
       </div>
     </>

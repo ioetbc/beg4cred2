@@ -2,31 +2,31 @@ export const getSecondaryNavigation = ({ isShopPage, isVideoPage, isNFTPage }) =
   if (isShopPage || isNFTPage) {
     return [
       {
-        title: `FUNNY_${isNFTPage ? 'NFTS' : 'PRINTS'}`,
+        title: `FUNNY`,
         url: `/${isNFTPage ? 'NFTS' : 'shop'}?category=funny`,
       },
       {
-        title: `EDITED_ADS_${isNFTPage ? 'NFTS' : 'PRINTS'}`,
+        title: `EDITED_ADS`,
         url: `/${isNFTPage ? 'NFTS' : 'shop'}?category=edited_ads`,
       },
       {
-        title: `PASTEL_SET_${isNFTPage ? 'NFTS' : 'PRINTS'}`,
+        title: `PASTEL_SET`,
         url: `/${isNFTPage ? 'NFTS' : 'shop'}?category=pastel_set`,
       },
       {
-        title: `WORK_IS_HELL_${isNFTPage ? 'NFTS' : 'PRINTS'}`,
+        title: `WORK_IS_HELL`,
         url: `/${isNFTPage ? 'NFTS' : 'shop'}?category=work_is_hell`,
       },
       {
-        title: `COLOURED_FACES_${isNFTPage ? 'NFTS' : 'PRINTS'}`,
+        title: `COLOURED_FACES`,
         url: `/${isNFTPage ? 'NFTS' : 'shop'}?category=coloured_faces`,
       },
       {
-        title: `COLOURED_CARTOON_${isNFTPage ? 'NFTS' : 'PRINTS'}`,
+        title: `COLOURED_CARTOON`,
         url: `/${isNFTPage ? 'NFTS' : 'shop'}?category=coloured_cartoon`,
       },
       {
-        title: `DETAILED_PEN_AND_INK_${isNFTPage ? 'NFTS' : 'PRINTS'}`,
+        title: `DETAILED_PEN_AND_INK`,
         url: `/${isNFTPage ? 'NFTS' : 'shop'}?category=detailed_pen_and_ink`,
       },
     ]
@@ -74,68 +74,68 @@ export const getPrimaryNavigation = ({ isNFTPage }) => {
       url: '/shop?category=work_is_hell',
       subPages: [
         {
-          title: 'FUNNY_PRINTS',
+          title: 'FUNNY',
           url: '/shop?category=funny',
         },
         {
-          title: 'EDITED_A_PRINTS',
+          title: 'EDITED_ADS',
           url: '/shop?category=edited_ads',
         },
         {
-          title: 'PASTEL_SET_PRINTS',
+          title: 'PASTEL_SET',
           url: '/shop?category=pastel_set',
         },
         {
-          title: 'WORK_IS_HELL_PRINTS',
+          title: 'WORK_IS_HELL',
           url: '/shop?category=work_is_hell',
         },
         {
-          title: 'COLOURED_FACES_PRINTS',
+          title: 'COLOURED_FACES',
           url: '/shop?category=coloured_faces',
         },
         {
-          title: 'COLOURED_CARTOON_PRINTS',
+          title: 'COLOURED_CARTOON',
           url: '/shop?category=coloured_cartoon',
         },
         {
-          title: 'DETAILED_PEN_AND_INK_PRINTS',
+          title: 'DETAILED_PEN_AND_INK',
           url: '/shop?category=detailed_pen_and_ink',
         },
       ],
     },
-    {
-      title: 'NFT',
-      url: '/NFTS?category=work_is_hell',
-      subPages: [
-        {
-          title: 'FUNNY_NFTS',
-          url: '/NFTS/?category=funny',
-        },
-        {
-          title: 'EDITED_ADS_NFTS',
-          url: '/NFTS/?category=edited_ads',
-        },
-        {
-          title: 'PASTEL_SET_NFTS',
-          url: '/NFTS?category=pastel_set',
-        },
-        {
-          title: 'WORK_IS_HELL_NFTS',
-          url: '/NFTS?category=work_is_hell',
-        },
-        {
-          title: 'COLOURED_FACES_NFTS',
-          url: '/NFTS?category=coloured_faces',
-        },
-        {
-          title: 'COLOURED_CARTOON_NFTS',
-          url: '/NFTS?category=coloured_cartoon',
-        },
-        {
-          title: 'DETAILED_PEN_AND_INK_NFTS',
-          url: '/NFTS?category=detailed_pen_and_ink',
-        },
-      ],
-    },
+    // {
+    //   title: 'NFT',
+    //   url: '/NFTS?category=work_is_hell',
+    //   subPages: [
+    //     {
+    //       title: 'FUNNY_NFTS',
+    //       url: '/NFTS/?category=funny',
+    //     },
+    //     {
+    //       title: 'EDITED_ADS_NFTS',
+    //       url: '/NFTS/?category=edited_ads',
+    //     },
+    //     {
+    //       title: 'PASTEL_SET_NFTS',
+    //       url: '/NFTS?category=pastel_set',
+    //     },
+    //     {
+    //       title: 'WORK_IS_HELL_NFTS',
+    //       url: '/NFTS?category=work_is_hell',
+    //     },
+    //     {
+    //       title: 'COLOURED_FACES_NFTS',
+    //       url: '/NFTS?category=coloured_faces',
+    //     },
+    //     {
+    //       title: 'COLOURED_CARTOON_NFTS',
+    //       url: '/NFTS?category=coloured_cartoon',
+    //     },
+    //     {
+    //       title: 'DETAILED_PEN_AND_INK_NFTS',
+    //       url: '/NFTS?category=detailed_pen_and_ink',
+    //     },
+    //   ],
+    // },
   ]
 }
