@@ -4,7 +4,7 @@ import styles from '../../styles/Navigation.module.css'
 import * as qs from 'query-string'
 
 import { getSecondaryNavigation } from '../../utils/getNavigation'
-import Icon from '../../images/left-arrow.svg'
+import { LinkButton } from '../LinkButton'
 
 export const Secondary = ({ pathname, search, showSecondaryNav }) => {
   const query = qs.parse(search)
@@ -20,18 +20,7 @@ export const Secondary = ({ pathname, search, showSecondaryNav }) => {
     (isShopPage || isVideoPage || isNFTPage) && (
       <div className={`${styles.leftAlignedMenuWrapper} ${showSecondaryNav ? styles.showSecondaryNav : ''}`}>
         {secondaryNavigation.map(item => (
-          <h2
-            style={{
-              textDecoration: item.title.toLowerCase().includes(query.category) && 'underline',
-            }}
-            onClick={() => history.push(item.url)}
-            className={styles.menuLink}
-          >
-            <div className={styles.secondaryNavigationWrapper}>
-              {item.title}
-              <img className={styles.forwardButtonIcon} src={Icon} alt={`link to ${item.title}`} />
-            </div>
-          </h2>
+          <LinkButton label={item.title} url={item.url} active={item.title.toLowerCase().includes(query.category)} />
         ))}
       </div>
     )

@@ -1,10 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { useHistory, Link } from 'react-router-dom'
 import * as qs from 'query-string'
 import dayjs from 'dayjs'
-
 const advancedFormat = require('dayjs/plugin/advancedFormat')
 dayjs.extend(advancedFormat)
+
 import { GlassMagnifier } from 'react-image-magnifiers'
 import styles from '../styles/NFTDetails.module.css'
 
@@ -39,19 +38,6 @@ export const NFTDetails = ({ location, isMobile }) => {
 
         <div className={styles.transcript}>
           <h1 className={`${styles.title} ${styles.desktop}`}>{data?.title}</h1>
-          <p className={`${styles.textContainer} ${expandMoreInfo ? styles.expand : ''}`}>
-            On mobile the images on the left will just live in the sliding page.Seventh NFT lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Porro praesentium neque esse. Seventh NFT lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Porro praesentium neque esse. Seventh NFT lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Porro praesentium neque esse. Seventh NFT lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Porro praesentium neque esse. Seventh NFT lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Porro praesentium neque esse. Seventh NFT lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Porro praesentium neque esse. Seventh NFT lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Porro praesentium neque esse. Seventh NFT lorem ipsum dolor sit amet
-          </p>
-          <p className={styles.readMore} onClick={() => setExpandMoreInfo(!expandMoreInfo)}>
-            {expandMoreInfo ? 'READ LESS' : 'READ MORE'}
-          </p>
           <ul className={styles.detailsList}>
             <li>Delivered by {<strong>{dayjs().add(5, 'days').format('dddd Do MMMM')}</strong>}</li>
             <li>

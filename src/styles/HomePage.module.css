@@ -1,5 +1,12 @@
 .wrapper {
-  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 48px;
+}
+
+.wrapper .image {
+  width: 100%;
+  margin-bottom: 8px;
 }
 
 @media screen and (min-width: 768px) {
@@ -14,11 +21,6 @@
   }
 }
 
-.title {
-  margin-top: -16px;
-}
-
 .image:hover {
   cursor: pointer;
-  opacity: 0.8;
 }

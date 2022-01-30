@@ -34,14 +34,14 @@ export const getSecondaryNavigation = ({ isShopPage, isVideoPage, isNFTPage }) =
 
   if (isVideoPage) {
     return [
-      {
-        title: 'FIRST_VIDEO_PROJECT',
-        url: '/video',
-      },
-      {
-        title: 'SECOND_VIDEO_PROJECT',
-        url: '/video',
-      },
+      // {
+      //   title: 'FIRST_VIDEO_PROJECT',
+      //   url: '/video',
+      // },
+      // {
+      //   title: 'SECOND_VIDEO_PROJECT',
+      //   url: '/video',
+      // },
     ]
   }
 }

@@ -5,12 +5,6 @@ export const HorizontalScrollingWrapper = ({ children, handleElementOnScreen, is
   const scrollContainerRef = useRef(null)
 
   useEffect(() => {
-    // const vh = window.innerHeight * 0.01
-    // document.documentElement.style.setProperty('--vh', `${vh}px`)
-
-    // const body = document.querySelector('body')
-    // body.style.overflow = 'hidden'
-
     if (!isMobile) {
       scrollContainerRef.current.addEventListener('wheel', event => {
         event.preventDefault()
@@ -21,18 +15,19 @@ export const HorizontalScrollingWrapper = ({ children, handleElementOnScreen, is
       })
     }
 
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          handleElementOnScreen(entry.target)
-          // observer.unobserve(entry.target)
-        }
+    if(!!window.IntersectionObserver) {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            handleElementOnScreen(entry.target)
+          }
+        })
       })
-    })
 
-    document.querySelectorAll('.image-index-container').forEach(img => {
-      observer.observe(img)
-    })
+      document.querySelectorAll('.image-index-container').forEach(img => {
+        observer.observe(img)
+      })
+    }
   }, [])
 
   return (

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import './App.css'
-import { useHistory, useLocation } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import queryString from 'query-string'
-import { GlassMagnifier } from 'react-image-magnifiers'
+
 import styles from './styles/HorizontalScrolling.module.css'
 
 import { HorizontalScrollingWrapper } from './components/HorizontalScrollingWrapper'
@@ -14,9 +14,9 @@ import { standardizeClassName } from './utils/standardizeClassName'
 
 const Shop = ({ location, isMobile }) => {
   const history = useHistory()
-  const hmm = useLocation()
   const [visibleContent, setVisibleContent] = useState([])
   const [projects, setProjects] = useState([])
+  const [numberOfImagesLoaded, setnumberOfImagesLoaded] = useState(0)
   const { pathname, search } = location
   const { category, position } = queryString.parse(location.search)
   const isNFTPage = pathname === '/NFTS' || pathname === '/NFTS/'
@@ -26,12 +26,13 @@ const Shop = ({ location, isMobile }) => {
   }, [location])
 
   useEffect(() => {
-    setProjects(NFTContent.filter(page => page.category === category)[0].projects)
-    if (position) {
+    const projects = NFTContent.filter(page => page.category === category)[0].projects
+    setProjects(projects)
+    if (position && numberOfImagesLoaded === projects.length) {
       const item = document.querySelector(`.${position}`)
-      item?.scrollIntoView({ behavior: 'smooth', inline: 'center' })
+      item?.scrollIntoView({ inline: 'center' })
     }
-  }, [projects])
+  }, [projects, numberOfImagesLoaded])
 
   const handleElementOnScreen = element => {
     element.style.opacity = 1
@@ -46,8 +47,8 @@ const Shop = ({ location, isMobile }) => {
     history.push(`/details?category=${category}&title=${title}&type=${isNFTPage ? 'NFT' : 'print'}`)
   }
 
-  const handlePurchaseEvent = title => {
-    window.open('https://foundation.app/', '_blank')
+  const setImagesLoaded = () => {
+    setnumberOfImagesLoaded(numberOfImagesLoaded + 1)
   }
 
   return (
@@ -68,6 +69,7 @@ const Shop = ({ location, isMobile }) => {
                   index={index}
                   className={`image image-index-container ${standardizeClassName(NFT.title)}`}
                   loaded={false}
+                  onLoad={setImagesLoaded}
                 />
                 <div className={styles.moreInfoContainer}>
                   <p className={styles.moreDetails} onClick={() => handleMoreInfoEvent(NFT.title)}>
@@ -84,7 +86,7 @@ const Shop = ({ location, isMobile }) => {
         title={visibleContent?.title}
         description={visibleContent?.description}
         NFTPrice={visibleContent?.NFTPrice}
-        price={isNFTPage ? `${visibleContent?.NFTPrice} ETH` : `£${visibleContent?.pricePrint}`}
+        price={isNFTPage ? `${visibleContent?.NFTPrice} ETH` : `£${visibleContent?.priceOriginal || visibleContent?.pricePrint}`}
         stripeLink={visibleContent?.stripeLink}
         sold={visibleContent?.sold}
       />

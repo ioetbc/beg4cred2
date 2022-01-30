@@ -77,7 +77,8 @@
 
   .imageContainer img {
     width: auto;
-    height: 550px;
+    height: 70vh;
+    max-height: 550px;
   }
 
   .moreDetails:hover {
