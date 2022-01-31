@@ -1,11 +1,11 @@
 import React from 'react'
 import styles from '../../styles/Navigation.module.css'
+import { BiSubdirectoryLeft } from "react-icons/bi";
 
 import { CloseButton } from '../CloseButton'
 import { getPrimaryNavigation } from '../../utils/getNavigation'
 
 export const Primary = ({
-  pathname,
   showMenu,
   showSubMenu,
   setShowMenu,
@@ -13,9 +13,9 @@ export const Primary = ({
   handleSubPageSelection,
   handleActiveNavigation,
   handleCloseNavigation,
+  handleSubMenuActiveNavigation
 }) => {
-  const isNFTPage = pathname === '/NFTS' || pathname === '/NFTS/'
-  const primaryNavigation = getPrimaryNavigation({ isNFTPage })
+  const primaryNavigation = getPrimaryNavigation()
 
   return (
     <>
@@ -30,7 +30,7 @@ export const Primary = ({
               <>
                 <h1
                   onClick={() => handleMenuSelection(page.title, page.subPages, page.url, page.newWindow)}
-                  className={styles.menuLink}
+                  className={styles.menuLinkPrimary}
                   style={{
                     textDecoration: handleActiveNavigation(page),
                   }}
@@ -39,13 +39,21 @@ export const Primary = ({
                 </h1>
                 {page.subPages && showSubMenu.show && showSubMenu.title === page.title && (
                   <ul>
+                    
                     {page.subPages.map(subpage => (
+                      <div className={styles.biSubdirectoryLeftIcon}>
+                     
                       <h1
                         onClick={() => handleSubPageSelection(subpage)}
                         className={`${styles.menuLink} ${styles.subLink}`}
+                        style={{
+                          textDecoration: handleSubMenuActiveNavigation(subpage),
+                        }}
                       >
                         {subpage.title}
                       </h1>
+                      <BiSubdirectoryLeft color="white" size={15} />
+                      </div>
                     ))}
                   </ul>
                 )}

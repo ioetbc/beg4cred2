@@ -7,6 +7,8 @@
 .imageContainer {
   margin: 0 16px;
   cursor: pointer;
+  user-select: none;
+  position: relative;
 }
 
 .imageContainer img {
@@ -17,21 +19,22 @@
   width: 100%;
   display: flex;
   flex-direction: row-reverse;
-  gap: 16px;
-  margin-top: 8px;
+  position: absolute;
+  right: 0;
+  bottom: -32px;
 }
 
 .moreDetails {
   color: white;
   text-align: right;
-  font-size: 14px;
+  font-size: var(--fontSizeM);
   cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
   html,
   body {
-    overflow: hidden;
+    overflow: hidden!important;
     height: 100%;
   }
 
@@ -60,19 +63,23 @@
   }
 
   .pastelSet:first-child {
-    margin: 0 25vw 0 calc(50vw - 378px) !important; /* NEGATIVE 200 TO CENTER THE FIRST IMAGE (IMAGE NEEDS TO BE 400 WIDTH FOR THIS TO WORK) */
+    margin: 0 25vw 0 calc(50vw - 335px) !important; /* NEGATIVE 200 TO CENTER THE FIRST IMAGE (IMAGE NEEDS TO BE 400 WIDTH FOR THIS TO WORK) */
   }
 
   .pastelSet:last-child {
-    margin: 0 calc(50vw - 378px) 0 25vw; /* NEGATIVE 200 TO CENTER THE LAST IMAGE (IMAGE NEEDS TO BE 400 WIDTH FOR THIS TO WORK) */
+    margin: 0 calc(50vw - 335px) 0 25vw; /* NEGATIVE 200 TO CENTER THE LAST IMAGE (IMAGE NEEDS TO BE 400 WIDTH FOR THIS TO WORK) */
   }
 
   .detailedPenAndInk:first-child {
-    margin: 0 25vw 0 calc(50vw - 228px) !important; /* NEGATIVE 200 TO CENTER THE FIRST IMAGE (IMAGE NEEDS TO BE 400 WIDTH FOR THIS TO WORK) */
+    margin: 0 25vw 0 calc(50vw - 194px) !important; /* NEGATIVE 200 TO CENTER THE FIRST IMAGE (IMAGE NEEDS TO BE 400 WIDTH FOR THIS TO WORK) */
   }
 
   .detailedPenAndInk:last-child {
-    margin: 0 calc(50vw - 405px) 0 25vw; /* NEGATIVE 200 TO CENTER THE LAST IMAGE (IMAGE NEEDS TO BE 400 WIDTH FOR THIS TO WORK) */
+    margin: 0 calc(50vw - 359px) 0 25vw; /* NEGATIVE 200 TO CENTER THE LAST IMAGE (IMAGE NEEDS TO BE 400 WIDTH FOR THIS TO WORK) */
+  }
+
+  .funny:first-child {
+    margin: 0 25vw 0 calc(50vw - 200px) !important; /* NEGATIVE 200 TO CENTER THE FIRST IMAGE (IMAGE NEEDS TO BE 400 WIDTH FOR THIS TO WORK) */
   }
 
   .imageContainer img {

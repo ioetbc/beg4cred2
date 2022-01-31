@@ -31,7 +31,7 @@ const Shop = ({ location, isMobile }) => {
     if (position && numberOfImagesLoaded === projects.length) {
       const item = document.querySelector(`.${position}`)
       item?.scrollIntoView({ inline: 'center' })
-    }
+    } 
   }, [projects, numberOfImagesLoaded])
 
   const handleElementOnScreen = element => {
@@ -52,14 +52,16 @@ const Shop = ({ location, isMobile }) => {
   }
 
   return (
-    <>
+<div className='shop-wrapper-padding'>
       {projects.length && (
         <HorizontalScrollingWrapper handleElementOnScreen={handleElementOnScreen} isMobile={isMobile}>
           {projects?.map((NFT, index) => (
             <>
               <div
                 className={`${styles.imageContainer} ${category === 'pastel_set' ? styles.pastelSet : ''} ${
-                  category === 'detailed_pen_and_ink' ? styles.detailedPenAndInk : ''
+                  category === 'detailed_pen_and_ink' ? styles.detailedPenAndInk : ''} ${
+                    category === 'funny' ? styles.funny : ''
+                  }
                 }`}
                 onClick={() => handleMoreInfoEvent(NFT.title)}
               >
@@ -91,7 +93,7 @@ const Shop = ({ location, isMobile }) => {
         sold={visibleContent?.sold}
       />
       <Secondary pathname={pathname} search={search} showSecondaryNav="showSecondaryNav" />
-    </>
+    </div>
   )
 }
 

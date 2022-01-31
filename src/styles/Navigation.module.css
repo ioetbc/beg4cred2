@@ -1,8 +1,16 @@
 .navigation {
   width: 100%;
-  padding: 16px;
-  height: 128px;
+  user-select: none;
   position: relative;
+  background: black;
+  position: fixed;
+  height: 90px;
+  z-index: 100;
+}
+
+.navigation.showSubMenu {
+  background: black;
+  height: 324px;
 }
 
 .logo {
@@ -11,28 +19,20 @@
   position: absolute;
   left: 0;
   right: 0;
-  margin: -16px auto;
+  /* top: 16px; */
+  margin: 0 auto;
 }
-
-/* .thing:after {
-  position: absolute;
-  content: '';
-  background: url('../images/circle.svg');
-  width: 150px;
-  height: 150px;
-  left: 18px;
-  right: 0;
-  top: -20px;
-  background-size: 100%;
-} */
 
 @media screen and (min-width: 768px) {
   .navigation {
-    height: 168px;
+    background: transparent;
+    position: relative;
+    height: auto;
+    z-index: 100;
   }
-  .navigation.fixed {
+  /* .navigation.fixed {
     position: fixed;
-  }
+  } */
 }
 
 .textLogo {
@@ -58,7 +58,7 @@
 }
 
 .backButton p {
-  font-size: 12px;
+  font-size: var(--fontSizeS);
 }
 
 .backButtonIcon {
@@ -67,13 +67,18 @@
 }
 
 .bottomLogo {
-  font-size: 18px;
+  font-size: var(--fontSizeL);
 }
 
 .menuMobile {
   color: white;
   text-align: right;
-  font-size: 14px;
+  font-size: var(--fontSizeM);
+  position: absolute;
+  right: 16px;
+  top: 28px;
+  border: 1px solid white;
+  padding: 8px 12px;
 }
 
 .menuLinksPages {
@@ -95,26 +100,48 @@
   margin-top: 32px;
 }
 
+.list ul {
+  padding: 0 8px 8px 16px;
+  background-color: black;
+}
+
 .menuLink:hover {
   text-decoration: underline !important;
   cursor: pointer;
 }
 
 .menuLink {
-  font-size: 32px;
+  font-size: var(--fontSizeM);
   line-height: 46px;
   color: white;
-  font-weight: 400;
+  font-weight: 700;
+}
+
+.menuLinkPrimary:hover {
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+
+.menuLinkPrimary {
+  font-size: var(--fontSizeXXL);
+  line-height: 46px;
+  color: white;
+  font-weight: 700;
+  user-select: none;
+}
+
+.biSubdirectoryLeftIcon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .subLink {
-  font-size: 14px;
+  font-size: var(--fontSizeM);
   line-height: 32px;
 }
 
-.menuLinksPages .menuLink {
-  font-weight: 700;
-}
 
 @media screen and (min-width: 768px) {
   .menuMobile {
@@ -129,11 +156,17 @@
     overflow: auto;
   }
   .menuLink {
-    font-size: 14px;
+    font-size: var(--fontSizeS);
+    line-height: 20px;
+  }
+  .menuLinkPrimary {
+    font-size: var(--fontSizeS);
     line-height: 20px;
   }
   .subLink {
+    font-size: var(--fontSizeXS);
     line-height: 24px;
+    font-weight: 400;
   }
   .list {
     margin-top: 16px;
@@ -157,7 +190,7 @@
 }
 
 .leftAlignedMenuWrapper.showSecondaryNav h2 {
-  font-size: 14px;
+  font-size: var(--fontSizeM);
   line-height: 24px;
   cursor: pointer;
   position: relative;
@@ -176,7 +209,6 @@
     position: fixed;
     bottom: 16px;
     left: 16px;
-    line-height: 18px;
   }
   .leftAlignedMenuWrapper.showSecondaryNav {
     display: none;

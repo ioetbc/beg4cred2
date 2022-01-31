@@ -1,5 +1,5 @@
 .sidebarTitle {
-  font-size: 14px;
+  font-size: var(--fontSizeM);
   letter-spacing: 1px;
   font-weight: 400;
   text-align: right;
@@ -9,7 +9,7 @@
 
 .price {
   margin-top: 0;
-  font-size: 15px;
+  font-size: var(--fontSizeM);
   letter-spacing: 1px;
   text-align: right;
   color: white;
@@ -18,7 +18,7 @@
 
 .moreInfo {
   margin-top: 16px;
-  font-size: 12px;
+  font-size: var(--fontSizeS);
   text-decoration: underline;
   letter-spacing: 1px;
   text-align: right;
@@ -55,6 +55,7 @@
     margin: 8px 0 16px 0;
   }
   .price {
+    user-select: none;
     /* margin-top: -16px; */
     /* margin: 8px 0 16px 0; */
   }

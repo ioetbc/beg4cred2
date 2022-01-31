@@ -2,7 +2,7 @@
   border: white solid 1px;
   padding: 8px 12px;
   border-radius: 4px;
-  font-size: 12px;
+  font-size: var(--fontSizeS);
   color: white;
   text-decoration: none;
   background-color: transparent;

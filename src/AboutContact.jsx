@@ -8,6 +8,7 @@ const AboutContact = ({ isMobile }) => {
   const [expandMoreInfo, setExpandMoreInfo] = useState(false)
 
   return (
+    <div className='page-wrapper-padding'>
     <div className={styles.details}>
       <h1 className={`${styles.title} ${styles.mobile}`}>ABOUT/CONTACT</h1>
       <video className={styles.video} controls muted autoPlay={!isMobile} loop src={`${VideoFile}#t=0.5`}></video>
@@ -31,6 +32,7 @@ const AboutContact = ({ isMobile }) => {
           <PrimaryButton text="INSTA" url="https://www.test.bymiles.co.uk/" />
         </div>
       </div>
+    </div>
     </div>
   )
 }

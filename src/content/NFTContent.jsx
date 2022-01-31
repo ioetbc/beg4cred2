@@ -204,6 +204,21 @@ export const NFTContent = [
     category: 'work_is_hell',
     projects: [
       {
+        title: 'Manager',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: workIsHell6,
+        imageLarge: workIsHellLarge6,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
         title: "Your_Job_Doesn't_Care_About_You",
         description:
           'Seventh NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse.',
@@ -294,21 +309,6 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'Manager',
-        description:
-          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        pricePrint: 40,
-        priceOriginal: 200,
-        sold: true,
-        dimensions: 'A4',
-        image: workIsHell6,
-        imageLarge: workIsHellLarge6,
-        alt: 'NFT image',
-        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
-        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
-        NFTLink: 'https://foundation.app/',
-      },
-      {
         title: 'New_Airpods',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
@@ -389,6 +389,21 @@ export const NFTContent = [
     category: 'detailed_pen_and_ink',
     projects: [
       {
+        title: 'Terraces',
+        description:
+          'Eighth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi.',
+        pricePrint: 40,
+        priceOriginal: 600,
+        sold: false,
+        dimensions: 'A4',
+        image: detailedPenAndInk5,
+        imageLarge: detailedPenAndInkLarge5,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/aEU8A1aBe2Gg956g0o',
+        originalStripeLink: 'https://buy.stripe.com/14k9E538MbcMepq16X',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
         title: 'Moon',
         description:
           'Seventh NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse.',
@@ -449,21 +464,6 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'Terraces',
-        description:
-          'Eighth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi.',
-        pricePrint: 40,
-        priceOriginal: 600,
-        sold: false,
-        dimensions: 'A4',
-        image: detailedPenAndInk5,
-        imageLarge: detailedPenAndInkLarge5,
-        alt: 'NFT image',
-        printStripeLink: 'https://buy.stripe.com/aEU8A1aBe2Gg956g0o',
-        originalStripeLink: 'https://buy.stripe.com/14k9E538MbcMepq16X',
-        NFTLink: 'https://foundation.app/',
-      },
-      {
         title: 'Last_Supper',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
@@ -500,7 +500,7 @@ export const NFTContent = [
         title: 'Front_Row',
         description:
           'Seventh NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse.',
-        NFTPrice: 0.2,
+        // NFTPrice: 0.2,
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
@@ -516,7 +516,7 @@ export const NFTContent = [
         title: 'I_am_Loved',
         description:
           'Eighth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi.',
-        NFTPrice: 0.1,
+        // NFTPrice: 0.1,
         pricePrint: 40,
         priceOriginal: 175,
         sold: false,
@@ -532,7 +532,7 @@ export const NFTContent = [
         title: 'Peace',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        NFTPrice: 0.5,
+        // NFTPrice: 0.5,
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
@@ -548,7 +548,7 @@ export const NFTContent = [
         title: 'You_make_my_Love_come_Down',
         description:
           'Tenth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum.',
-        NFTPrice: 0.4,
+        // NFTPrice: 0.4,
         pricePrint: 40,
         priceOriginal: 250,
         sold: false,
@@ -564,7 +564,7 @@ export const NFTContent = [
         title: 'Oppenheimer',
         description:
           'Seventh NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse.',
-        NFTPrice: 0.2,
+        // NFTPrice: 0.2,
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
@@ -580,7 +580,7 @@ export const NFTContent = [
         title: 'Green_Crown',
         description:
           'Eighth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi.',
-        NFTPrice: 0.1,
+        // NFTPrice: 0.1,
         pricePrint: 40,
         priceOriginal: 250,
         sold: false,
@@ -596,7 +596,7 @@ export const NFTContent = [
         title: 'Model_Portrait ',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        NFTPrice: 0.5,
+        // NFTPrice: 0.5,
         pricePrint: 40,
         priceOriginal: 150,
         sold: true,
@@ -612,7 +612,7 @@ export const NFTContent = [
         title: 'Hey_Arnold!',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        NFTPrice: 0.5,
+        // NFTPrice: 0.5,
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
@@ -628,7 +628,7 @@ export const NFTContent = [
         title: 'Gucci_Detail_1',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        NFTPrice: 0.5,
+        // NFTPrice: 0.5,
         pricePrint: 40,
         priceOriginal: 300,
         sold: true,
@@ -644,7 +644,7 @@ export const NFTContent = [
         title: 'Gucci_Detail_2',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        NFTPrice: 0.5,
+        // NFTPrice: 0.5,
         pricePrint: 40,
         priceOriginal: 300,
         sold: true,
@@ -660,7 +660,7 @@ export const NFTContent = [
         title: 'Tell_me_what_you_Know',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        NFTPrice: 0.5,
+        // NFTPrice: 0.5,
         pricePrint: 40,
         priceOriginal: 150,
         sold: true,
@@ -676,7 +676,7 @@ export const NFTContent = [
         title: 'Occulted_Knowledge',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        NFTPrice: 0.5,
+        // NFTPrice: 0.5,
         pricePrint: 40,
         priceOriginal: 250,
         sold: true,
@@ -692,7 +692,7 @@ export const NFTContent = [
         title: 'French_for_With',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        NFTPrice: 0.5,
+        // NFTPrice: 0.5,
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
@@ -708,7 +708,7 @@ export const NFTContent = [
         title: 'Poppy',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        NFTPrice: 0.5,
+        // NFTPrice: 0.5,
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
@@ -724,7 +724,7 @@ export const NFTContent = [
         title: "Don't_Explain",
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        NFTPrice: 0.5,
+        // NFTPrice: 0.5,
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
@@ -740,7 +740,7 @@ export const NFTContent = [
         title: 'The_Physical_World',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        NFTPrice: 0.5,
+        // NFTPrice: 0.5,
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
@@ -756,7 +756,7 @@ export const NFTContent = [
         title: 'Larder_full_of_Prada',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        NFTPrice: 0.5,
+        // NFTPrice: 0.5,
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
@@ -772,7 +772,7 @@ export const NFTContent = [
         title: 'Sore_Winner',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        NFTPrice: 0.5,
+        // NFTPrice: 0.5,
         pricePrint: 40,
         priceOriginal: 100,
         sold: true,
@@ -788,7 +788,7 @@ export const NFTContent = [
         title: 'Faith',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        NFTPrice: 0.5,
+        // NFTPrice: 0.5,
         pricePrint: 40,
         sold: true,
         dimensions: 'Approx A4 (slightly larger)',
@@ -802,7 +802,7 @@ export const NFTContent = [
         title: 'Absurdity_beneath_Solemnity ',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        NFTPrice: 0.5,
+        // NFTPrice: 0.5,
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
@@ -818,7 +818,7 @@ export const NFTContent = [
         title: "Ain't_Laurent",
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        NFTPrice: 0.5,
+        // NFTPrice: 0.5,
         pricePrint: 40,
         priceOriginal: 500,
         sold: true,
@@ -834,7 +834,7 @@ export const NFTContent = [
         title: 'Serial_Person',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        NFTPrice: 0.5,
+        // NFTPrice: 0.5,
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
@@ -850,7 +850,7 @@ export const NFTContent = [
         title: 'Prada_Profile',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        NFTPrice: 0.5,
+        // NFTPrice: 0.5,
         pricePrint: 40,
         sold: true,
         dimensions: 'Approx A4 (slightly larger)',
@@ -864,7 +864,7 @@ export const NFTContent = [
         title: "I'm_Really_Here",
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        NFTPrice: 0.5,
+        // NFTPrice: 0.5,
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
@@ -880,7 +880,7 @@ export const NFTContent = [
         title: 'Abundance',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        NFTPrice: 0.5,
+        // NFTPrice: 0.5,
         pricePrint: 40,
         priceOriginal: 175,
         sold: true,
@@ -896,7 +896,7 @@ export const NFTContent = [
         title: 'Do_Not_Draw',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        NFTPrice: 0.5,
+        // NFTPrice: 0.5,
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
@@ -912,7 +912,7 @@ export const NFTContent = [
         title: 'I_Accept_Myself',
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        NFTPrice: 0.5,
+        // NFTPrice: 0.5,
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
@@ -928,7 +928,7 @@ export const NFTContent = [
         title: "Dior_can't_Afford_me",
         description:
           'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        NFTPrice: 0.5,
+        // NFTPrice: 0.5,
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
@@ -945,6 +945,21 @@ export const NFTContent = [
   {
     category: 'coloured_cartoon',
     projects: [
+      {
+        title: 'your_dad',
+        description:
+          'Eighth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi.',
+        pricePrint: 40,
+        priceOriginal: 150,
+        sold: false,
+        dimensions: 'A4',
+        image: colourCartoons5,
+        imageLarge: colourCartoonsLarge5,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/4gw6rTfVy94Ea9a15j',
+        originalStripeLink: 'https://buy.stripe.com/fZe8A15gU80Achi3eU',
+        NFTLink: 'https://foundation.app/',
+      },
       {
         title: 'fake_suns',
         description:
@@ -1018,21 +1033,6 @@ export const NFTContent = [
         alt: 'NFT image',
         printStripeLink: 'https://buy.stripe.com/6oE4jLfVyft26WYg0c',
         originalStripeLink: 'https://buy.stripe.com/cN23fH6kYeoYgxy8zd',
-        NFTLink: 'https://foundation.app/',
-      },
-      {
-        title: 'your_dad',
-        description:
-          'Eighth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi.',
-        pricePrint: 40,
-        priceOriginal: 150,
-        sold: false,
-        dimensions: 'A4',
-        image: colourCartoons5,
-        imageLarge: colourCartoonsLarge5,
-        alt: 'NFT image',
-        printStripeLink: 'https://buy.stripe.com/4gw6rTfVy94Ea9a15j',
-        originalStripeLink: 'https://buy.stripe.com/fZe8A15gU80Achi3eU',
         NFTLink: 'https://foundation.app/',
       },
       {
@@ -1131,6 +1131,19 @@ export const NFTContent = [
     category: 'coloured_faces',
     projects: [
       {
+        title: 'man',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        sold: true,
+        dimensions: 'A4',
+        image: colourFaces5,
+        imageLarge: colourFacesLarge5,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/8wM4jL5gUbcM95615b',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
         title: 'lonely_boy',
         description:
           'Seventh NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse.',
@@ -1204,19 +1217,6 @@ export const NFTContent = [
         alt: 'NFT image',
         printStripeLink: 'https://buy.stripe.com/aEUcQh4cQ3Kk4OQ6pu',
         originalStripeLink: 'https://buy.stripe.com/8wMbMd10EeoY812bLi',
-        NFTLink: 'https://foundation.app/',
-      },
-      {
-        title: 'man',
-        description:
-          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        pricePrint: 40,
-        sold: true,
-        dimensions: 'A4',
-        image: colourFaces5,
-        imageLarge: colourFacesLarge5,
-        alt: 'NFT image',
-        printStripeLink: 'https://buy.stripe.com/8wM4jL5gUbcM95615b',
         NFTLink: 'https://foundation.app/',
       },
       {

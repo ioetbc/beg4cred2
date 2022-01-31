@@ -11,14 +11,21 @@ import { NFTContent } from '../content/NFTContent'
 import { PrimaryButton } from '../components/PrimaryButton'
 
 export const NFTDetails = ({ location, isMobile }) => {
-  const [expandMoreInfo, setExpandMoreInfo] = useState(false)
   const { category, title, type } = qs.parse(location.search)
   const pageData = NFTContent.filter(page => page.category === category)[0].projects
   const data = pageData.filter(page => page.title === title)[0]
   const details = useRef(null)
 
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }, [])
+
   return (
-    <>
+<div className='page-wrapper-padding'>
       <div ref={details} className={styles.details}>
         <h1 className={`${styles.title} ${styles.mobile}`}>{data?.title}</h1>
         {isMobile ? (
@@ -39,7 +46,7 @@ export const NFTDetails = ({ location, isMobile }) => {
         <div className={styles.transcript}>
           <h1 className={`${styles.title} ${styles.desktop}`}>{data?.title}</h1>
           <ul className={styles.detailsList}>
-            <li>Delivered by {<strong>{dayjs().add(5, 'days').format('dddd Do MMMM')}</strong>}</li>
+            <li>DELIVERED BY: {<strong>{dayjs().add(5, 'days').format('dddd Do MMMM')}</strong>}</li>
             <li>
               DIMENSIONS: <strong>{data?.dimensions}</strong>
             </li>
@@ -48,7 +55,7 @@ export const NFTDetails = ({ location, isMobile }) => {
                 ORIGINAL PRICE: <strong>£{data?.priceOriginal?.toFixed(2)}</strong>
               </li>
             )}
-            {data?.priceOriginal && (
+            {data?.pricePrint && (
               <li>
                 PRINT PRICE: <strong>£{data?.pricePrint?.toFixed(2)}</strong>
               </li>
@@ -76,6 +83,6 @@ export const NFTDetails = ({ location, isMobile }) => {
           </div>
         </div>
       </div>
-    </>
+      </div>
   )
 }

@@ -1,12 +1,12 @@
 .details {
-  margin: 16px;
+  /* margin: 16px; */
   overflow-y: scroll;
 }
 
-html,
+/* html,
 body {
   overflow: scroll;
-}
+} */
 
 @media screen and (min-width: 768px) {
   .details {
@@ -33,7 +33,7 @@ body {
   color: white;
   text-transform: uppercase;
   margin-bottom: 16px;
-  font-size: 18px;
+  font-size: var(--fontSizeL);
 }
 
 .textContainer {
@@ -58,7 +58,7 @@ body {
     display: none;
   }
   .title {
-    font-size: 32px;
+    font-size: var(--fontSizeXXL);
   }
 }
 
@@ -68,7 +68,7 @@ body {
 
 .transcript p {
   color: white;
-  font-size: 14px;
+  font-size: var(--fontSize);
 }
 
 .image {
@@ -94,19 +94,20 @@ body {
 
 .detailsList {
   list-style: none;
-  margin: 16px 0 16px 32px;
+  margin: 16px 0 16px 24px;
   padding: 0;
   position: relative;
 }
 
 .detailsList li {
   position: relative;
+  font-size: var(--fontSizeM);
 }
 
 .detailsList li:before {
   content: '';
   position: absolute;
-  left: -32px;
+  left: -24px;
   top: 6px;
   border: white 1px solid;
   width: 8px;

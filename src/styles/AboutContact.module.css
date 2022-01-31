@@ -36,7 +36,7 @@
 
 .transcript p {
   color: white;
-  font-size: 14px;
+  font-size: var(--fontSizeM);
 }
 
 .video {

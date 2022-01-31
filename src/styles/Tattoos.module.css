@@ -4,7 +4,7 @@
 }
 
 .tattooWrapper {
-  margin: 0 16px;
+  /* margin: 0 16px; */
 }
 
 .transcript {
@@ -47,7 +47,7 @@
     display: none;
   }
 }
-
+ 
 .tattooWrapper .left {
   box-sizing: border-box;
 }
@@ -57,7 +57,16 @@
   /* display: grid; */
   /* grid-template-columns: 1fr 1fr; */
   /* grid-gap: 16px; */
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
+}
+
+.hmm {
+  margin-top: 32px;
+}
+
+.buttonWrapper {
+  display: flex;
+  gap: 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -71,11 +80,13 @@
   .hmm {
     height: calc(100vh - 168px);
     overflow: scroll;
+    margin-top: 0;
   }
 }
 
 .video {
   width: 100%;
+  margin-bottom: 16px;
 }
 
 .contactList {
@@ -100,7 +111,7 @@
 }
 
 .contactList ul li a {
-  font-size: 28px;
+  font-size: var(--fontSizeXL);
   font-weight: 700;
   color: white;
   text-decoration: none;

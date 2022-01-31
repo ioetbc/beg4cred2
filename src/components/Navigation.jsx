@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import styles from '../styles/Navigation.module.css'
 import queryString from 'query-string'
+import { GrClose } from "react-icons/gr";
+
 
 import { Primary } from './Navigation/Primary'
 import { Secondary } from './Navigation/Secondary'
@@ -51,6 +53,15 @@ export const Navigation = ({ location, isMobile }) => {
     return 'none'
   }
 
+  const handleSubMenuActiveNavigation = page => {
+    if (
+      category === page.title.toLowerCase()
+    ) {
+      return 'underline'
+    }
+    return 'none'
+  }
+
   const handleCloseNavigation = () => {
     setShowMenu(false)
   }
@@ -65,12 +76,16 @@ export const Navigation = ({ location, isMobile }) => {
   }
 
   return (
-    <div className={`${styles.navigation} ${isShopPage || isNFTPage ? styles.fixed : ''}`}>
+    <div className={`${styles.navigation} ${isShopPage || isNFTPage ? styles.fixed : ''}`} onMouseLeave={() => setShowSubMenu(false)}>
       <img onClick={() => history.push('/')} className={styles.logo} src={Logo} />
-      <div onClick={handleGoBack} className={styles.backButton}>
-        <img className={styles.backButtonIcon} src={Icon} alt="back button" />
-        <p>GO BACK</p>
-      </div>
+
+      {isDetailsPage &&
+        <div onClick={handleGoBack} className={styles.backButton}>
+          <img className={styles.backButtonIcon} src={Icon} alt="back button" />
+          <p>GO BACK</p>
+        </div>
+      }
+
 
       <Primary
         pathname={pathname}
@@ -80,6 +95,7 @@ export const Navigation = ({ location, isMobile }) => {
         handleMenuSelection={handleMenuSelection}
         handleSubPageSelection={handleSubPageSelection}
         handleActiveNavigation={handleActiveNavigation}
+        handleSubMenuActiveNavigation={handleSubMenuActiveNavigation}
         handleCloseNavigation={handleCloseNavigation}
       />
 

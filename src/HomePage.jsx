@@ -13,6 +13,7 @@ import workIsHell from './images/work_is_hell/1.jpg'
 const HomePage = () => {
   const history = useHistory()
   return (
+    <div className='page-wrapper-padding'>
     <div className={styles.wrapper}>
           <div>
             <img
@@ -46,6 +47,7 @@ const HomePage = () => {
             <LinkButton label="FUNNY" url={'shop?category=funny'} active={false} icon={false} />
 
           </div>
+    </div>
     </div>
   )
 }

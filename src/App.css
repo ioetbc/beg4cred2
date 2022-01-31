@@ -1,5 +1,43 @@
+@import-normalize;
+
+html { font-size: 62.5%; } 
+
 body {
   min-height: 100vh;
+}
+
+html,
+body {
+  background: black;
+}
+
+:root {
+  --NavigationHeight: 40px;
+  --fontSizeXS: 1rem;
+  --fontSizeS: 1.2rem;
+  --fontSizeM: 1.4rem;
+  --fontSizeL: 1.8rem;
+  --fontSizeXL: 2.4rem;
+  --fontSizeXXL: 3.2rem;
+  --lintHeightS: 1.4rem;
+  --lintHeightL: 1.8rem;
+  --lineHeightPara: 24px;
+  --marginMedium: 24px;
+  --marginLarge: 32px;
+  --vh: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --NavigationHeight: 100px;
+    --marginMedium: 32px;
+    --marginLarge: 48px;
+  }
+}
+
+
+* {
+  box-sizing: border-box;
 }
 
 button {
@@ -7,25 +45,6 @@ button {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-:root {
-  --NavigationHeight: 40px;
-  --fontSizeHeading: 19px;
-  --fontSizePara: 12px;
-  --lineHeightPara: 24px;
-  --marginMedium: 24px;
-  --marginLarge: 32px;
-  --vh: 0px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  background: black;
 }
 
 p {
@@ -52,16 +71,6 @@ p {
   transition-delay: 300;
 }
 
-@media screen and (min-width: 768px) {
-  :root {
-    --NavigationHeight: 100px;
-    --fontSizeHeading: 48px;
-    --fontSizePara: 16px;
-    --marginMedium: 32px;
-    --marginLarge: 48px;
-  }
-}
-
 h1,
 h2,
 h3,
@@ -73,10 +82,24 @@ h4 {
 p,
 li,
 a {
-  font-size: var(--fontSizePara);
+  font-size: var(--fontSizeS);
   line-height: var(--lineHeightPara);
   color: white;
 }
+
+.page-wrapper-padding {
+  padding: 150px 16px 16px 16px;
+}
+
+.shop-wrapper-padding {
+  padding: 150px 16px 16px 16px;
+}
+@media screen and (min-width: 768px) {
+  .shop-wrapper-padding {
+    padding: 0 16px 16px 16px;
+  }
+}
+
 
 .video-wrapper {
   position: relative;
