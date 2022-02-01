@@ -23,6 +23,10 @@ const HomePage = () => {
     <div className='page-wrapper-padding'>
       <div className={styles.wrapper}>
         <div>
+          <img onClick={() => history.push('shop?category=detailed_pen_and_ink')} className={styles.image} src={detailedPenAndInk} />
+          <LinkButton label="DETAILED_PEN_AND_INK" url={'shop?category=detailed_pen_and_ink'} active={false} icon={false} />
+        </div>
+        <div>
           <img
             onClick={() => history.push('shop?category=coloured_cartoon')}
             className={styles.image}
@@ -74,12 +78,8 @@ const HomePage = () => {
           <img onClick={() => history.push('shop?category=squares_and_circles')} className={styles.image} src={squaresAndCircles} />
           <LinkButton label="SQUARES_AND_CIRCLES" url={'shop?category=squares_and_circles'} active={false} icon={false} />
         </div>
-        <div>
-          <img onClick={() => history.push('shop?category=detailed_pen_and_ink')} className={styles.image} src={detailedPenAndInk} />
-          <LinkButton label="DETAILED_PEN_AND_INK" url={'shop?category=detailed_pen_and_ink'} active={false} icon={false} />
-        </div>
       </div>
-    </div>
+      </div>
   )
 }
 

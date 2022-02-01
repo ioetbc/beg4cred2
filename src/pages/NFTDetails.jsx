@@ -67,7 +67,7 @@ export const NFTDetails = ({ location, isMobile }) => {
             )}
           </ul>
           <div className={styles.buttonWrapper}>
-            {data?.priceOriginal && (
+            {data?.priceOriginal && !data?.sold && (
               <PrimaryButton
                 text="BUY ORIGINAL"
                 handleOnClick={() => window.open(data?.originalStripeLink, '_blank')}

@@ -27,8 +27,7 @@ export const Navigation = ({ location, isMobile }) => {
   useEffect(() => {
     const pageWrapper = document.querySelector('.page-wrapper-padding')
     const shopWrapper = document.querySelector('.shop-wrapper-padding')
-    console.log('pageWrapper', pageWrapper)
-
+    if (!isMobile) return
     if (shopWrapper) {
       if (showMenu) {
         shopWrapper.style.display = 'none'
