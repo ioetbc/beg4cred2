@@ -3,23 +3,46 @@
   grid-template-columns: 1fr;
 }
 
-.tattooWrapper {
-  /* margin: 0 16px; */
+.transcript {
+  margin: 32px 0;
 }
 
-.transcript {
+.transcript p {
+  color: white;
+}
+.transcript h2 {
+  color: white;
+  font-size: var(--fontSizeM);
+  text-transform: uppercase;
   margin-bottom: 16px;
+  line-height: 2.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .transcript {
+    margin: 32px 0 0 0;
+  }
 }
 
 .title {
   color: white;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
+  font-size: var(--fontSizeXXL);
+  line-height: 3.8rem;
 }
 
 .textContainer {
   height: 180px;
   overflow: hidden;
+}
+
+.textContainer p {
+  margin-bottom: 16px;
+}
+
+.textContainer p:last-child {
+  margin-bottom: 0;
 }
 
 .readMore {
@@ -29,6 +52,10 @@
 
 .expand {
   height: auto;
+}
+
+.marginTop {
+  margin-top: 49px;
 }
 
 @media screen and (min-width: 768px) {
@@ -53,7 +80,7 @@
 }
 
 .tattooWrapper .right {
-  margin-left: auto;
+  /* margin-left: auto; */
   /* display: grid; */
   /* grid-template-columns: 1fr 1fr; */
   /* grid-gap: 16px; */
@@ -61,7 +88,13 @@
 }
 
 .hmm {
-  margin-top: 32px;
+  /* margin-top: 32px; */
+}
+
+.right {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px; */
 }
 
 .buttonWrapper {
@@ -121,13 +154,10 @@
   text-decoration: underline;
 }
 
-.transcript {
-  margin-top: 16px;
-}
+/* .transcript {
+  margin-top: 32px;
+} */
 
-.transcript p {
-  color: white;
-}
 
 .image {
   width: 100%;

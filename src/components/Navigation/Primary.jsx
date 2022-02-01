@@ -3,6 +3,7 @@ import styles from '../../styles/Navigation.module.css'
 import { BiSubdirectoryLeft } from "react-icons/bi";
 
 import { CloseButton } from '../CloseButton'
+import { PrimaryButton } from '../PrimaryButton'
 import { getPrimaryNavigation } from '../../utils/getNavigation'
 
 export const Primary = ({
@@ -19,9 +20,12 @@ export const Primary = ({
 
   return (
     <>
-      <h1 onClick={() => setShowMenu(!showMenu)} className={styles.menuMobile}>
+      {/* <h1 onClick={} className={styles.menuMobile}>
         MENU
-      </h1>
+      </h1> */}
+<div className={styles.menuMobile}>
+      <PrimaryButton text="MENU" handleOnClick={() => setShowMenu(!showMenu)} />
+      </div>
       {showMenu && (
         <div className={`${styles.menuLinksPages} ${showSubMenu ? styles.border : ''}`}>
           <CloseButton handleOnClick={handleCloseNavigation} />

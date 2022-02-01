@@ -40,6 +40,10 @@ body {
   box-sizing: border-box;
 }
 
+img {
+  user-select: none!important;
+}
+
 button {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 
@@ -103,14 +107,11 @@ a {
 
 .video-wrapper {
   position: relative;
-}
-
-.video-wrapper {
-  margin-right: 50vw;
+  /* margin-right: 50vw; */
 }
 
 .video-wrapper:nth-child(1) {
-  margin-left: 16px;
+  /* margin-left: 16px; */
 }
 
 .image-index-container {
@@ -120,6 +121,7 @@ a {
 
 .video-container {
   width: calc(100vw - 32px);
+  margin: 0 auto;
 }
 
 .video-container video {
@@ -128,10 +130,15 @@ a {
 
 @media screen and (min-width: 768px) {
   .video-container {
-    width: 800px;
-    margin-top: -30vh; /* THIS IS SHIT */
+    min-width: 500px;
+    width: 50vw;
+    margin-right: 50vw;
   }
   .video-wrapper:nth-child(1) {
-    margin-left: calc(50vw - 200px); /* minus half with width of an video */
+    margin-left: calc(50vw - 25vw); /* minus half with width of an video */
+  }
+  .video-wrapper:last-child {
+    /* margin: 0 25vw 0 25vw !important; */
+    margin-right: calc(50vw - 50vw)!important;
   }
 }

@@ -1,17 +1,12 @@
 export const getPrimaryNavigation = () => {
   return [
     {
-      title: 'ABOUT/CONTACT',
-      url: '/contact',
-    },
-    {
-      title: 'LINKTREE',
-      url: 'https://linktr.ee/BEG4CRED',
-      newWindow: true,
-    },
-    {
       title: 'TATTOOS',
       url: '/tattoos',
+    },
+    {
+      title: 'CONTACT',
+      url: '/contact',
     },
     {
       title: 'VIDEOS',
@@ -20,6 +15,11 @@ export const getPrimaryNavigation = () => {
     {
       title: 'INSTA',
       url: 'https://www.instagram.com/beg4cred/?hl=en',
+      newWindow: true,
+    },
+    {
+      title: 'MORE',
+      url: 'https://linktr.ee/BEG4CRED',
       newWindow: true,
     },
     {

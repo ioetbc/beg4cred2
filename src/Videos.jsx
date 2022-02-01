@@ -21,28 +21,28 @@ const Videos = ({ location }) => {
   const projects = VideoContent
 
   return (
-    <>
+    <div className="shop-wrapper-padding">
       <HorizontalScrollingWrapper handleElementOnScreen={handleElementOnScreen}>
         {projects?.map((video, index) => (
           <>
             <div className="video-wrapper">
               <div className="video-container">
                 <div className="image-index-container" index={index}>
-                  <video controls src={`${video?.url}#t=0.5`}></video>
+                  <video controls src={`${video?.url}#t=0.10`}></video>
                 </div>
               </div>
-              <div style={{ display: 'flex', gap: 16, justifyContent: 'end' }}>
+              {/* <div style={{ display: 'flex', gap: 16, justifyContent: 'end' }}>
                 <p className="more-details" onClick={() => console.log('open youtube')}>
                   VIEW ON YOUTUBE
                 </p>
-              </div>
+              </div> */}
             </div>
           </>
         ))}
       </HorizontalScrollingWrapper>
 
       <Sidebar title={visibleContent?.title} />
-    </>
+    </div>
   )
 }
 

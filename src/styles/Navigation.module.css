@@ -77,8 +77,8 @@
   position: absolute;
   right: 16px;
   top: 28px;
-  border: 1px solid white;
-  padding: 8px 12px;
+  /* border: 1px solid white; */
+  /* padding: 8px 12px; */
 }
 
 .menuLinksPages {
