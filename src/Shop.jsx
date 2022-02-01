@@ -28,11 +28,17 @@ const Shop = ({ location, isMobile }) => {
   useEffect(() => {
     const projects = NFTContent.filter(page => page.category === category)[0].projects
     setProjects(projects)
+  }, [projects])
+
+  useEffect(() => {
+    console.log('numberOfImagesLoaded', numberOfImagesLoaded)
+    console.log('projects.length', projects.length)
     if (position && numberOfImagesLoaded === projects.length) {
       const item = document.querySelector(`.${position}`)
+      console.log('item', item)
       item?.scrollIntoView({ inline: 'center' })
     } 
-  }, [projects, numberOfImagesLoaded])
+  }, [numberOfImagesLoaded])
 
   const handleElementOnScreen = element => {
     element.style.opacity = 1
@@ -40,7 +46,7 @@ const Shop = ({ location, isMobile }) => {
     const projects = getPageData({ location })[index]
     element.src = projects.image
 
-    setVisibleContent({ ...projects, index: index + 1 })
+    setVisibleContent({ ...projects })
   }
 
   const handleMoreInfoEvent = title => {
@@ -88,7 +94,7 @@ const Shop = ({ location, isMobile }) => {
         title={visibleContent?.title}
         description={visibleContent?.description}
         NFTPrice={visibleContent?.NFTPrice}
-        price={isNFTPage ? `${visibleContent?.NFTPrice} ETH` : `£${visibleContent?.priceOriginal || visibleContent?.pricePrint}`}
+        price={`£${visibleContent?.priceOriginal}`}
         stripeLink={visibleContent?.stripeLink}
         sold={visibleContent?.sold}
       />

@@ -20,11 +20,8 @@ export const Primary = ({
 
   return (
     <>
-      {/* <h1 onClick={} className={styles.menuMobile}>
-        MENU
-      </h1> */}
-<div className={styles.menuMobile}>
-      <PrimaryButton text="MENU" handleOnClick={() => setShowMenu(!showMenu)} />
+      <div className={styles.menuMobile}>
+        <PrimaryButton text="MENU" handleOnClick={() => setShowMenu(!showMenu)} />
       </div>
       {showMenu && (
         <div className={`${styles.menuLinksPages} ${showSubMenu ? styles.border : ''}`}>
@@ -43,20 +40,20 @@ export const Primary = ({
                 </h1>
                 {page.subPages && showSubMenu.show && showSubMenu.title === page.title && (
                   <ul>
-                    
+
                     {page.subPages.map(subpage => (
                       <div className={styles.biSubdirectoryLeftIcon}>
-                     
-                      <h1
-                        onClick={() => handleSubPageSelection(subpage)}
-                        className={`${styles.menuLink} ${styles.subLink}`}
-                        style={{
-                          textDecoration: handleSubMenuActiveNavigation(subpage),
-                        }}
-                      >
-                        {subpage.title}
-                      </h1>
-                      <BiSubdirectoryLeft color="white" size={15} />
+
+                        <h1
+                          onClick={() => handleSubPageSelection(subpage)}
+                          className={`${styles.menuLink} ${styles.subLink}`}
+                          style={{
+                            textDecoration: handleSubMenuActiveNavigation(subpage),
+                          }}
+                        >
+                          {subpage.title}
+                        </h1>
+                        <BiSubdirectoryLeft color="white" size={15} />
                       </div>
                     ))}
                   </ul>

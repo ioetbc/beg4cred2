@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import styles from '../styles/Navigation.module.css'
 import queryString from 'query-string'
@@ -23,6 +23,29 @@ export const Navigation = ({ location, isMobile }) => {
   const isShopPage = pathname === '/shop' || pathname === '/shop/'
   const isNFTPage = pathname === '/NFTS' || pathname === '/NFTS/'
   const isDetailsPage = pathname === '/details' || pathname === '/details/'
+
+  useEffect(() => {
+    const pageWrapper = document.querySelector('.page-wrapper-padding')
+    const shopWrapper = document.querySelector('.shop-wrapper-padding')
+    console.log('pageWrapper', pageWrapper)
+
+    if (shopWrapper) {
+      if (showMenu) {
+        shopWrapper.style.display = 'none'
+      } else {
+        shopWrapper.style.display = 'block'      
+      }
+    }
+
+    if (pageWrapper) {
+      if (showMenu) {
+        pageWrapper.style.display = 'none'
+      } else {
+        pageWrapper.style.display = 'block'      
+      }
+    }
+   
+  }, [showMenu])
 
   const handleMenuSelection = (title, subPages = [], url, newWindow) => {
     if (!subPages.length) {

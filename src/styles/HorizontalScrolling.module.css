@@ -52,18 +52,18 @@
   }
 
   .imageContainer {
-    margin: 0 25vw;
+    margin: 0 33vw;
   }
 
   .imageContainer:first-child {
-    margin: 0 25vw 0 calc(50vw - 200px); /* NEGATIVE 200 TO CENTER THE FIRST IMAGE (IMAGE NEEDS TO BE 400 WIDTH FOR THIS TO WORK) */
+    margin: 0 33vw 0 calc(50vw - 200px); /* NEGATIVE 200 TO CENTER THE FIRST IMAGE (IMAGE NEEDS TO BE 400 WIDTH FOR THIS TO WORK) */
   }
   .imageContainer:last-child {
     margin: 0 calc(50vw - 200px) 0 25vw; /* NEGATIVE 200 TO CENTER THE LAST IMAGE (IMAGE NEEDS TO BE 400 WIDTH FOR THIS TO WORK) */
   }
 
   .pastelSet:first-child {
-    margin: 0 25vw 0 calc(50vw - 335px) !important; /* NEGATIVE 200 TO CENTER THE FIRST IMAGE (IMAGE NEEDS TO BE 400 WIDTH FOR THIS TO WORK) */
+    margin: 0 33vw 0 calc(50vw - 335px) !important; /* NEGATIVE 200 TO CENTER THE FIRST IMAGE (IMAGE NEEDS TO BE 400 WIDTH FOR THIS TO WORK) */
   }
 
   .pastelSet:last-child {
@@ -71,7 +71,7 @@
   }
 
   .detailedPenAndInk:first-child {
-    margin: 0 25vw 0 calc(50vw - 194px) !important; /* NEGATIVE 200 TO CENTER THE FIRST IMAGE (IMAGE NEEDS TO BE 400 WIDTH FOR THIS TO WORK) */
+    margin: 0 33vw 0 calc(50vw - 194px) !important; /* NEGATIVE 200 TO CENTER THE FIRST IMAGE (IMAGE NEEDS TO BE 400 WIDTH FOR THIS TO WORK) */
   }
 
   .detailedPenAndInk:last-child {
@@ -79,7 +79,7 @@
   }
 
   .funny:first-child {
-    margin: 0 25vw 0 calc(50vw - 200px) !important; /* NEGATIVE 200 TO CENTER THE FIRST IMAGE (IMAGE NEEDS TO BE 400 WIDTH FOR THIS TO WORK) */
+    margin: 0 33vw 0 calc(50vw - 200px) !important; /* NEGATIVE 200 TO CENTER THE FIRST IMAGE (IMAGE NEEDS TO BE 400 WIDTH FOR THIS TO WORK) */
   }
 
   .imageContainer img {

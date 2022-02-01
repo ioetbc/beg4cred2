@@ -199,7 +199,1348 @@ import funnyLarge7 from '../images/funny/large/7.jpg'
 import funnyLarge8 from '../images/funny/large/8.jpg'
 import funnyLarge9 from '../images/funny/large/9.jpg'
 
+import joy0 from '../images/joy/0.jpg'
+import joy1 from '../images/joy/1.jpg'
+import joy2 from '../images/joy/2.jpg'
+import joy3 from '../images/joy/3.jpg'
+import joy4 from '../images/joy/4.jpg'
+import joy5 from '../images/joy/5.jpg'
+import joy6 from '../images/joy/6.jpg'
+import joy7 from '../images/joy/7.jpg'
+import joy8 from '../images/joy/8.jpg'
+import joy9 from '../images/joy/9.jpg'
+import joy10 from '../images/joy/10.jpg'
+import joy11 from '../images/joy/11.jpg'
+import joy12 from '../images/joy/12.jpg'
+import joy13 from '../images/joy/13.jpg'
+import joy14 from '../images/joy/14.jpg'
+import joy15 from '../images/joy/15.jpg'
+import joy16 from '../images/joy/16.jpg'
+import joy17 from '../images/joy/17.jpg'
+
+import joyLarge0 from '../images/joy/large/0.jpg'
+import joyLarge1 from '../images/joy/large/1.jpg'
+import joyLarge2 from '../images/joy/large/2.jpg'
+import joyLarge3 from '../images/joy/large/3.jpg'
+import joyLarge4 from '../images/joy/large/4.jpg'
+import joyLarge5 from '../images/joy/large/5.jpg'
+import joyLarge6 from '../images/joy/large/6.jpg'
+import joyLarge7 from '../images/joy/large/7.jpg'
+import joyLarge8 from '../images/joy/large/8.jpg'
+import joyLarge9 from '../images/joy/large/9.jpg'
+import joyLarge10 from '../images/joy/large/10.jpg'
+import joyLarge11 from '../images/joy/large/11.jpg'
+import joyLarge12 from '../images/joy/large/12.jpg'
+import joyLarge13 from '../images/joy/large/13.jpg'
+import joyLarge14 from '../images/joy/large/14.jpg'
+import joyLarge15 from '../images/joy/large/15.jpg'
+import joyLarge16 from '../images/joy/large/16.jpg'
+import joyLarge17 from '../images/joy/large/17.jpg'
+
+import a6Drawings0 from '../images/a6_drawings/0.jpg'
+import a6Drawings1 from '../images/a6_drawings/1.jpg'
+import a6Drawings2 from '../images/a6_drawings/2.jpg'
+import a6Drawings3 from '../images/a6_drawings/3.jpg'
+import a6Drawings4 from '../images/a6_drawings/4.jpg'
+import a6Drawings5 from '../images/a6_drawings/5.jpg'
+import a6Drawings6 from '../images/a6_drawings/6.jpg'
+
+import a6DrawingsLarge0 from '../images/a6_drawings/large/0.jpg'
+import a6DrawingsLarge1 from '../images/a6_drawings/large/1.jpg'
+import a6DrawingsLarge2 from '../images/a6_drawings/large/2.jpg'
+import a6DrawingsLarge3 from '../images/a6_drawings/large/3.jpg'
+import a6DrawingsLarge4 from '../images/a6_drawings/large/4.jpg'
+import a6DrawingsLarge5 from '../images/a6_drawings/large/5.jpg'
+import a6DrawingsLarge6 from '../images/a6_drawings/large/6.jpg'
+
+import nightBus0 from '../images/night_bus/0.jpg'
+import nightBus1 from '../images/night_bus/1.jpg'
+import nightBus2 from '../images/night_bus/2.jpg'
+import nightBus3 from '../images/night_bus/3.jpg'
+import nightBus4 from '../images/night_bus/4.jpg'
+
+import nightBusLarge0 from '../images/night_bus/0.jpg'
+import nightBusLarge1 from '../images/night_bus/1.jpg'
+import nightBusLarge2 from '../images/night_bus/2.jpg'
+import nightBusLarge3 from '../images/night_bus/3.jpg'
+import nightBusLarge4 from '../images/night_bus/4.jpg'
+
+import multiPen0 from '../images/multi_pen/0.jpg'
+import multiPen1 from '../images/multi_pen/1.jpg'
+import multiPen2 from '../images/multi_pen/2.jpg'
+import multiPen3 from '../images/multi_pen/3.jpg'
+import multiPen4 from '../images/multi_pen/4.jpg'
+import multiPen5 from '../images/multi_pen/5.jpg'
+import multiPen6 from '../images/multi_pen/6.jpg'
+import multiPen7 from '../images/multi_pen/7.jpg'
+import multiPen8 from '../images/multi_pen/8.jpg'
+import multiPen9 from '../images/multi_pen/9.jpg'
+import multiPen10 from '../images/multi_pen/10.jpg'
+import multiPen11 from '../images/multi_pen/11.jpg'
+import multiPen12 from '../images/multi_pen/12.jpg'
+import multiPen13 from '../images/multi_pen/13.jpg'
+import multiPen14 from '../images/multi_pen/14.jpg'
+import multiPen15 from '../images/multi_pen/15.jpg'
+import multiPen16 from '../images/multi_pen/16.jpg'
+import multiPen17 from '../images/multi_pen/17.jpg'
+import multiPen18 from '../images/multi_pen/18.jpg'
+import multiPen19 from '../images/multi_pen/19.jpg'
+import multiPen20 from '../images/multi_pen/20.jpg'
+import multiPen21 from '../images/multi_pen/21.jpg'
+import multiPen22 from '../images/multi_pen/22.jpg'
+import multiPen23 from '../images/multi_pen/23.jpg'
+import multiPen24 from '../images/multi_pen/24.jpg'
+
+import multiPenLarge0 from '../images/multi_pen/large/0.jpg'
+import multiPenLarge1 from '../images/multi_pen/large/1.jpg'
+import multiPenLarge2 from '../images/multi_pen/large/2.jpg'
+import multiPenLarge3 from '../images/multi_pen/large/3.jpg'
+import multiPenLarge4 from '../images/multi_pen/large/4.jpg'
+import multiPenLarge5 from '../images/multi_pen/large/5.jpg'
+import multiPenLarge6 from '../images/multi_pen/large/6.jpg'
+import multiPenLarge7 from '../images/multi_pen/large/7.jpg'
+import multiPenLarge8 from '../images/multi_pen/large/8.jpg'
+import multiPenLarge9 from '../images/multi_pen/large/9.jpg'
+import multiPenLarge10 from '../images/multi_pen/large/10.jpg'
+import multiPenLarge11 from '../images/multi_pen/large/11.jpg'
+import multiPenLarge12 from '../images/multi_pen/large/12.jpg'
+import multiPenLarge13 from '../images/multi_pen/large/13.jpg'
+import multiPenLarge14 from '../images/multi_pen/large/14.jpg'
+import multiPenLarge15 from '../images/multi_pen/large/15.jpg'
+import multiPenLarge16 from '../images/multi_pen/large/16.jpg'
+import multiPenLarge17 from '../images/multi_pen/large/17.jpg'
+import multiPenLarge18 from '../images/multi_pen/large/18.jpg'
+import multiPenLarge19 from '../images/multi_pen/large/19.jpg'
+import multiPenLarge20 from '../images/multi_pen/large/20.jpg'
+import multiPenLarge21 from '../images/multi_pen/large/21.jpg'
+import multiPenLarge22 from '../images/multi_pen/large/22.jpg'
+import multiPenLarge23 from '../images/multi_pen/large/23.jpg'
+import multiPenLarge24 from '../images/multi_pen/large/24.jpg'
+
+import asemic0 from '../images/asemic_writing/0.jpg'
+import asemic1 from '../images/asemic_writing/1.jpg'
+import asemic2 from '../images/asemic_writing/2.jpg'
+import asemic3 from '../images/asemic_writing/3.jpg'
+import asemic4 from '../images/asemic_writing/4.jpg'
+
+import asemicLarge0 from '../images/asemic_writing/large/0.jpg'
+import asemicLarge1 from '../images/asemic_writing/large/1.jpg'
+import asemicLarge2 from '../images/asemic_writing/large/2.jpg'
+import asemicLarge3 from '../images/asemic_writing/large/3.jpg'
+import asemicLarge4 from '../images/asemic_writing/large/4.jpg'
+
+import squaresAndCircles0 from '../images/squares_and_circles/0.jpg'
+import squaresAndCircles1 from '../images/squares_and_circles/1.jpg'
+import squaresAndCircles2 from '../images/squares_and_circles/2.jpg'
+import squaresAndCircles3 from '../images/squares_and_circles/3.jpg'
+import squaresAndCircles4 from '../images/squares_and_circles/4.jpg'
+import squaresAndCircles5 from '../images/squares_and_circles/5.jpg'
+import squaresAndCircles6 from '../images/squares_and_circles/6.jpg'
+import squaresAndCircles7 from '../images/squares_and_circles/7.jpg'
+import squaresAndCircles8 from '../images/squares_and_circles/8.jpg'
+import squaresAndCircles9 from '../images/squares_and_circles/9.jpg'
+import squaresAndCircles10 from '../images/squares_and_circles/10.jpg'
+import squaresAndCircles11 from '../images/squares_and_circles/11.jpg'
+import squaresAndCircles12 from '../images/squares_and_circles/12.jpg'
+import squaresAndCircles13 from '../images/squares_and_circles/13.jpg'
+import squaresAndCircles14 from '../images/squares_and_circles/14.jpg'
+
+import squaresAndCirclesLarge0 from '../images/squares_and_circles/large/0.jpg'
+import squaresAndCirclesLarge1 from '../images/squares_and_circles/large/1.jpg'
+import squaresAndCirclesLarge2 from '../images/squares_and_circles/large/2.jpg'
+import squaresAndCirclesLarge3 from '../images/squares_and_circles/large/3.jpg'
+import squaresAndCirclesLarge4 from '../images/squares_and_circles/large/4.jpg'
+import squaresAndCirclesLarge5 from '../images/squares_and_circles/large/5.jpg'
+import squaresAndCirclesLarge6 from '../images/squares_and_circles/large/6.jpg'
+import squaresAndCirclesLarge7 from '../images/squares_and_circles/large/7.jpg'
+import squaresAndCirclesLarge8 from '../images/squares_and_circles/large/8.jpg'
+import squaresAndCirclesLarge9 from '../images/squares_and_circles/large/9.jpg'
+import squaresAndCirclesLarge10 from '../images/squares_and_circles/large/10.jpg'
+import squaresAndCirclesLarge11 from '../images/squares_and_circles/large/11.jpg'
+import squaresAndCirclesLarge12 from '../images/squares_and_circles/large/12.jpg'
+import squaresAndCirclesLarge13 from '../images/squares_and_circles/large/13.jpg'
+import squaresAndCirclesLarge14 from '../images/squares_and_circles/large/14.jpg'
+
 export const NFTContent = [
+
+  {
+    category: 'squares_and_circles',
+    projects: [
+      {
+        title: 'squares_and_circles_1',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: squaresAndCircles0,
+        imageLarge: squaresAndCirclesLarge0,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'squares_and_circles_2',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: squaresAndCircles1,
+        imageLarge: squaresAndCirclesLarge1,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'squares_and_circles_3',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: squaresAndCircles2,
+        imageLarge: squaresAndCirclesLarge2,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'squares_and_circles_4',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: squaresAndCircles3,
+        imageLarge: squaresAndCirclesLarge3,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'squares_and_circles_5',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: squaresAndCircles4,
+        imageLarge: squaresAndCirclesLarge4,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'squares_and_circles_6',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: squaresAndCircles5,
+        imageLarge: squaresAndCirclesLarge5,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'squares_and_circles_7',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: squaresAndCircles6,
+        imageLarge: squaresAndCirclesLarge6,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'squares_and_circles_8',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: squaresAndCircles7,
+        imageLarge: squaresAndCirclesLarge7,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'squares_and_circles_9',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: squaresAndCircles8,
+        imageLarge: squaresAndCirclesLarge8,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'squares_and_circles_10',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: squaresAndCircles9,
+        imageLarge: squaresAndCirclesLarge9,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'squares_and_circles_11',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: squaresAndCircles10,
+        imageLarge: squaresAndCirclesLarge10,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'squares_and_circles_12',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: squaresAndCircles11,
+        imageLarge: squaresAndCirclesLarge11,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'squares_and_circles_13',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: squaresAndCircles12,
+        imageLarge: squaresAndCirclesLarge12,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'squares_and_circles_14',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: squaresAndCircles14,
+        imageLarge: squaresAndCirclesLarge14,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'squares_and_circles_14',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: squaresAndCircles13,
+        imageLarge: squaresAndCirclesLarge13,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+    ],
+  },
+
+
+  {
+    category: 'asemic_writing',
+    projects: [
+      {
+        title: 'asemic_writing_1',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: asemic0,
+        imageLarge: asemicLarge0,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'asemic_writing_2',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: asemic1,
+        imageLarge: asemicLarge1,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'asemic_writing_3',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: asemic2,
+        imageLarge: asemicLarge2,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'asemic_writing_4',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: asemic3,
+        imageLarge: asemicLarge3,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'asemic_writing_5',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: asemic4,
+        imageLarge: asemicLarge4,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+    ],
+  },
+
+
+  {
+    category: 'multi_pen',
+    projects: [
+      {
+        title: 'multi_pen_1',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: multiPen0,
+        imageLarge: multiPenLarge0,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'multi_pen_2',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: multiPen1,
+        imageLarge: multiPenLarge1,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'multi_pen_3',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: multiPen2,
+        imageLarge: multiPenLarge2,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'multi_pen_4',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: multiPen3,
+        imageLarge: multiPenLarge3,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'multi_pen_5',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: multiPen4,
+        imageLarge: multiPenLarge4,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'multi_pen_6',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: multiPen5,
+        imageLarge: multiPenLarge5,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'multi_pen_7',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: multiPen6,
+        imageLarge: multiPenLarge6,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'multi_pen_8',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: multiPen7,
+        imageLarge: multiPenLarge7,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'multi_pen_9',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: multiPen8,
+        imageLarge: multiPenLarge8,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'multi_pen_10',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: multiPen9,
+        imageLarge: multiPenLarge9,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'multi_pen_11',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: multiPen10,
+        imageLarge: multiPenLarge10,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'multi_pen_12',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: multiPen11,
+        imageLarge: multiPenLarge11,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'multi_pen_13',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: multiPen12,
+        imageLarge: multiPenLarge12,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'multi_pen_14',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: multiPen13,
+        imageLarge: multiPenLarge13,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'multi_pen_15',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: multiPen14,
+        imageLarge: multiPenLarge14,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'multi_pen_16',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: multiPen15,
+        imageLarge: multiPenLarge15,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'multi_pen_17',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: multiPen16,
+        imageLarge: multiPenLarge16,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'multi_pen_18',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: multiPen17,
+        imageLarge: multiPenLarge17,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'multi_pen_19',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: multiPen18,
+        imageLarge: multiPenLarge18,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'multi_pen_20',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: multiPen19,
+        imageLarge: multiPenLarge19,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'multi_pen_21',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: multiPen20,
+        imageLarge: multiPenLarge20,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'multi_pen_22',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: multiPen21,
+        imageLarge: multiPenLarge21,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'multi_pen_23',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: multiPen22,
+        imageLarge: multiPenLarge22,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'multi_pen_24',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: multiPen23,
+        imageLarge: multiPenLarge23,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'multi_pen_25',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: multiPen24,
+        imageLarge: multiPenLarge24,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+    ],
+  },
+
+
+
+
+
+
+
+  {
+    category: 'night_bus',
+    projects: [
+      {
+        title: 'night_bus_1',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: nightBus0,
+        imageLarge: nightBusLarge0,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'night_bus_2',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: nightBus1,
+        imageLarge: nightBusLarge1,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'night_bus_3',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: nightBus2,
+        imageLarge: nightBusLarge2,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'night_bus_4',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: nightBus3,
+        imageLarge: nightBusLarge3,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'night_bus_5',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: nightBus4,
+        imageLarge: nightBusLarge4,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+    ],
+  },
+
+
+
+
+  {
+    category: 'a6_drawings',
+    projects: [
+      {
+        title: 'a6_drawings_1',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: a6Drawings0,
+        imageLarge: a6DrawingsLarge0,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'a6_drawings_2',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: a6Drawings1,
+        imageLarge: a6DrawingsLarge1,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'a6_drawings_3',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: a6Drawings2,
+        imageLarge: a6DrawingsLarge2,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'a6_drawings_4',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: a6Drawings3,
+        imageLarge: a6DrawingsLarge3,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'a6_drawings_5',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: a6Drawings4,
+        imageLarge: a6DrawingsLarge4,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'a6_drawings_6',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: a6Drawings5,
+        imageLarge: a6DrawingsLarge5,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'a6_drawings_7',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: a6Drawings6,
+        imageLarge: a6DrawingsLarge6,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+    ],
+  },
+
+
+
+
+  {
+    category: 'joy',
+    projects: [
+      {
+        title: 'joy_1',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: joy0,
+        imageLarge: joyLarge0,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'joy_2',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: joy1,
+        imageLarge: joyLarge1,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'joy_3',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: joy2,
+        imageLarge: joyLarge2,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'joy_4',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: joy3,
+        imageLarge: joyLarge3,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'joy_5',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: joy4,
+        imageLarge: joyLarge4,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'joy_6',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: joy5,
+        imageLarge: joyLarge5,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'joy_7',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: joy6,
+        imageLarge: joyLarge6,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'joy_8',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: joy7,
+        imageLarge: joyLarge7,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'joy_9',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: joy8,
+        imageLarge: joyLarge8,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'joy_10',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: joy9,
+        imageLarge: joyLarge9,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'joy_11',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: joy10,
+        imageLarge: joyLarge10,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'joy_12',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: joy11,
+        imageLarge: joyLarge11,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'joy_13',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: joy12,
+        imageLarge: joyLarge12,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'joy_14',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: joy13,
+        imageLarge: joyLarge13,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'joy_15',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: joy14,
+        imageLarge: joyLarge14,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'joy_16',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: joy15,
+        imageLarge: joyLarge15,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'joy_117',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: joy16,
+        imageLarge: joyLarge16,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+      {
+        title: 'joy_18',
+        description:
+          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
+        pricePrint: 40,
+        priceOriginal: 200,
+        sold: true,
+        dimensions: 'A4',
+        image: joy17,
+        imageLarge: joyLarge17,
+        alt: 'NFT image',
+        printStripeLink: 'https://buy.stripe.com/cN2aI9cJm0y8epq6pk',
+        originalStripeLink: 'https://buy.stripe.com/8wM9E5gZCgx62GIcPc',
+        NFTLink: 'https://foundation.app/',
+      },
+    ],
+  },
+
+
+
+
   {
     category: 'work_is_hell',
     projects: [
@@ -498,15 +1839,12 @@ export const NFTContent = [
     projects: [
       {
         title: 'Front_Row',
-        description:
-          'Seventh NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse.',
-        // NFTPrice: 0.2,
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
         dimensions: 'Approx A4 (slightly larger)',
-        image: editedAds0,
-        imageLarge: editedAdsLarge0,
+        image: editedAds7,
+        imageLarge: editedAdsLarge7,
         alt: 'NFT image',
         printStripeLink: 'https://buy.stripe.com/3cs4jLeRucgQ2GIdR0',
         originalStripeLink: 'https://buy.stripe.com/bIYg2t9xa3Kk2GI4jb',
@@ -514,15 +1852,12 @@ export const NFTContent = [
       },
       {
         title: 'I_am_Loved',
-        description:
-          'Eighth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi.',
-        // NFTPrice: 0.1,
         pricePrint: 40,
         priceOriginal: 175,
         sold: false,
         dimensions: 'Approx A4 (slightly larger)',
-        image: editedAds1,
-        imageLarge: editedAdsLarge1,
+        image: editedAds24,
+        imageLarge: editedAdsLarge24,
         alt: 'NFT image',
         printStripeLink: 'https://buy.stripe.com/aEU17zbFidkU1CEfZ9',
         originalStripeLink: 'https://buy.stripe.com/fZeaI9gZC3Kk6WY4hY',
@@ -530,15 +1865,12 @@ export const NFTContent = [
       },
       {
         title: 'Peace',
-        description:
-          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        // NFTPrice: 0.5,
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
         dimensions: 'Approx A4 (slightly larger)',
-        image: editedAds2,
-        imageLarge: editedAdsLarge2,
+        image: editedAds9,
+        imageLarge: editedAds9,
         alt: 'NFT image',
         printStripeLink: 'https://buy.stripe.com/28o8A124I5Sschi7sE',
         originalStripeLink: 'https://buy.stripe.com/9AQ8A1dNq5SsdlmaGl',
@@ -546,25 +1878,19 @@ export const NFTContent = [
       },
       {
         title: 'You_make_my_Love_come_Down',
-        description:
-          'Tenth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum.',
-        // NFTPrice: 0.4,
         pricePrint: 40,
         priceOriginal: 250,
         sold: false,
         dimensions: 'Approx A4 (slightly larger)',
-        image: editedAds3,
-        imageLarge: editedAdsLarge3,
+        image: editedAds16,
+        imageLarge: editedAds16,
         alt: 'NFT image',
         printStripeLink: 'https://buy.stripe.com/aEUaI99xadkUftufZb',
         originalStripeLink: 'https://buy.stripe.com/cN203v10E0y83KMg0H',
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'Oppenheimer',
-        description:
-          'Seventh NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse.',
-        // NFTPrice: 0.2,
+        title: 'Abundance',
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
@@ -577,10 +1903,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'Green_Crown',
-        description:
-          'Eighth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi.',
-        // NFTPrice: 0.1,
+        title: 'I_Accept_Myself',
         pricePrint: 40,
         priceOriginal: 250,
         sold: false,
@@ -593,10 +1916,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'Model_Portrait ',
-        description:
-          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        // NFTPrice: 0.5,
+        title: 'Gucci_Detail_1 ',
         pricePrint: 40,
         priceOriginal: 150,
         sold: true,
@@ -609,26 +1929,20 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'Hey_Arnold!',
-        description:
-          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        // NFTPrice: 0.5,
+        title: "I'm_Really_Here",
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
         dimensions: 'Approx A4 (slightly larger)',
-        image: editedAds7,
-        imageLarge: editedAdsLarge7,
+        image: editedAds0,
+        imageLarge: editedAdsLarge0,
         alt: 'NFT image',
         printStripeLink: 'https://buy.stripe.com/14kcQhdNq1CcftucN3',
         originalStripeLink: 'https://buy.stripe.com/4gw7vX10EbcM8125m7',
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'Gucci_Detail_1',
-        description:
-          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        // NFTPrice: 0.5,
+        title: 'Poppy',
         pricePrint: 40,
         priceOriginal: 300,
         sold: true,
@@ -641,42 +1955,33 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'Gucci_Detail_2',
-        description:
-          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        // NFTPrice: 0.5,
+        title: 'Larder_full_of_Prada',
         pricePrint: 40,
         priceOriginal: 300,
-        sold: true,
-        dimensions: 'Approx A4 (slightly larger)',
-        image: editedAds9,
-        imageLarge: editedAdsLarge9,
-        alt: 'NFT image',
-        printStripeLink: 'https://buy.stripe.com/fZe7vX9xa94E6WY14n',
-        originalStripeLink: 'https://buy.stripe.com/5kA5nPcJmgx61CEcOB',
-        NFTLink: 'https://foundation.app/',
-      },
-      {
-        title: 'Tell_me_what_you_Know',
-        description:
-          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        // NFTPrice: 0.5,
-        pricePrint: 40,
-        priceOriginal: 150,
         sold: true,
         dimensions: 'Approx A4 (slightly larger)',
         image: editedAds10,
         imageLarge: editedAdsLarge10,
         alt: 'NFT image',
-        printStripeLink: 'https://buy.stripe.com/fZe17z5gU3Kkdlm6oI',
-        originalStripeLink: 'https://buy.stripe.com/3cscQh6kYeoYgxyeWK',
+        printStripeLink: 'https://buy.stripe.com/fZe7vX9xa94E6WY14n',
+        originalStripeLink: 'https://buy.stripe.com/5kA5nPcJmgx61CEcOB',
         NFTLink: 'https://foundation.app/',
       },
+      // {
+      //   title: "Ain't_Laurent",
+      //   pricePrint: 40,
+      //   priceOriginal: 150,
+      //   sold: true,
+      //   dimensions: 'Approx A4 (slightly larger)',
+      //   image: editedAds9,
+      //   imageLarge: editedAdsLarge9,
+      //   alt: 'NFT image',
+      //   printStripeLink: 'https://buy.stripe.com/fZe17z5gU3Kkdlm6oI',
+      //   originalStripeLink: 'https://buy.stripe.com/3cscQh6kYeoYgxyeWK',
+      //   NFTLink: 'https://foundation.app/',
+      // },
       {
-        title: 'Occulted_Knowledge',
-        description:
-          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        // NFTPrice: 0.5,
+        title: "Ain't_Laurent",
         pricePrint: 40,
         priceOriginal: 250,
         sold: true,
@@ -689,10 +1994,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'French_for_With',
-        description:
-          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        // NFTPrice: 0.5,
+        title: 'faith',
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
@@ -705,10 +2007,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'Poppy',
-        description:
-          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        // NFTPrice: 0.5,
+        title: 'sore_winner',
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
@@ -721,10 +2020,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: "Don't_Explain",
-        description:
-          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        // NFTPrice: 0.5,
+        title: "Gucci_Detail_2",
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
@@ -737,10 +2033,7 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'The_Physical_World',
-        description:
-          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        // NFTPrice: 0.5,
+        title: 'Green_Crown', 
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
@@ -753,166 +2046,107 @@ export const NFTContent = [
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'Larder_full_of_Prada',
-        description:
-          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        // NFTPrice: 0.5,
+        title: 'Hey_Arnold!',
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
         dimensions: 'Approx A4 (slightly larger)',
-        image: editedAds16,
-        imageLarge: editedAdsLarge16,
+        image: editedAds17,
+        imageLarge: editedAdsLarge17,
         alt: 'NFT image',
         printStripeLink: 'https://buy.stripe.com/4gw3fHdNq4OobdefZo',
         originalStripeLink: 'https://buy.stripe.com/bIY03vaBe4OodlmaGA',
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'Sore_Winner',
-        description:
-          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        // NFTPrice: 0.5,
+        title: 'The_Physical_World',
         pricePrint: 40,
         priceOriginal: 100,
         sold: true,
         dimensions: 'Approx A4 (slightly larger)',
-        image: editedAds17,
-        imageLarge: editedAdsLarge17,
+        image: editedAds18,
+        imageLarge: editedAdsLarge18,
         alt: 'NFT image',
         printStripeLink: 'https://buy.stripe.com/5kA6rTeRubcMa9acNd',
         originalStripeLink: 'https://buy.stripe.com/7sI4jL10E0y8ftubKF',
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'Faith',
-        description:
-          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        // NFTPrice: 0.5,
+        title: 'Do_Not_Draw', 
         pricePrint: 40,
         sold: true,
         dimensions: 'Approx A4 (slightly larger)',
-        image: editedAds18,
-        imageLarge: editedAdsLarge18,
+        image: editedAds19,
+        imageLarge: editedAdsLarge19,
         alt: 'NFT image',
         printStripeLink: 'https://buy.stripe.com/00gaI9gZC5SsdlmcNe',
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'Absurdity_beneath_Solemnity ',
-        description:
-          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        // NFTPrice: 0.5,
+        title: 'Model_Portrait', 
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
         dimensions: 'Approx A4 (slightly larger)',
-        image: editedAds19,
-        imageLarge: editedAdsLarge19,
+        image: editedAds20,
+        imageLarge: editedAdsLarge20,
         alt: 'NFT image',
         printStripeLink: 'https://buy.stripe.com/8wMg2t24I3Kkbde5kN',
         originalStripeLink: 'https://buy.stripe.com/6oEdUl7p2gx65SU4ie',
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: "Ain't_Laurent",
-        description:
-          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        // NFTPrice: 0.5,
+        title: "Occulted_Knowledge",
         pricePrint: 40,
         priceOriginal: 500,
         sold: true,
         dimensions: 'Approx A4 (slightly larger)',
-        image: editedAds20,
-        imageLarge: editedAdsLarge20,
+        image: editedAds21,
+        imageLarge: editedAdsLarge21,
         alt: 'NFT image',
         printStripeLink: 'https://buy.stripe.com/4gw03v8t6ft2a9aaF8',
         originalStripeLink: 'https://buy.stripe.com/9AQdUl7p24Oo5SUeWT',
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'Serial_Person',
-        description:
-          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        // NFTPrice: 0.5,
+        title: 'Tell_me_what_you_Know',
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
         dimensions: 'Approx A4 (slightly larger)',
-        image: editedAds21,
-        imageLarge: editedAdsLarge21,
+        image: editedAds22,
+        imageLarge: editedAdsLarge22,
         alt: 'NFT image',
         printStripeLink: 'https://buy.stripe.com/6oE3fH7p2a8IftudRl',
         originalStripeLink: 'https://buy.stripe.com/bIYbMd38M2GgbdedSQ',
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'Prada_Profile',
-        description:
-          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        // NFTPrice: 0.5,
+        title: 'Absurdity_beneath_Solemnity',
         pricePrint: 40,
-        sold: true,
-        dimensions: 'Approx A4 (slightly larger)',
-        image: editedAds22,
-        imageLarge: editedAdsLarge22,
-        alt: 'NFT image',
-        printStripeLink: 'https://buy.stripe.com/eVa03v38Mft2ftufZu',
-        NFTLink: 'https://foundation.app/',
-      },
-      {
-        title: "I'm_Really_Here",
-        description:
-          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        // NFTPrice: 0.5,
-        pricePrint: 40,
-        priceOriginal: 200,
         sold: true,
         dimensions: 'Approx A4 (slightly larger)',
         image: editedAds23,
         imageLarge: editedAdsLarge23,
         alt: 'NFT image',
-        printStripeLink: 'https://buy.stripe.com/fZeg2teRueoYchi00x',
-        originalStripeLink: 'https://buy.stripe.com/eVaaI97p22Gg5SU3ed',
+        printStripeLink: 'https://buy.stripe.com/eVa03v38Mft2ftufZu',
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'Abundance',
-        description:
-          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        // NFTPrice: 0.5,
+        title: "Serial_Person", 
         pricePrint: 40,
         priceOriginal: 175,
         sold: true,
         dimensions: 'Approx A4 (slightly larger)',
-        image: editedAds24,
-        imageLarge: editedAdsLarge24,
+        image: editedAds25,
+        imageLarge: editedAdsLarge25,
         alt: 'NFT image',
         printStripeLink: 'https://buy.stripe.com/4gw17zdNq1Cc9569B8',
         originalStripeLink: 'https://buy.stripe.com/7sI17zgZC5Sschi2aa',
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: 'Do_Not_Draw',
-        description:
-          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        // NFTPrice: 0.5,
-        pricePrint: 40,
-        priceOriginal: 200,
-        sold: true,
-        dimensions: 'Approx A4 (slightly larger)',
-        image: editedAds25,
-        imageLarge: editedAdsLarge25,
-        alt: 'NFT image',
-        printStripeLink: 'https://buy.stripe.com/8wMdUl10E1Cca9a9B9',
-        originalStripeLink: 'https://buy.stripe.com/14keYp8t680A5SUg11',
-        NFTLink: 'https://foundation.app/',
-      },
-      {
-        title: 'I_Accept_Myself',
-        description:
-          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        // NFTPrice: 0.5,
+        title: "Prada_Profile",
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
@@ -920,15 +2154,12 @@ export const NFTContent = [
         image: editedAds26,
         imageLarge: editedAdsLarge26,
         alt: 'NFT image',
-        printStripeLink: 'https://buy.stripe.com/5kA3fH24IdkUchidRq',
-        originalStripeLink: 'https://buy.stripe.com/8wMcQhdNqbcMbde2ac',
+        printStripeLink: 'https://buy.stripe.com/8wMdUl10E1Cca9a9B9',
+        originalStripeLink: 'https://buy.stripe.com/14keYp8t680A5SUg11',
         NFTLink: 'https://foundation.app/',
       },
       {
-        title: "Dior_can't_Afford_me",
-        description:
-          'Ninth NFT lorem ipsum dolor sit amet consectetur adipisicing elit. Porro praesentium neque esse? Quaerat, ex cupiditate architecto atque laudantium delectus nostrum porro aliquam? Placeat modi quibusdam sit consequatur.',
-        // NFTPrice: 0.5,
+        title: "Dior_can't_Afford_me", 
         pricePrint: 40,
         priceOriginal: 200,
         sold: true,
@@ -936,10 +2167,23 @@ export const NFTContent = [
         image: editedAds27,
         imageLarge: editedAdsLarge27,
         alt: 'NFT image',
-        printStripeLink: 'https://buy.stripe.com/cN2aI9gZC2GgbdebJj',
-        originalStripeLink: 'https://buy.stripe.com/eVa4jL6kYft21CEbKN',
+        printStripeLink: 'https://buy.stripe.com/5kA3fH24IdkUchidRq',
+        originalStripeLink: 'https://buy.stripe.com/8wMcQhdNqbcMbde2ac',
         NFTLink: 'https://foundation.app/',
       },
+      // {
+      //   title: "I_Accept_Myself", 
+      //   pricePrint: 40,
+      //   priceOriginal: 200,
+      //   sold: true,
+      //   dimensions: 'Approx A4 (slightly larger)',
+      //   image: editedAds28,
+      //   imageLarge: editedAdsLarge2,
+      //   alt: 'NFT image',
+      //   printStripeLink: 'https://buy.stripe.com/cN2aI9gZC2GgbdebJj',
+      //   originalStripeLink: 'https://buy.stripe.com/eVa4jL6kYft21CEbKN',
+      //   NFTLink: 'https://foundation.app/',
+      // },
     ],
   },
   {

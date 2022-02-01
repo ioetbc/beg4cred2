@@ -55,11 +55,11 @@ export const NFTDetails = ({ location, isMobile }) => {
                 ORIGINAL PRICE: <strong>£{data?.priceOriginal?.toFixed(2)}</strong>
               </li>
             )}
-            {data?.pricePrint && (
+            {/* {data?.pricePrint && (
               <li>
                 PRINT PRICE: <strong>£{data?.pricePrint?.toFixed(2)}</strong>
               </li>
-            )}
+            )} */}
             {data?.NFTPrice && (
               <li>
                 NFT PRICE: <strong>{data?.NFTPrice} ETH</strong>
@@ -73,10 +73,10 @@ export const NFTDetails = ({ location, isMobile }) => {
                 handleOnClick={() => window.open(data?.originalStripeLink, '_blank')}
               />
             )}
-            <PrimaryButton
+            {/* <PrimaryButton
               text="BUY PRINT"
               handleOnClick={() => window.open(type === 'NFT' ? data?.NFTLink : data?.printStripeLink, '_blank')}
-            />
+            /> */}
             {data?.NFTPrice && (
               <PrimaryButton text="BUY NFT" handleOnClick={() => window.open(data?.stripeLink, '_blank')} />
             )}
